@@ -15,6 +15,23 @@ Claire:
 https://www.youtube.com/watch?v=ALAuI5JLsYs
 https://www.youtube.com/watch?v=_xk_fwWm_dU
 
+https://44.agendaculturel.fr/danse/nantes/le-lac-des-cygnes-9.html
+https://44.agendaculturel.fr/danse/nantes/la-chute-des-anges.html
+https://44.agendaculturel.fr/danse/nantes/lorenzaccio-pietragalla-derouault-2.html  > https://vimeo.com/263146153
+https://www.fnacspectacles.com/place-spectacle/ticket-evenement/danse-traditionnelle-shen-yun-mannccsy-lt.htm?utm_medium=affiliation&awc=12494_1547832352_084f53cf7490207eb10b928b9f04dba8&utm_source=Agenda%20Culturel%20SARL#ancreVideo
+https://44.agendaculturel.fr/danse/nantes/l-empreinte.html > http://www.tntheatre.com/l-empreinte
+https://44.agendaculturel.fr/danse/nantes/the-sea-within.html > https://www.youtube.com/watch?v=Ug0Ekyn_QdY&feature=youtu.be
+https://44.agendaculturel.fr/lieux-culturels/nantes/salle-de-spectacle/
+https://44.agendaculturel.fr/danse/nantes/viens-comme-tu-es.html > http://www.tntheatre.com/viens-comme-tu-es & https://www.billetreduc.com/228062/evtbook.htm?date=1
+https://44.agendaculturel.fr/danse/nantes/tango-pasion.html
+https://44.agendaculturel.fr/danse/nantes/bolero-hommage-a-maurice-ravel-3.html
+
+> https://44.agendaculturel.fr/danse/nantes/le-lac-des-cygnes-9.html
+> https://www.fnacspectacles.com/place-spectacle/ticket-evenement/danse-traditionnelle-shen-yun-mannccsy-lt.htm?utm_medium=affiliation&awc=12494_1547832352_084f53cf7490207eb10b928b9f04dba8&utm_source=Agenda%20Culturel%20SARL#ancreVideo
+> https://44.agendaculturel.fr/danse/nantes/tango-pasion.html
+> http://www.tntheatre.com/viens-comme-tu-es
+> http://www.tntheatre.com/l-empreinte
+
 TODO > https://www.youtube.com/watch?v=S5CZkNZq7VE
 TODO > https://cfspart.impots.gouv.fr/monprofil-webapp/monCompte > 1AJ 30381, 1BP ???
 TODO > https://www.facebook.com/events/845355795856261/?notif_t=plan_user_invited&notif_id=1547556132816371
@@ -208,7 +225,7 @@ calcul frais papyal
 
 impots.gouv.fr => 1200125072181 / i 5/17
 moncompteactivite.gouv.fr => 184014410977526 M12/18    cf https://intra.ausy.fr/publish/universite/Guide%20d'utilisation%20Consultant.pdf
-gog.com => 3/17 gog13.o.osef@xoxy.net / 12/18 gog.leno.osef@xoxy.net 
+gog.com => 3/17 gog13.o.osef@xoxy.net (aussi 12/18 gog.leno.osef@xoxy.net  mais inutile)
 cardmarket.com => 6/18 slemoine cardmarket.s.lemoine@xoxy.com
 paypal => 8/17 ebay.s.lemoine@xoxy.net
 ebay => 3/18 ebay.s.lemoine@xoxy.net
@@ -228,12 +245,13 @@ spamgourmet.net
 swdestinydb => 
 starwarsdestinyfr.forumactif.com => 7/17
 steam => lenopgm 4/18
-humble bundle => 4/18
+humble bundle => 4/18 humble.osef.osef@xoxy.net
 ameli => 06062016
 
     => 2 88 06 49 007 351 08 / 14737567
 
 CAF => 1469221 06062016
+IZY => http://dpparis.ozyclub.eu/?p=435 => 001368 / date de naissance JJMMAAAA
 ants.gouv.fr => G 2/18
 ulule => 3/18
 myedenred => E 3/18 edenred.s.lemoine@xoxy.net
