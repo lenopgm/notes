@@ -255,7 +255,7 @@ IZY => http://dpparis.ozyclub.eu/?p=435 => 001368 / date de naissance JJMMAAAA
 ants.gouv.fr => G 2/18
 ulule => 3/18
 myedenred => E 3/18 edenred.s.lemoine@xoxy.net
-NGE => 3/17
+NGE => sl@y.com / 3/17 / https://mon.nge-nantes.fr/espace/stationnement
 natixis => natixis.s.lemoine@xoxy.net n° entreprise 06962 code serveur 14290097 mdp:00xxxxxx où xxxxxx=n°troll MH
 romaricbriand.fr/forum => romaricbriand.osef.osef@xoxy.net 6/18
 paypal => <mail yahoo>
