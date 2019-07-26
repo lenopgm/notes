@@ -147,6 +147,8 @@ Error message and password prompt
 
 <li>$:/DefaultTiddlers</li>
 
+<li>$:/Import</li>
+
 <li>$:/isEncrypted</li>
 
 <li>$:/palette</li>
@@ -224,6 +226,8 @@ Error message and password prompt
 <li>change over pass / hand washing</li>
 
 <li>clown</li>
+
+<li>code snippets</li>
 
 <li>coin magic</li>
 
@@ -305,6 +309,8 @@ Error message and password prompt
 
 <li>Mektoube, le destin</li>
 
+<li>Mentalisme / hypnose :</li>
+
 <li>Mickey Silver's Coin Retention Vanish (Silver's Ultimate Vanish) 'The Move'</li>
 
 <li>Monique Pinçon-Charlot : Casse sociale, le début ?</li>
@@ -314,6 +320,8 @@ Error message and password prompt
 <li>music</li>
 
 <li>Nico Pène misc</li>
+
+<li>Ninja / oshin jutsu</li>
 
 <li>Olicard &amp; Ropers</li>
 
@@ -326,6 +334,8 @@ Error message and password prompt
 <li>Origine de l'univers - Etienne Klein</li>
 
 <li>Parties les plus sensibles du corps</li>
+
+<li>pedo-criminalité</li>
 
 <li>Philogynes BIG5</li>
 
@@ -347,7 +357,7 @@ Error message and password prompt
 
 <li>security</li>
 
-<li>self tips</li>
+<li>self tips / ideas</li>
 
 <li>shuttle pass / flying shuttle pass</li>
 
@@ -9269,6 +9279,17 @@ Error message and password prompt
 <pre>Home
 </pre>
 </div>
+<div plugin-type="import" status="pending" title="$:/Import" type="application/json">
+<pre>{
+    &quot;tiddlers&quot;: {
+        &quot;Untitled&quot;: {
+            &quot;title&quot;: &quot;Untitled&quot;,
+            &quot;text&quot;: &quot;Derren Brown\n&quot;,
+            &quot;type&quot;: &quot;text/plain&quot;
+        }
+    }
+}</pre>
+</div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
@@ -9305,13 +9326,13 @@ Error message and password prompt
 <div created="20190108084833171" modified="20190108105317510" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Appearance</pre>
 </div>
-<div created="20190108104722609" modified="20190529151043425" title="$:/state/tab/moresidebar-1850697562">
+<div created="20190108104722609" modified="20190726084302342" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Recent</pre>
 </div>
 <div created="20190108101211875" modified="20190521145518441" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/More</pre>
 </div>
-<div created="20190717133922722" list="Home" modified="20190718131934136" title="$:/StoryList">
+<div created="20190724095020480" list="[[Quotes, citations]] Home" modified="20190726085858047" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20190131165140039" modified="20190131165140039" title="$:/temp/advancedsearch">
@@ -9371,8 +9392,8 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20190114084246125" modified="20190718131927816" title="$:/temp/search">
-<pre>downl</pre>
+<div created="20190114084246125" modified="20190726085857160" title="$:/temp/search">
+<pre>quot</pre>
 </div>
 <div created="20190108084849123" modified="20190108084857507" title="$:/theme">
 <pre>$:/themes/tiddlywiki/snowwhite</pre>
@@ -9800,6 +9821,19 @@ You must not project that you are proving anything or the actions, no matter how
 * 9 : Tu iras tjs jusqu'au bout
 * 10 : Tu jubileras de tout</pre>
 </div>
+<div created="20190725145732868" modified="20190725145946327" tags="dev" title="code snippets">
+<pre>! Java stream regroupement d'objets en Map&lt;A, B&gt; à partir d'une liste d'objets
+
+```
+        Map&lt;Long, Set&lt;String&gt;&gt; bla2 = listAlertTriggeredEntity.stream()
+                .collect(Collectors.groupingBy(
+                        AlertTriggeredEntity::getAlertTriggeredId, 
+                        Collectors.mapping(AlertTriggeredEntity::getTransactionId, Collectors.toSet())
+                ));
+
+```
+</pre>
+</div>
 <div created="20190327143035149" modified="20190618143143455" tags="magic coinmagic" title="coin magic">
 <pre>* ''@1'26 -&gt; @1'29 https://www.youtube.com/watch?v=ZQSnMsbcLhI''
 * https://www.youtube.com/watch?v=W1sAkptXwf4
@@ -10134,8 +10168,12 @@ https://github.com/remouk
 ```
 </pre>
 </div>
-<div created="20190108133939395" modified="20190704122526215" tags="dev" title="dev resources">
-<pre>! YAML
+<div created="20190108133939395" modified="20190725142207308" tags="dev" title="dev resources">
+<pre>! Java
+* https://www.rtsoft.com/pages/dink.php
+* https://www.lwjgl.org/
+
+! YAML
 * https://symfony.com/legacy/doc/reference/1_3/fr/02-yaml
 * https://fr.wikipedia.org/wiki/YAML
 
@@ -10419,20 +10457,14 @@ Augustin Barruel - Mémoires pour servir à l'histoire du jacobinisme	https://fr
 * photos ? (big)
 * useful code snippets</pre>
 </div>
-<div created="20190108105358377" modified="20190715123328402" tags="home current" title="Home">
+<div created="20190108105358377" modified="20190726084126684" tags="home current" title="Home">
 <pre>cute https://twitter.com/i_iove_nature
-
-
-```
-TROJANSPY.JS.COINSTEAL.AA
-flatmap-stream-0.1.2.tgz (NONAMEFL)
-https://www.trendmicro.com/vinfo/fr/threat-encyclopedia/malware/TrojanSpy.JS.COINSTEAL.AA
-```
-
 
 ! current
 * ''https://tgdmb.com/'' The Gaming Den - Frank Trollman
 * ''HMM3 Horn of the Abyss '': http://www.jeuxvideo.com/forums/42-10531-55944943-1-0-1-0-heroes-of-might-magic-iii-mod-hd-horn-of-the-habyss-traduction.htm http://heroescommunity.com/viewthread.php3?TID=39830
+* ''Dink Smallwood'' https://www.rtsoft.com/pages/dink.php
+* ''Repetitive Strain Injury'' : https://www.nhs.uk/conditions/repetitive-strain-injury-rsi/
 * https://en.wikipedia.org/wiki/Zip_bomb &amp; https://en.wikipedia.org/wiki/Quine_(computing)
 * http://www.ponpokopon.net/cours.html cours japonais
 * http://jeanzin.fr/2011/05/12/la-vie-increee/
@@ -10458,6 +10490,11 @@ https://www.trendmicro.com/vinfo/fr/threat-encyclopedia/malware/TrojanSpy.JS.COI
 * ''Turing indéterminabilité de l'arrêt / Incomplétude de Goedel / caractère fini de la connaissance''
 * Litobox musculation à poids de corps
 * Talend | Norsys
+
+! ''Java dev jeu''
+* https://www.lwjgl.org/
+* Jeu 3D LWJGL	https://www.youtube.com/watch?v=e2-Si7RAwG8&amp;list=PLq0CkcZATy26QgVPOGiuW8-FQICKJUf4D
+* Jeu 2D LWJGL	https://www.youtube.com/watch?v=o56B1O1WwBk&amp;list=PLq0CkcZATy27MgFJcy0HmMPVRwtDWeMlD
 
 ! Ressources
 * https://annuel.framapad.org/p/leno
@@ -10835,6 +10872,10 @@ Nous ne faisons que suivre ce qui est écrit a l’avance par la configuration i
 Si nous ne sommes qu'en fin de comptes que des automates conscient d’exister, nous devons néanmoins tendre vers la liberté, c'est a dire se soumettre a Dieu ou aux lois physique du mondes.
 Qui se soumet a Dieu ne vit que pour aimer et servir Dieu, Dieu qui prend conscience de lui-même en l'homme et qu'on ne peux aimer et servir qu'en aimant et servant les hommes, c'est a dire soi-même.</pre>
 </div>
+<div created="20190726084209569" modified="20190726084316441" tags="hypnose" title="Mentalisme / hypnose :">
+<pre>Derren Brown
+</pre>
+</div>
 <div created="20190417094219575" modified="20190426090544270" tags="coinmagic magic" title="Mickey Silver's Coin Retention Vanish (Silver's Ultimate Vanish) 'The Move'">
 <pre>https://www.themagiccafe.com/forums/viewtopic.php?topic=59604&amp;forum=3&amp;start=60
 
@@ -10919,6 +10960,12 @@ croyance limitante
 ```
 </pre>
 </div>
+<div created="20190726085804819" modified="20190726085849465" tags="ninja" title="Ninja / oshin jutsu">
+<pre>oshin jutsu / Shinobi no Jutsu / Kakure no jutsu
+http://translate.google.com/translate?u=http%3A%2F%2Fninjutsu-kurokawa-sp.blogspot.com%2F2012%2F01%2Fshinobi-fuku.html&amp;langpair=pt%7Cfr&amp;hl=en
+les maitres de l'ombre
+</pre>
+</div>
 <div created="20190301161812373" modified="20190301161922389" tags="fiche_lecture" title="Olicard &amp; Ropers">
 <pre>https://www.youtube.com/watch?v=-v4xTtDcXwc
 
@@ -10983,6 +11030,286 @@ le fondement logiquement premier de tout ce qui existe - ce peut être particuli
 * sexe
 * anus</pre>
 </div>
+<div created="20190725121652596" modified="20190726084953106" tags="maçonnerie pedo todo" title="pedo-criminalité">
+<pre>* No 7 : PEDO-CRIMINALITE : https://www.youtube.com/playlist?list=PLNqpj0IGr43AogFsIF7WyriYKbyddY4bH
+* affaire Epstein : https://www.youtube.com/playlist?list=PLNqpj0IGr43BnTpCMnrYatI7cmWKqLK1B
+*''Amidlisa '': http://rendeznousnosenfants.org/ftprendez/amidlisa/
+
+! related
+* No 3 : CRIMES CONTRE L'HUMANITE : https://www.youtube.com/playlist?list=PLNqpj0IGr43DGGdSK6O_EWCTdw_G-B8n5
+* No 6 : SATANISME : https://www.youtube.com/playlist?list=PLNqpj0IGr43BlXnUsJ-W443AcVYkb_Qr-
+
+! 1
+* un état dans l'état - Sophie Coignard
+* Rose Mafia - Gérard Dalongeville
+* J'ai frappé à la porte du temple - Serge Abad-Gallardo
+* Je servais Lucifer - Serge Abad-Gallardo
+* Secret maçonnique - Serge Abad-Gallardo
+* Les racines occultistes de la franc-maçonnerie - Jean-Claude Lozac'hmeur
+* J'étais franc-maçon - Maurice Caillet
+* La franc-maçonnerie, 300 ans d'imposture - Johan Livernette
+* Le livre noir des francs-maçons - Jean Robin
+
+! 2
+* une justice parallèle - réseau de la franc-maçonnerie
+* Serge Abad-Gallardo &quot;la franc-maçonnerie est luciférienne&quot;
+* la franc-maçonnerie est une secte diabolique Johan Livernette
+* Ploncard d'Assac le double visage de la franc-maçonnerie 
+* connaissance élémentaire de la Franc-Maçonnerie - Arnaud de lassu 
+* Franc-Maçonnerie et schizophrénie - Dr Jekyll &amp; Mr Hyde
+
+! 3
+* Violds d'enfants la fin du silence
+* Snuff-films et Messes noires en France
+* Vivre l'enfer, abus rituels sataniques en allemagne
+* Satanisme et personnalités multiples
+* Témoignage de Véronique Liaigre victime d'un réseau pédosatanique
+
+! Chaque fois c'est exactement le même scénario:
+# 1/ Affaire Dutroux, c'est Regina Louf qui affabule. Malgré de nombreux témoins.  Tous les notables ne sont pas appréhendés.  Et deux policiers qui ont enquêtés normalement sont poursuivis en pénal pour dénonciation calomnieuse.
+# 2/ Affaire Outreau, la mère et ses enfants sont mythomanes.  De toute façon, c'est une mère indigne, un monstre.  On s'étonne pas qu'elle puisse inventer des choses.  (On se demande comment elle a pu connaître tous ces notables et les côtoyer intimement).  Le juge Burgaud qui a fait son travail normalement a été mis en cause.
+# 3/ Affaire Allgère/Baudis/Roche.  Ce sont ces prostitués qui délirent.  Elles calomnient un grand homme d'Etat Baudis dans le but de le nuire.  On se demande comment ils ont pu se connaitre pour que ces prostituées nourrissent une telle haine à notre grand homme.  Les enfants du juge Roche également, ce sont des affabulateurs, parce qu'ils haïssent leur père et les magistrats. 
+# 4/ Cette mère Sandrine Chastan.  Elle est folle est dépressive (Sophie Giuli affiche un sang froid dans les vidéos, cela veut dire qu'elle ment.  Si elle apparaît indignée et larmoyante, cela veut dire qu'elle folle, donc pas crédible non plus).  Elle affabule contre son ex-mari pour des faits imaginaires d'inceste dans le but de le nuire. 
+# 5/ La mère de Marie et Pierre et la mère de Sylvie dans l'emission de Elise Lucet sur &quot;Viols d'enfant, la fin de silence&quot;.  Les deux mères inventent des histoires.  Pour fuir les pères pédocriminels, elles sont obligées d'émigrer à l'étranger.  Dans leurs histoires, c'est exactement le même scénario.  Le parquet communique en temps réel au père pédocriminels tout ce qu'ils savent pour qu'il puisse effacer à temps toutes les preuves susceptibles de le mettre en cause. Le père a su qu'il est sur l'écoute téléphonique en temps réel.  
+# 6/Marc Vervloesem qui a dénoncé le réseau pédocriminel et qui a remis le CD-Rom Snuff movies à la justice est condamné en prison et puis est mort dans des circonstances suspectes.  Zandvoort, qui commercialise les snuff movies des enfants a été assassiné en Italie. 7/ Le gendarme Christian Jambert qui a enquêté sur les disparus de l'Yonne a été assassiné.  8/ Le gendarme Stan Maillaud qui enquêtait sur les réseaux pédocriminels est en fuite à l'étranger et probablement disparu/assassiné.  Les enfants du juge Roche également, probablement disparus/assassinés également.   Une vingtaine d'affaires... Exactement les mêmes scénario.  On ne peut que dire que cette secte sataniste est très très puissante.  Presque tous les états sont dans les mains de ces franc-maçons sataniste pédocriminels maintenant. Ils ont un budget 250 fois supérieur à l'état français.  Ils peuvent tout faire. 
+# Cette affaire Amidlisa va connaître le même issue que toutes ces affaires.  La seule solution pour la famille?  Il faut que Sophie Giuli s'enfuie à l'étranger avec ses enfants et vivre dans l'anonymat.  Changer de juridiction en France?  Ce sera la même chose. 
+
+! Stan Maillaud
+
+&lt;&lt;&lt;
+Qui est Stan Maillaud ?
+
+supprimé de wikipédia :
+
+R.R.R. – Ralliement des Résistants pour la Révolution créé par Stan Maillaud
+
+Auto-biographie de Stan Maillaud…. Prêt à faire évoluer les “mentalités” du peuple pour le pousser à réagir…. et a ne plus ce laisser faire…..
+
+Stan Maillaud est le petit fils de Pierre Maillaud (appelé aussi Pierre Bourdan), ancien résistant. Pierre Maillaud est à l’origine de « l’Agence française indépendante », à Londres. Homme politique et journaliste, il parle à Radio Londres (BBC) de juillet 1940 à juin 1944, participe à l’émission « Les Français parlent aux Français ». Il devient ministre de la culture après la guerre et élabore un projet de loi sur le statut de la presse, plaide pour la suppression de « l’autorisation préalable » qui régissait la presse… Il meurt ! bizarrement.
+
+Stan Maillaud est le créateur du R.R.R. : le Ralliement des Résistants pour la Révolution… ainsi que d’un groupe plus secret appelé l’O.C.C.U.L.T.E. (Organisation Civique Clandestine Universelle de Lutte contre le Terrorisme d’État) destiné à prendre le contrôle de l’état.
+
+Cette organisation appelle les gendarmes et militaires de tous les pays à la rejoindre afin de destituer les pouvoirs en place liés au N.O.M (nouvel ordre mondial) au niveau planétaire.
+
+Le RRR invite les citoyens à une véritable désobéissance civique.
+
+Stan Maillaud est un ancien para et ancien gendarme entré par idéal et ressortit par dégoût.
+
+Il effectue son service militaire dans l’arme en 1986, et, après un interlude de deux ans où il travaille dans la sécurité privée, il rentre en école de sous officiers de gendarmerie, à Chatellereau.
+
+Il sera gendarme mobile moins de trois ans, et choisira de démissionner pour effectuer une mutation inter-armée et rentrer au 1e RPIMa de Bayonne ; une unité spéciale.
+
+Une carrière en gendarmerie devenue invivable, depuis qu’il s’était rebellé contre les actes de violences sur les autochtones par ses collègues départementaux, à l’occasion d’un déplacement en Guyane française :
+
+Envoyé en renfort à la brigade de gendarmerie de Kourou, en 1992, il fut le témoin d’exactions particulièrement graves de la part des militaires de cette unité, entre les descentes sauvages dans les quartiers pauvres de Kourou, suivies de passages à tabac de pauvres bougres ; les trafics de drogue et d’armes organisés au sein même de la brigade, et les viols de prostituées, thème principal des patrouilles de nuit.
+
+Passablement perturbé par ce qu’il découvrait de l’arme, il fut un beau jour le témoin de violences sur un Surinamien de quinze ans, qui échappa pour l’occasion au viol collectif proposé par les membres du détachement qui devait le raccompagner jusqu’à une brigade frontalière avec le Surinam ; détachement de gendarmes dont il faisait partie.
+
+Il perdit son sang froid, générant son renvoie immédiat de ladite brigade de ripoux, vers son unité d’origine.
+
+Au retour en métropole, tentant de s’expliquer sur les raisons pour lesquelles il avait été renvoyé de ladite brigade départementale, il était décrété mythomane par sa hiérarchie ; il fut même l’objet d’une expertise psychiatrique, qui, fort heureusement, devait, au lieu de le faire plonger, le déclarer « P1 » (psychologiquement irréprochable).
+
+Mais, son rêve d’une carrière au service de son prochain fut brisé à jamais, et il ne fut plus jamais perdu de vue par la rancunière vieille gardienne de la république.
+
+Durant le temps qu’il resta dans l’arme jusqu’à sa démission, il essuya de sérieux coups tordus dont un, particulièrement bas ; son arme de tir personnelle – étant membre de la FFT à titre purement privé – disparut dans des conditions troubles.
+
+Il fut immédiatement accusé de s’être volé lui-même son arme de poing, et bien que celle-ci fut un bien personnel sans aucun rapport direct avec ses fonctions, l’opportun incident déclencha les feux de l’enfer, avec toute les disgrâces possibles, de la part de sa hiérarchie, et même de l’autorité judiciaire de Montélimar.
+
+Dans la foulée, ce furent certains de ses effets de dotation, cette fois, qui devaient disparaître, apportant de l’eau au moulin des accusateurs acharnés ; il était temps d’anticiper sur ce qui devait suivre, et de démissionner pour une mutation inter-armée.
+
+Son bref passage dans la maréchaussée, qu’il qualifie d’erreur de jeunesse, lui permit de constater, au passage, la volonté profonde de sa hiérarchie à pousser les jeunes gendarmes à la haine raciale, en particulier, ainsi que d’apprécier que la paix sociale primait sur la sécurité de ses concitoyens.
+
+Ce fut la révélation d’une société gangrenée, à ses premiers pas dans ce qu’il est coutume d’appeler la « vie active ».
+
+Si vous l’interrogez sur le recul qu’il a par rapport à cette expérience, il vous répondra qu’il est toujours gendarme, que son idéal est intact, au point que se soit toujours ce qui l’anime contre vents et marées ; protéger son prochain, et par extension, toute forme de Vie sur Terre.
+
+En 1994, Stan Maillaud se rendit sur l’Iles de La Réunion pour accompagner son père Ian dans son « dernier voyage ».
+
+Ses parents étant partis vivre sur l’Ile, il y resta après la mort de son père.
+
+Il monta une entreprise de protection des biens et des personnes ; aux vues d’un climat d’insécurité préoccupant, et de l’inefficacité caractérisée des pouvoirs publics, il créa une équipe privée d’intervention pour pallier ladite inefficacité.
+
+Une épopée particulièrement épique de plusieurs années, entre les coups fourrés des pouvoirs publics et la délinquance, le conduisit finalement à la ruine, à la prison et à la disgrâce publique, à l’âge de 33 ans, en 2001.
+
+Entre temps, il avait « fait régner la terreur » chez les voyous qui rentraient dans le périmètre de Saint-Gilles les Bains, avec son équipe privée d’intervention – dûment agrémentée ! – au service d’un regroupement de commerçants et de résidents qu’il avait initié, et servit sans faillire.
+
+Son initiative originale faisant de l’ombre aux pouvoirs publics, et courrouçant la franc-maçonnerie locale, il fut accusé d’escroqueries diverses et « d’organisation de groupe de combat ».
+
+Après une liquidation de sa première entreprise, organisée frauduleusement par le tribunal de commerce local et sa clique de voyous – dont le rosicrucien PIEC, liquidateur judiciaire – il fut reproché à Stan Maillaud d’être – à lui tout seul ! – ledit « groupe de combat », sans aucun autre élément à sa charge qu’une récolte de faux témoignages.
+
+La brigade de recherche de Saint-Paul, avec le gendarme véreux du nom de Emmanuel PRISSETTE, sous les ordres du capitaine BON, avait arrangé le tout, pour la forme…
+
+L’agrément de Stan Maillaud ne lui fut d’ailleurs supprimé qu’après son inculpation…
+
+Bref ; après deux mois de prison, il entreprit une défense impossible, englué dans les fils de la franc-maçonnerie locale, véritable ramassis de petits parvenus corrompus et pourris.
+
+Il fut condamné en première instance, grâce à la complicité d’un voyous notoire, un certain auxiliaire de justice du nom de Gilbert Collard. – Voir article Stan Maillaud, le retour -
+
+Mauvais perdant, et à cours d’argent, il réitéra son « crime », remontant avec sa mère la copie conforme de son « groupe de combat » Saint-Gillois, cette fois dans le sud de l’île.
+
+Il fit affaire principalement avec la communauté musulmane – malgré une fracassante campagne de diffamation organisée par les médias – assurant même la sécurité de la Mosquée de Saint-Pierre ; insigne honneur, selon lui.
+
+Evidemment, il fit appel entre-temps, changeant de voyous pour sa défense.
+
+De nouvelles aventures – voir Paris-Match : « Kidnapping au nom de l’amour » et « Stan Maillaud, échappé de l’enfer » http://web.archive.org/web/20130430180829/http://www.pedopolis.com/pages/qui-ose-en-parler-/stan-maillaud/stan-maillaud-kidnapping-au-nom-de-l-amour-paris-match-janvier-2004.html – le stimulèrent jusqu’en 2005, jusqu’à ce qu’il soit contraint de se rendre chez un « frère maçon », psychothérapeute expert près la cour d’appel de son état.
+
+Abandonné par son deuxième traître d’avocat – le franc-maçon Patrick Rizzo, de Nice – et redoutant l’internement qui lui pendait au bout du nez, il quitta la Réunion en catastrophe, ignorant l’invitation du frère psy.
+
+« Par défaut », il fut condamné en appel à subir une psychothérapie, ainsi qu’à un an et demi de prison avec sursis, et une interdiction, à vie, de travailler dans la protection privée.
+
+Le président de la cour d’appel de Saint-Denis – un caractériel notoire et pro-pédophile du nom de Salzmann – , frustré de n’avoir pu obtenir l’expertise qu’il avait ordonnée, s’était alors octroyé les compétences d’expert psychiatre pour juger de la dangerosité paranoïde de Stan Maillaud.
+
+Courant 2005 ; dernières missions de protection rapprochée, pour le compte d’agences de la Côte d’Azur, où Stan Maillaud fut provisoirement réfugié.
+
+Ayant engagé son dernier recours, la cassation, sa condamnation était suspendue le temps que n’intervienne cette ultime décision de « justice ».
+
+Perdant le recours en question, sans plus de surprise, Stan Maillaud partit sur la trace de ses ancêtres Corses, et se reconvertit dans le coaching sportif.
+
+L’origine du combat contre les réseaux de criminels pédophiles et sataniques :
+
+C’est en septembre 2006 que Stan Maillaud revint sur le continent, pour rentrer en contact avec un certain Christian Cotten, président d’une association, prétendue de lutte contre les violences judiciaires ; Politique de Vie.
+
+Stan Maillaud, toujours aussi mauvais perdant, entendait pousser son dossier à la Cour Européenne des Droits de l’Homme, et espérait dans le même temps trouver l’aide nécessaire pour éviter l’internement, auprès du psychothérapeute Christian Cotten.
+
+En fait d’aide pour son propre dossier, Stan Maillaud, bonne poire, se fit embrigadé dans la « bande à Cotten », ce dernier le réquisitionnant pour mettre en forme des rapports d’enquête de ses nombreux dossiers.
+
+Christian Cotten, candidat aux présidentielles, attirait beaucoup de victimes de violences judiciaires, mais n’avait guerre de temps pour traiter sérieusement leurs dossiers.
+
+Alors, l’ex-gendarme tomba des nus ; il découvrit des vérités insoupçonnées sur le système sociétal dans son ensemble, sur tous les thèmes possibles et imaginables.
+
+Si il avait fait, par ses propres expériences, une brèche dans la chape d’illusion qui habille notre système sociétal, il parfit son éducation, accédant à des dossiers et des vérités épouvantables.
+
+La révolte et le dégoût au ventre, Stan Maillaud s’acharna au travail, mais ne voyait rien publié pour autant sur le site de son nouvel « ami ».
+
+Qu’à cela ne tienne ; il rédigea des rapports chronologiques sur des affaires de violences judiciaires qui touchaient des mamans victimes, avec leurs enfants, de réseaux de criminels pédophiles, impliquant les pouvoirs publics – voir « scandale judiciaire à Montpellier » – ; il accompagna Christian Cotten dans des audiences publiques, et intervint même au jugement en appel de l’affaire de l’Ordre du Temple Solaire, à Grenoble, suppléant à Christian Cotten partie civile dans le dossier, pour ses interventions à la barre.
+
+Stan Maillaud fut également témoin de la complicité des magistrats dans le drame du village de Bourg-Fidèle, lors de l’audience publique des malheureux villageois empoisonnés, face au criminel impuni, le patron de l’usine de traitement de piles, « Métal Blanc ».
+
+De retour au bureau, le bénévole redoubla d’effort, et continua à rédiger des rapports qui ne furent jamais publiés sur le site de « Politique de Vie », jusqu’au jour où un dossier atterrît sur son petit bureau ; celui d’un enfant de dix ans, un certain Vincent http://web.archive.org/web/20130430180829/http://www.pedopolis.com/pages/les-affaires/2006-affaire-vincent/ …
+
+Malgré l’épée de Damoclès en suspend au dessus de sa tête dure – la condamnation à subir une psychothérapie -, Stan Maillaud accepta de descendre à Grenoble pour rencontrer l’enfant et sa mère venus, eux, de Perpignan pour rencontrer l’avocat de « Politique de Vie », Jean-Pierre JOSEPH.
+
+Dans le bureau du sympathique auxiliaire de justice, l’ex gendarme fit connaissance de l’enfant, de sa mère, et découvrit le dossier, explicité par Jean-Pierre JOSEPH.
+
+Celui-ci précisa, après avoir demandé à madame ROIG et à son fils Vincent de bien vouloir attendre dans la salle d’attente :
+
+« – Si tu veux aider ce gosse – le tutoiement vient du fait que les deux hommes avaient « plaidé » côte à côte dans le dossier de l’OTS – il n’y a rien d’autre à faire que de les délocaliser ; c’est trop pourri, je ne peux rien faire, et le gosse court un sérieux danger ».
+
+Le mot à mot n’y est pas ; mais presque.
+
+Briffé par le juriste, Stan Maillaud prit alors contact téléphoniquement avec le président de l’association qui l’avait mandaté pour effectuer un rapport d’enquête ; une vive discussion s’envenima rapidement.
+
+Stan Maillaud prétendait aider l’enfant autrement qu’en rédigeant un rapport chronologique, et Christian Cotten lui ordonna de remonter au siège de l’association, à Boulogne Billancourt, et « d’arrêter ses délires ».
+
+La suite, vous la connaissez ; si ça n’est pas le cas, vous la découvrirez dans le rapport chronologique que Stan Maillaud acheva… …à sa sortie de prison, suite à son inculpation pour « soustraction de mineur » ; « l’affaire Vincent » http://web.archive.org/web/20130430180829/http://www.pedopolis.com/pages/les-affaires/2006-affaire-vincent/ .
+
+Suite à ce dramatique épisode, et à trois semaines d’incarcération – et de grève de la faim – Stan Maillaud décida de ne plus prêter sa voix à ce sinistre théâtre que constitue notre appareil judiciaire, et de ne pas risquer que les imposteurs de magistrats ne s’aperçoivent de son talon d’Achile pour l’exploiter ; sa condamnation à subir une psychothérapie, laquelle, par miracle, leur avait jusqu’ici échappée.
+
+Il faut savoir également que, pendant qu’il abritait l’enfant et sa grand-mère, il tenta d’alerter toutes les autorités possibles de nos institutions politiques et judiciaires ; en vain.
+
+Il savait depuis lors qu’il n’avait rien d’autre à attendre des pouvoirs publics, tout comme Vincent, que plus de mesures terroristes.
+
+Il mit donc en ligne sur un site qu’il créa pour l’occasion, le témoignage vidéo qu’il avait pris la précaution de recueillir de l’enfant – le fameux « témoignage de Vincent » http://web.archive.org/web/20130430180829/http://www.pedopolis.com/pages/les-affaires/2006-affaire-vincent/le-temoignage-de-vincent.html – ainsi que le rapport écrit accompagné de ses pièces jointes.
+
+Il effectua également, sur la base de ce dossier, la saisine du président du conseil supérieur de la magistrature, rendue publique sur Internet par le biais d’une première vidéo lettre à Nicolas Sarkozy http://web.archive.org/web/20130430180829/http://www.pedopolis.com/pages/qui-ose-en-parler-/stan-maillaud/stan-lettres-au-president-2008.html .
+
+Puis, il se mit en quête de matière première pour répondre à l’argumentaire par lequel les magistrats corrompus prétendaient refuser toute justice et toute protection à l’enfant, à savoir :
+
+qu’il ne pouvait que mentir en raison des horreurs qu’il prétend dénoncer
+
+que les réseaux de criminels pédophiles n’existaient pas
+
+que de toutes façon, tout le monde savait bien que depuis l’affaire d’Outreau http://web.archive.org/web/20130430180829/http://www.pedopolis.com/pages/les-affaires/2004-affaire-d-outreau/ , il ne fallait pas prendre en compte la parole des enfants.
+
+Stan Maillaud, étant tombé sur le rapport de Juan Miguel PETIT http://web.archive.org/web/20130430180829/http://www.pedopolis.com/blog/pedocriminalite-en-france-rapport-accablant-de-l-onu-en-2003.html , rapporteur spécial de l’ONU, entreprit une enquête concernant l’affaire citée par ce fonctionnaire ; l’affaire du CD ROM de Zandvoort http://web.archive.org/web/20130430180829/http://www.pedopolis.com/pages/les-affaires/1998-affaire-zandvoort/ .
+
+C’est ainsi, que, s’étant rendu en Flandre pour interviewer l’activiste Marcel VERVLOESEM http://web.archive.org/web/20130430180829/http://www.pedopolis.com/pages/qui-ose-en-parler-/marcel-vervloesem/ qui découvrit le dit CD ROM, il apprit qu’en fait ce dernier avait récupéré 21 CD ROMS, et que ceux-ci contenaient une quantité effarante de photos et de films de viols, tortures avec actes de barbarie d’enfant, de bébés, jusqu’à la mise à mort.
+
+Stan Mailaud découvrit dans le détail la monstrueuse affaire, qui recoupait à la perfection les déclarations du petit Vincent, et apprit que celle-ci avait fait l’objet d’une campagne de terreur de la part des autorités Belges pour l’étouffer, avec la complicité des dirigeants européens concernés.
+
+De retour en France, il effectua une nouvelle saisine du Chef de l’Etat français, sur ce sujet précis à travers sa deuxième vidéo lettre publique à Nicolas Sarkozy http://web.archive.org/web/20130430180829/http://www.pedopolis.com/pages/qui-ose-en-parler-/stan-maillaud/stan-lettres-au-president-2008.html .
+
+Puis, il dénonça toujours sur Internet, la monstrueuse affaire, ainsi que la complicité effective des dirigeants et institutions politiques et judiciaires de nombreux pays, dont le nôtre ; voir « opération panique chez les ignobles » http://web.archive.org/web/20130430180829/http://www.dailymotion.com/video/x5ssrc_operation-panique-chez-les-ignobles_news
+
+A ce jour, il n’eut aucune autre réponse que des tentatives pour faire taire ses accusations.
+
+Stan Maillaud réalisa des mois d’enquête sur les réseaux de criminels pédophiles et/ou sataniques dans notre société. Ce qu’il découvrit est cauchemardesque, et fera l’objet de prochaines diffusions sur Internet.
+
+Mais la prochaine programmée, c’est le reportage qu’il fit au printemps 2008, jusqu’à la veille de l’incarcération de l’enquêteur flamand, Marcel Vervloesem http://web.archive.org/web/20130430180829/http://www.pedopolis.com/pages/qui-ose-en-parler-/marcel-vervloesem/ .
+
+Ce reportage http://web.archive.org/web/20130430180829/http://www.pedopolis.com/pages/sous-pages-reportages/les-reseaux-de-l-horreur.html était encore au montage en mars 2009.
+
+Stan Maillaud est arrivé à la conclusion que notre système sociétal dans son ensemble est un montage criminel, inclus dans une vaste organisation criminelle internationale, ce qui expliquerait toutes les horreurs et incohérences de notre société moderne.
+
+Il affirme que l’on ne peut obtenir justice d’une organisation criminelle, et que c’est justement ce qui nous régit, à travers notre funeste imposture de démocratie.
+
+Des gênes de Résistant :
+
+Si d’aucun prétendent que la pédophilie ou le nazisme ont une origine génétique, que dire des antécédents familiaux de Christian Maillaud, alias Stan ?
+
+Son grand-père maternel, le Basque Raymond Paluat, fut – épaulée par sa femme, la corse Berthe Rutily – un résistant plus qu’engagé durant la deuxième guerre mondiale.
+
+Il commandait un réseau de renseignement en Afrique du Nord, avec lequel il procédait régulièrement à des exfiltrations de juifs.
+
+Il fut enfermé deux ans par les nazis, mais en sortît vivant à la fin de la guerre.
+
+Le grand oncle paternel de Stan Maillaud, Robert Maillaud, officier Hussard, mourut au front face à des chars nazis.
+
+Il avait un grand frère, qui lui survécu plus longtemps :
+
+Pierre Maillaud, alias Pierre Bourdan de son nom de guerre ; grand-père paternel de Stan Maillaud.
+
+Journaliste à l’AFP, il rallia le général de Gaulle le lendemain même de son célèbre appel, bouleversé par la mort de son jeune frère.
+
+Il participa à la création de l’émission « Les français parlent aux français » de la BBC, et l’anima durant les quatre années d’occupation, insufflant courage à une résistance désespérée, tout en renseignant les Résistants.
+
+Malgré le rôle crucial que fut le sien, et les bombardements qui étaient le quotidien qu’il partageait avec les londoniens, il estima qu’il devait également partager le danger des soldats du Débarquement ; et le grand jour arriva en même temps que la « voix de Londres » se tut.
+
+Pierre Bourdan débarqua avec ses galons de lieutenant, au sein de la Division Leclerc.
+
+Parti en mission de renseignement, il fut capturé derrière les lignes ennemies, pour être déporté dans des fourgons à bestiaux.
+
+Il s’évada, puis fut à nouveau intercepté et laissé pour mort sous les décombres d’une bâtisse pilonnée par une section d’artillerie ennemie, où il avait trouvé refuge dans sa cavale.
+
+Miraculeusement indemne, comme les deux compagnons de cavale qui l’accompagnaient, il réintégra la Division Leclerc pour participer à la libération de Paris, puis poursuivre son offensive en territoire ennemi, et libérer les prisonniers des camps de concentration.
+
+Pierre Maillaud était célèbre, et adulé par ses compatriotes au point qu’il entreprit, au lendemain de la guerre, une carrière politique.
+
+Il fut ainsi député, puis ministre du gouvernement Ramadier avec trois portefeuilles ; celui de la Jeunesse et de la Culture, qui fut l’occasion pour lui d’inaugurer le Festival de Cannes et de créer le Festival d’Avignon ; celui de la Jeunesse et des Sports, qui fut l’occasion de promouvoir le scoutisme ; et celui de l’Information.
+
+Là, il oeuvra pour la liberté de la presse, supprimant notamment la fameuse « autorisation préalable ».
+
+Cette initiative ne lui porta pas chance ; quelques mois plus tard, il était « noyé » lors d’une balade en voilier, au large du Lavandou, en été 1948.
+
+Son corps repêché plusieurs semaines plus tard permis tout de même aux experts de l’époque de conclure à… …une congestion pulmonaire !
+
+Il eut droit à des funérailles nationales, après avoir été assassiné par son propre Etat à l’âge de 39 ans.
+
+Des gênes d’indépendantistes et de… …Bandits d’Honneur ?!
+
+L’épouse de Pierre Maillaud, Jeannette d’Albiez, la grand-mère maternelle de Stan Maillaud, était basque.
+
+Tout comme le grand-père maternel de Stan Maillaud, Raymond Paluat.
+
+Ce dernier était lui, mariée à une certaine Berthe Rutily, dont le père était l’un des derniers Bandits d’Honneur Corse ; Adolf Rutily.
+
+Stan Maillaud, avec un bon pourcentage de sang basque, descend, par sa grand-mère maternelle, d’une famille de redoutables Bandits d’Honneur Corses.
+
+Comme Stan Maillaud Les Anciens Résistants appellent de nouveau à la résistance.
+
+À l’ heure où les internautes ayant très bien compris les rouages de ce système sont taxés de conspirationnistes, de paranoïaques ou de skyzophrènes, nos doyens nous rapellent que le fascisme est toujours d’actualité. et appellent à une opposition FERME contre l’actuelle dictature internationale des marchés financiers.
+
+Ils apellent encore les mouvements, partis, associations, institutions et syndicats héritiers de la Résistance à dépasser les enjeux sectoriels, et à se consacrer en priorité aux causes politiques des injustices et des conflits sociaux, et non plus seulement à leurs conséquences, à définir ensemble un nouveau « Programme de Résistance » pour notre siècle, sachant que le fascisme se nourrit toujours du racisme, de l’intolérance et de la guerre, qui eux-mêmes se nourrissent des injustices sociales.
+
+” Nous n’acceptons pas que les principaux médias soient désormais contrôlés par des intérêts privés, contrairement au programme du Conseil national de la Résistance et aux ordonnances sur la presse de 1944.”
+
+Signataires :
+
+Lucie Aubrac, Raymond Aubrac, Henri Bartoli, Daniel Cordier, Philippe Dechartre, Georges Guingouin, Stéphane Hessel, Maurice Kriegel-Valrimont, Lise London, Georges Séguy, Germaine Tillion, Jean-Pierre Vernant, Maurice Voutey.
+
+&lt;&lt;&lt;
+</pre>
+</div>
 <div created="20190301161125545" modified="20190301161230451" tags="fiche_lecture" title="Philogynes BIG5" type="">
 <pre>https://www.youtube.com/watch?v=jC3BsBPqDRA
 
@@ -11040,7 +11367,7 @@ le fondement logiquement premier de tout ce qui existe - ce peut être particuli
 * World's Greatest Magic 1-4
 * James Randi Secret of The Psychics</pre>
 </div>
-<div created="20190130144059269" modified="20190618101801207" tags="pw" title="pw">
+<div created="20190130144059269" modified="20190724095114048" tags="pw" title="pw">
 <pre>```
 youtube =&gt; osef@grr.la	5/19    cf https://www.guerrillamail.com/fr/inbox?mail_id=476361683
 aliexpress =&gt; ali.s.lx.n 6/19
@@ -11087,6 +11414,7 @@ https://github.com/dashboard        lenopgm 12/18
 macif          13229934 12/18
 https://ceausy.kadeosconnect.com/avantage/       kadeos.s.lemoine@xoxy.net 12/18
 ausyce.fr (&quot;BetweenUs&quot;)	s.l@ycom	l*****m
+epicgames =&gt; epicgames.osef.osef@xoxy.net 7/19
 ```
 </pre>
 </div>
@@ -11105,9 +11433,14 @@ ausyce.fr (&quot;BetweenUs&quot;)	s.l@ycom	l*****m
 * packaging executable : https://gregoryszorc.com/blog/2019/06/24/building-standalone-python-applications-with-pyoxidizer/
 * virtualenv : http://sametmax.com/les-environnement-virtuels-python-virtualenv-et-virtualenvwrapper/</pre>
 </div>
-<div created="20190529145620246" modified="20190718133125106" tags="quotes" title="Quotes, citations">
+<div created="20190529145620246" modified="20190726085909113" tags="quotes" title="Quotes, citations">
 <pre>&lt;&lt;&lt;
 optimisme de la volonté, pessimisme de l'intelligence - Antonio Gramsci
+&lt;&lt;&lt;
+
+
+&lt;&lt;&lt;
+un système protecteur ne voit pas sa propre violence
 &lt;&lt;&lt;
 
 
@@ -11171,6 +11504,24 @@ Forget about winning and losing; forget about pride and pain. Let your opponent 
 There are no limits. There are plateaus, but you must not stay there, you must go beyond them. If it kills you, it kills you. A man must constantly exceed his level. 
 &lt;&lt;&lt;
 
+! Lao Tsu
+
+&lt;&lt;&lt;
+Trente rayons convergent au moyeu
+mais c'est le vide médian
+qui fait marcher le char.
+
+On façonne l'argile pour en faire des vases,
+mais c'est du vide interne
+que dépend leur usage.
+
+Une maison est percée de portes et de fenêtres,
+c'est encore le vide
+qui permet l'habitat.
+
+L'Être donne des possibilités,
+c'est par le Non-Être qu'on les utilise 
+&lt;&lt;&lt;
 </pre>
 </div>
 <div created="20190301162956576" modified="20190301163042570" tags="fiche_lecture" title="Regenere - jus lunettes">
@@ -11274,9 +11625,16 @@ acquérir des arguments
 * clé U2F		https://u2f-key.tech/fr/
 </pre>
 </div>
-<div created="20190528092031684" modified="20190528092206773" tags="magic tips" title="self tips">
-<pre>* while learning, use gravity to your advantage &gt; it helps to get the movement right at the beginning
-* </pre>
+<div created="20190528092031684" modified="20190724145206674" tags="magic tips" title="self tips / ideas">
+<pre>! tips
+* while learning, use gravity to your advantage &gt; it helps to get the movement right at the beginning
+
+! ideas
+* ''magicien fou'' : exemple = faire un tour de carte au cours duquel des pièces apparaissent mais le magicien n'y prête pas attention, les ignore, ne les vois pas
+* ''jeu du rond'' : pdt une routine de pièces, faire un signe du jeu du rond après une disparition en classic palm
+* ''minority report'' : handle invisible/vanished coins like in minority report
+* ''invisible dust'' : grab an imaginary coin, and make it appear as your swipe of invisible dust
+* ''elastic coin'' : take a coin from one hand, it pops back to it</pre>
 </div>
 <div created="20190416125524938" modified="20190418152027154" tags="coinmagic magic" title="shuttle pass / flying shuttle pass">
 <pre>&lt;&lt;&lt;
