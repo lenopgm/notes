@@ -1,0 +1,1189 @@
+Magic Missile, Chromatic Orb, Find Familiar, Identify, (Friends, Protection from Evil/Petrification, Armor, Reflected Image)
+Magic Missile, Spook, Protection from Evil, Chromatic Orb, Burning Hands (trolls)
+Sleep, Spook, Identify, Magic Missile, Shield 
+
+
+Chromatic Orb, Identify, (Friends, Protection from Evil/Petrification, Armor, Reflected Image)
+Spook, Protection from Evil, Chromatic Orb, Burning Hands (trolls)
+Sleep, Spook, Identify, Shield 
+
+
+
+Sorcerer's Guide for Baldur's Gate 2
+(updated for Throne of Bhaal)
+
+Version 2.1
+
+By: Roman Grigoriev
+
+1. General Information
+
+2. Race
+
+3. Alignment
+
+4. Stat Allocation
+
+5. Spell Picks
+
+ 5.1 Level 1
+ 5.2 Level 2
+ 5.3 Level 3
+ 5.4 Level 4
+ 5.5 Level 5
+ 5.6 Level 6
+ 5.7 Level 7
+ 5.8 Level 8
+ 5.9 Level 9
+ 5.10 Special Abilities
+
+6. Equipment
+
+7. Battle Tactics
+
+8. Contributors
+
+9. Legal Stuff
+
+1. General Information
+   
+   Dedicated solely to pursuit of magic, Sorcerer is undoubtedly the most 
+   powerful spellcaster in BG2. Having your entire spell list available 
+   for casting at all times is incredibly convenient, and makes Sorcerer
+   that much superior to the already underpowered plain Mage. As for
+   Sorcerer's limited choice of spells; it is not much of a detriment, 
+   as even with this weakness Sorcerer will still have more variety of
+   spells in any given battle. Sorcerer's main weakness is the fact that
+   you can't Dual-Class him or to him, but then again, if you could, it 
+   would be a totally unbalanced killing machine (Berserker/Sorcerer? Ouch!)
+   All in all, if you enjoy playing a spellcaster, you will immensely enjoy
+   this kit, probably to the point of never even looking at a Mage 
+   (or Specialist Mage) again. In the party, it definitely pays to have
+   a Sorcerer as your main spellslinger, while have someone like Jan or
+   Imoen as a support mage.
+   I also want to point out that since the introduction of Throne of Bhaal
+   (ToB)things have changed and have changed alot. Especially spell picks
+   and battle tactics.
+
+2. Race
+   
+   Since it is impossible to Dual-Class a Sorcerer, we are no longer limited
+   to Humans as the only racial choice. Other possibilities include Elves and 
+   Half-Elves, with the former being the most optimal choice for a Sorcerer.
+   Why Elf? Because Elven Sorcerer has a few nifty (albeit minor) perks
+   that Humans lack. Infravision aside, you have high resistance to sleep,
+   charm (although Domination will still work against the Elf), and 19 Dex.
+   All of that with no downside whatsoever. Of course, overall it won't make 
+   that much of a difference, but why not grab a free perk? In short, Elf is
+   a perfect choice, but any other available race will do.
+
+3. Alignment
+
+   The most obvious effect of your alignment is a familiar that you get. Yes,
+   for some reason, Pseudo Dragon (Lawful Good, Neutral Good) got the most 
+   attention because of his combat skills. Ask yourself, however, how many
+   times should you involve your familiar in combat? The correct answer is
+   NEVER. Having said that, I'd opt for Chaotic Neutral which will net you
+   a Cat. With 99% in both Hiding and Stealth, this kitty will make a perfect 
+   scout, which is the only practical use of your familiar 
+   (aside from the HP bonus).
+   As for the difference in the starting Rep... Lawful Good starts at 12,
+   Chaotic Neutral at 10, boo-hoo. If you want 20 Rep, you still can get it,
+   and if you're in a habit of having Evil companions (most wise choice, 
+   I might add), then you will never need more than 18 rep anyway. In short,
+   don't limit yourself to Lawful Good, see which familiar you like the most
+   and pick your Alignment accordingly.
+   Note: in ToB familiars have twice the original hitpoints and also
+   enhanced abilities.
+
+4. Stat Allocation
+
+   Since Sorcerer is a pure spellcaster, he should have the same stats as a
+   Mage, right? Wrong! There is one very important difference between the
+   two, specifically: Sorcerer does NOT need Intelligence. That's right, 
+   Intelligence plays absolutely no part in how many spell picks you get,
+   or how high up in spell levels you can advance. With that being said,
+   you are left with a few stat points that can be allocated elsewhere.
+   Go ahead, and max out Str, Dex, and Con. Keep Int at 9, Wis at 8, and 
+   pump the rest into Cha. The Sorcerer I tested when writing this FAQ, had
+   the following stats (he was an Elf):
+
+   18 Str, 19 Dex, 16 Con, 9 Int, 8 Wis, 16 Cha.
+
+   Took me about five minutes to roll enough stat points for that character.
+
+   Note: When I was forced to sacrifice a stat point while in Spellhold, I
+   did so with Int, which brought it down to 8, and resulted in an interesting
+   sideffect; I was no longer able to cast spells from Scrolls. No big deal 
+   really, it can be bypassed with a good old potion of Genius, but it is
+   something to keep in mind.
+
+   In ToB things have changed...profoundly. I'm talking about the 9th level
+   spell Wish. Being an extremely useful spell that it is, Wish check for
+   both caster's Wisdom AND Intelligence. So, if you plan on using this spell,
+   (highly recommended) I suggest that you max out both Int and Wis. Easily
+   done at the expense of Str and Cha (neither of which will be of any
+   importance to the Sorcerer in ToB. So, for ToB I'll recommend the classic
+   mage-like stat allocation:
+
+   8/9 Str, 18/19 Dex, 16 Con, 18 Int, 18 Wis, 9/10 Cha.
+
+5. Spell Picks
+
+   Ahh, this is what makes or breaks a Sorcerer. The first two levels are very
+   forgiving, but beyond that you'll be forced to make a few tough choices.
+   
+   Spells to avoid:
+   
+   Charm-type spells: (Dire Charm, Domination, etc.) I find them to be of
+   marginal value. If you like them, put them on your Secondary Mage (you do
+   have a Secondary mage, right?). Personally, I avoid them altogether.
+   They are almost completely useless in ToB, since everyone there has very
+   low saving throws.
+   
+   AC-modifying spells: (Armor, Ghost Armor, etc.) Don't get me wrong, these
+   are nice spells, the problem is that you don't need them. What? You want to
+   take your Sorcerer into the heat of a battle? So do I, and there are ways
+   to enchant your Sorcerer enough to make a Dragon cry. AC spells are NOT
+   the way to do it though. You will NOT be going anywhere near melee combat
+   in ToB, let alone tanking.
+
+   Damage-over-Time spells: (Cloudkill, Ice Storm, etc.) I'll probably get
+   bashed for this, but I find these spells to lead to cheap tactics.
+   Functional? Sure. Enjoyable? Hardly so. I prefer to take my Sorcerer into
+   the heat of the battle and have him single-handedly destroy, say a group of
+   ten Vampires while watching them make futile attempts to harm him. In
+   short, if you want to have fun, avoid the Damage-over-Time spells.
+
+   Low Level Trigger-type spells: (Minor Sequencers, Contingencies, etc.)
+   You will have access to the highest level triggers (i.e. Spell Trigger
+   and Chain Contingency), so ignore the rest.
+
+   Weapon Immunities: Only protection from Magical Weapons and Protection
+   from Normal Missiles are worth spending picks on. You can safely ignore
+   the rest.
+
+   Party-Enhancing spells: (Resist Fear, Haste, etc.)
+   Your first and foremost pupose is to hurt enemies, not help friends. So
+   concentrate on what you do best.
+
+   Most Summoning Spells: Unless the summoned creature has something
+   special about it (for example, Skeletal Warriors have 90% magic
+   resistance), it is not worth having.
+
+   Finally, avoid spell duplication. By that I mean, avoid
+   having two or more spells that do the same thing (unless they can
+   be combined for a cumulative effect.) In other words, if you have
+   A Nishruu, you don't need Hakeashar, etc.
+
+   A word of caution: when deciding in advance which spells to pick, do
+   NOT consult the manual; it is riddled with errors and inconsistencies.
+   Instead, look up the in-game spell description.
+
+   5.1 Level 1 Spells (5 Picks)
+
+   Magic Missile: The only must-have in this whole level. Good damage,
+   handy for spell disruption in the early parts of the game. Evem in ToB
+   there will be an occasional use for it. Great all-around spell.
+
+   Chromatic Orb: after you reach level 12, it becomes a poor man's Finger
+   of Death. I did manage to kill Firkraag with 3 Orbs (after a preemptive
+   Greater Malison of course). Yes, you need luck with it, but hey, it's a
+   1st level spell.
+   Note: don't expect this spell to be of much use in ToB.
+
+   Spook: with its -6 to save modifier it becomes the only reliable way
+   to scare enemies in ToB. 
+
+   Burning Hands: Why have it? In case if you ran out of Flame and Melf's
+   arrows vs. Trolls. Also, it seems to do more damage vs. the Undead.
+
+   Friends: if you have sacrificed Charisma to bump up Intelligence
+   and Wisdom, this is the way compensate for it. Since multiple Friends
+   have cumulative effects, you can quickly attain angelic charisma just
+   in time for shopping.
+
+   Summary: Magic Missile is still the only must-have, the rest of your
+   choices won't make a diddly squat of a difference, so go ahead and
+   pick whatever strikes your fancy.
+ 
+   Note: Find familiar should be cast off a scroll, since you are only going
+   to do it once.
+
+   5.2 Level 2 Spells (5 Picks)
+
+   Melf's Acid Arrow: Aside from it being a troll killer, there really isn't
+   much to it. Unfortunately, it is the only direct damage projectile in
+   this level. Since it deals damage every round, it can be used for spell
+   disruption (mainly vs. Clerics) early in the game. Acid arrows are
+   cumulative with each other, so if you pump your enemy full of them,
+   EACH of them will do damage every round. A spellcaster with 3 Melf's
+   arrows eating him away will NOT get any spells off. Guaranteed.
+   Surprisingly, even in ToB it has its uses.
+
+   Mirror Image: Still a good pick, even in ToB. Good regardless of your AC.
+
+   Vocalize: There is only one Amulet of Power in the game, and it better
+   be used on a fronliner (like a Fighter/Cleric or whatever). Keep this
+   spell as an insurance from silence.
+
+   Blur: the only reason to have this one is because you can. It won't save
+   your day and is nowhere near the must-have list, but you CAN have it, and
+   that's good enough for me ;]
+
+   Invisibility: Occasionally, there's a neer to sneak a party member past
+   a powerful but dumb (unable to dispel) monster. It had a few uses in ToB,
+   which is amazing for a second level spell.
+
+   Summary: most second level spells are defense-oriented, which is fine.
+   I recommend having both Blur AND Mirror Image. Other spells worth
+   mentioning...
+   Resist Fear: now I have a Cavalier to do that (or a cleric, or whoever).
+   Horror: farewelll, my friend. You served well in the original game but
+   you are of no use in ToB. Goodbye. Good riddance.
+   Knock: are you a thief? No. Let the thief do his job.
+   Web: Too risky. I see some merit in having this spell, but it can far
+   too easily disable your own party. 
+   Stinking Cloud: Works okay with Greater Malison, but like Web, it is
+   party-unfriendly. Hardly works on anybody in ToB.
+   Overall, Second level gives you some room to maneuver, but not much.
+   Weigh your spell picks carefully.
+ 
+   5.3  Level 3 Spells (5 Picks)
+
+   Skull Trap: Excellent way to get rid of those pesky Iron and Adamantine
+   Golems without engaging in melee. Get the golem stuck in the narrow
+   pathway, lower his resistance a few times, then fire a few skull traps.
+   Note: Fireball will NOT work with this strategy, since it relies on
+   elemental damage rather than pure magical damage.
+
+   Flame Arrow: how should I put it... if a critter is vulnerable to fire,
+   he will die. Fast. This is a GOOD spell, I recommend it.
+ 
+   Slow: Probably the only disabling spell that is still good in ToB,
+   thanks to its innate -4 to save modifier. Although more often than not
+   you WILL need Greater Malison to go along with it.
+
+   Remove Magic: I no longer favor Dispel Magic over it for the simple
+   reason that my fronliners usualy go into battle loaded with lots of
+   enchantments. I found that Dispel Magic often hurt me more than it
+   helped me.
+
+   Protection from Normal Missiles: there are a few occasions in ToB
+   where you get ambushed by archers from every direction. Cast this
+   one on yourself while your warriors make short work of them.
+
+   Summary: aside from above, not many 3rd level spells are of much use in
+   ToB.
+   Haste: forget it. With Whirlwind attack who needs Haste?
+   Melf's Minute Meteors: With your THAC0, it's a total waste. Plus, the
+   damage isn't great either. If you like this spell, take it instead of Flame
+   Arrow.
+   Protection from Fire/Cold: there are better ways to accomplish the
+   same thing.
+   Lightning: nah. Requires too many preliminary arrangements to work
+   properly.
+
+
+   5.4  Level 4 Spells (5 Picks)
+
+   Fireshield Red or Blue: I prefer Red, since fire is far more common than
+   cold (hence the 50% Fire Resistance that it gives, will aid you more often).
+   Why do I like this spell? Because it is an excellent Offensive weapon.
+   That's right, offensive. Each time someone hits you they get zapped by
+   fire. Instrumental in buffing up the defenses. Blue Fire Shield on the
+   other hand is more useful offensively (fewer monsters resist cold) but
+   less useful defensively (fewer monsters are cold-enchanted). Still worth
+   having even in ToB.
+
+   Greater Malison: Extremely powerful, makes all those Horrors, Chromatic
+   Orbs, Fingers of Death, VERY hard to resist. An absolute necessity later
+   in the game. In you expect any spell that requires a save to work in ToB,
+   you better have this one.
+
+   Stoneskin: the most important defensive spell bar none. An absolute
+   necessity for any spellcaster, since it prevents spell interruptions
+   while active (although it does not protect from area effect spells).
+   Also if you are hit with an enchanted weapon (say, a fire-enchanted axe),
+   stone skin will block the damage from the weapon itself, but will
+   NOT block the fire damage.
+
+   Wizard Eye: good scout, plus it makes Project Image a very wise
+   investment.
+
+   Polymorph Self: for those few times when you have trouble surviving an
+   assault by various elemental forces, this spell offers Mustard Jelly
+   as one of its forms. That pretty much exhausts its use in ToB.
+
+   Summary: with no direct damage spells, save for Ice Storm
+   (which is a Damage-over-Time spell), Level 4 is mostly composed of
+   buffing/disabling spells. Other spells worth considering...
+   Emotion: Useless in ToB. Nuff said.
+   Minor Sequencer: I miss it, but not enough to consider spending a spell
+   slot on it. Keep it on your Secondary Mage.
+   Otiluke's Resilient Sphere: too easily resisted, otherwise would have
+   been a worthy pick.
+   Polymorph Other: entertaining, but also useless in ToB.
+   Minor Globe of Invulnerability: There's only one reason to get this spell
+   really, and that is if you like to use Lightning. (more on this in the
+   Battle Tactics section).
+   Spirit Armor: the most decent among all magical armors, this one is worth
+   considering to have instead of a Fireshield or Polymorph Self. Your call.
+   Secret Word: buh-bye! Who needs Secret Word when you can have Spellstrike!
+
+   5.5  Level 5 Spells (5 picks)
+
+   Breach: The most important spell in the game. Get it, or else. Seriously.
+   Without Breach, mages will wipe the floor with you over and over, so get
+   it, or face countless reloads and hours of frustration. In ToB
+   it still remains as important as always.
+
+   Lower Resistance: Works very well, and becomes essential when facing the
+   Drow. Extremely important in ToB, since most opponents have a hefty
+   magic resistance.
+
+   Sunfire: no longer the "ultimate" killer spell, but still pretty good.
+   I definitely recommend it for ToB, as it comes in handy quite a few
+   times.
+
+   Spell Immunity: The most obvious use of this spell is to prevent
+   imprisonment (immunity from Abjuration). I wish Immunity from
+   Necromancy could protect me from level drain, but it's not happening.
+   rather limited spell overall, but imprisonment efect alone is enough to
+   warrant its use.
+
+   Animate Dead: The effectiveness of this spell varies greatly with your
+   level. If you pick this one, don't plan cashing in on it until about
+   level 15. That's however, where the magic happens so to speak; instead of
+   lowly (and useless) skeletons, you get Skeletal Warriors. These guys have
+   an amazing THAC0, 90% Magic Resistance, 80 hitpoints, and hit with
+   magic weapons. Very tough to say the least. Excellent fodder against
+   enemy mages.
+
+   Summary: I got rid of the Shadow Door, since I never had a chance (or a
+   reason, or an urge) to use it in ToB. Other than that, my spell picks
+   remain largely unchanged.
+   Cone of Cold: weaker than Sunfire, and still hard to use when your party
+   is around. Having this one AND Sunfire maybe worthwhile, since there are
+   monsters immune to Fire and monsters immune to Cold.
+   Spell Shield: The best defence is good offence. The way I play, enemy
+   mages never get a chance to fire anything decent at me before they expire.
+
+   5.6  Level 6 Spells (5 Picks)
+       
+   Chain Lightning: rather mild damage, but it is a party-friendly spell.
+   Comes very handy when battling the Drow, as a way to disrupt the
+   spellcasting of all Drow Priestesses at once. Do not take this one,
+   if you have Lightning. Still good in ToB. Keep it.
+
+   True Sight: the second most important spell in the game (after Breach).
+   The only spell capable of dispelling Shadow Door (which enemy mages use
+   extensively), along with any other Illusion. Best of all, it does NOT
+   dispel your party's Illusions(unlike Oracle). An absolutely necessary
+   spell, more so, if you don't have Keldorn in your party (even if you do,
+   it is still worth having).
+
+   Protection from Magical Weapons: since everybody and their brother in
+   ToB is wielding some kind of a magical weapon, having this spell in your
+   book is a no-brainer. Four rounds that it gives you is more than enough
+   to give you a chance to cast Time Stop. The rest should be easy. This
+   spell also protects you from vampiric level drain since vampires can
+   only level drain what they can hit (and their attack counts as magical).
+
+   Death Spell: enemy summoned critters may become a potential problem in
+   ToB. This spell is here to make sure that they never do. Best of all, no
+   save is required. Don't expect much use out of the Primary effect of this
+   spell.
+
+   Protection of Magical Energy: this spell totally and completely protects
+   you from Magical Energy (100%, not 50% as the manual claims), but ONLY
+   from that. Magic Missile, Skull Trap and Abi-Dalzim's Horrid Wilting
+   fall into this category. Fireball, Flame arrow, or Lightning don't,
+   because they deal elemental damage. This spell does come in handy
+   for some active use of skull trap, and protection from Abi-Dalzim's is
+   always welcome.
+
+   Summary: with 5 spell picks allowed, 6th level is no longer a weakness
+   of a Sorcerer. In fact, there aren't that many good spells left here...
+   Disintegrate/Flesh to Stone: nice to look at, but they lack a saving
+   throw penalty (which makes Finger of Death such a nice spell).
+   Also, many creatures carry important loot, making these spells even
+   less useful.
+   Improved Haste: two words, Whirlwind Attack. This is a useless spell now,
+   well, almost useless (it still has a nice duration which Whirlwind lacks).
+   Invisible Stalker: a decent scout. Unfortunately, you can't waste a spell
+   slot on a scout. And Skeletal Warriors make better Mind Flayer fodder.
+   Mislead: You no longer need to hide yourself, so don't waste your time on
+   this one.
+   Summon Nishruu: I prefer Hakeashar, but if you want to spend a 7th level
+   pick on something else, this is acceptable. Apparently, if your mage gets
+   charmed, so will your Nishruu/Hakeashar will get charmed as well
+   [Cheloniophile].
+   Power Word Silence: Power Word Stun is better for disabling enemy mages.
+   Spell Deflection: best defence? Good Offence.
+   Tenser's Transformation: it is amazing how an absolutely awesome spell
+   can become totally useless. This is one of those cases. Don't get this
+   spell, in fact avoid it like plague. Even with all those protections and
+   double hitpoints, Sorcerer won't last long in ToB. Besides, he has other
+   important things to do (like casting spells). To make a long story short,
+   your time at the frontlines has ended with the arrival of ToB.
+   (let us observe a moment of silence)
+
+   5.7  Level 7 Spells (5 picks)
+
+   Finger of Death: Dragons, Greater Wolfweres, Elder Beholders, Kuo Toa
+   Princes, and anything else I can think of, will fall to this spell,
+   provided that you bust their spell protections and cast a pre-emptive
+   Greater Malison. Still packs a punch in ToB, although not nearly as
+   much as before.
+
+   Project Image: this is an excellent utility spell both in and outside
+   of combat. Combined with a Wizard Eye it makes an excellent kamikaze,
+   however the real beauty of this spell is that it can cut down
+   significantly on the number of spells you use. Example:
+   You want to summon 5 skeletal warriors? Cast a Project Image and
+   have it do it for you. YOUR 5th level spell picks will remain untouched.
+   You can do the same thing with umm...Protection from Magic Energy,
+   Summon Planetar, and many many other spells. I highly recommend this one.
+
+   Mordenkainen's Sword: While being rather unremarkable in terms of
+   THAC0, these guys have a neat perk of being totally immune to physical
+   damage (as in Normal and Magical Weapons), which comes in handy on more
+   than one occasion when playing ToB. 
+
+   Limited Wish: I'm not particularly crazy about this spell, but since
+   you are going to have 18 Wis (for the Wish spell), you might as well
+   pick this one up too.
+
+   Summon Hakeashar: The value of this spell has been greatly reduced in
+   ToB, because enemy wizards are no longer your biggest threat. Feel
+   free to dump this one for anything else that catches your eye on this
+   level. Unfortunately, I saw nothing good.
+
+   Summary: 7th level is surprisingly unremarkable when it comes to spell
+   picks, with few good spells besides the aforementioned ones.
+   Ruby Ray of Reversal: with Spellstrike on the horizon, you don't need
+   this Ruby Ray or whatever it is.
+   Power Word Stun: works on anyone with less than 90 hitpoints (provided
+   that you have eliminated their spell defences). This means, that most
+   mages and clerics WILL be stunned by this spell. Of course, most
+   warriors will just shrug it off. In ToB most enemies have far too many
+   hitpoints for this spell to work.
+   Protection From Elements: 75% Protection from all elemental attacks.
+   Pretty good, actually. Take this one instead of either Hakeashar or
+   Limited Wish.
+ 
+   5.8 Level 8 Spells (4 picks)
+
+   Abi Dalzim's Horrid Wilting: this spell is just too cool for words.
+   I took down half of the Underdark with it (including the Mind Flayers'
+   Elder Brain). Cruel, brutal damage, and totally party-friendly!
+   Long casting time though (but that can be countered). In ToB, this
+   spell only increases in importance.
+
+   Spell Trigger: this is a very versatile spell that has its uses in
+   various combat situations. Good spells to queue include Lower Resistance,
+   Skull Trap and Flame Arrow.
+
+   Power Word Blind: my new favorite. It blinds anyone with no save
+   (although Magic Resistance can stop it), long enough to finish them off.
+   Especially useful on spellcasters, since instead of killing you they
+   just stand there looking stupid. Highly amuzing.
+
+   Summon Fiend: if you want to have a demon, this is the way to go. It is
+   absolutely pointless to spend a 9th level spell slot on Gate, when
+   this spell accomplishes the same thing except that instead of a Pit Fiend
+   it summons a Glabrezu, which is just as good.
+
+   Summary: Yuck! 8th level proves to be even more useless than 7th...
+   other than those two aforementioned spells there's hardly anything
+   here to lay eyes on...
+   Maze: cool effect, no save. What the spell description doesn't say
+   however, is that this spell CAN be countered by magic resistance.
+   By the time you can cast this spell, most of your adversaries will
+   have TONS of magic resistance, making this spell far less than
+   what it seems to be.
+   Pierce Shield: Spellstrike makes this one moot.
+   Symbol Stun: also an okay spell. Good effect and good saving penalty.
+   However, by this time melee opponents are no longer a threat, and Mages
+   don't seem to be affected by it. Also, this spell WILL disable your
+   own party.
+   Simulacrum: to put it bluntly, this spell sucks, especially compared to
+   Project Image. Add the fact that can only have ONE simulacrum at a time,
+   and this spell becomes a complete loser. Thumbs down. Big time.
+
+   5.9 Level 9 Spells (4 picks)
+
+   Time Stop: Hail to the chief. Long live the king. Bow before this spell
+   for you are not worthy. On a serious note, this the crowning achievement
+   of a high level spellcaster, which leaves you free to try any strategy
+   you want. This spell is what will make your enemies tremble. This is
+   not only a must-have, but it should be the first 9th level spell you pick.
+
+   Spellstrike: this is what allows you to completely ignore lower level
+   defense-busters (other than Breach). This is a one-shot spell protection
+   remover, and it does it's job extremely well. As Lilarcor has succintly
+   put it: "I'm good at what I do, and what I do ain't pretty."
+
+   Wish: it's new, it's cool, it allows you to do things that you normaly
+   can't. For instance, you can rememorize all your spells (including 9th
+   level), or raise dead party members (clerics? ha!), or...well, let's just
+   say that it allows you to do many nifty things. The only downside is that
+   it need both high Int (which you otherwise don't need) and high Wis.
+   Nevertheless, an excellent choice.
+
+   Chain Contingency: allows you to kill your enemies the moment they turn
+   hostile (or the moment they are seen). Stick 3 Abi-Dalzims, set them to
+   release them upon the nearest enemy sighted. Neat. Oh, and there are all
+   those obvious defensive uses that annoy me so much when the enemy has them.
+
+   Summary: Lo and behold, the 9th level is here. This is what mage's power
+   is all about. If Kensai is a master of one on one combat, the Sorcerer is
+   a master of one on everyone else combat. 9th level is here to make sure
+   that that is exactly what's gonna happen. Let's see what else we have here.
+
+   Absolute Immunity: Protection From Magical weapons will suffice. Do not
+   take this one.
+   Black Blade of Disaster: let me explain it in a complex mathematical
+   formula...Sorcerer + melee combat = dead Sorcerer. Do not take this spell.
+   Gate: Gah, it's a total ripoff, considering that there are spells of the
+   same power at lower levels.
+   Energy Drain: won't it be cool to be a vampire? not at the expense of a 9th
+   level spell pick. Plus it requires physical contact and all those other
+   things a self-respecting Sorcerer shouldn't do...
+   Freedom: there are scrolls for that. Obviously.
+   Imprisonment: this is actually a good spell. The problem is that it's too
+   good. Totally takes the challenge out of the game, hence I don't use it.
+   Meteor Swarm: No, no and no. You get the Comet special spell for a reason,
+   and that reason is not to get Meteor Swarm.
+   Power Word Kill: if you can get an enemy to as low as 60 hitpoints, he
+   is already as good as dead. Don't bother with this spell.
+   Shapechange: this spell comes too late to be of any use. If only it were on
+   the 8th level...As it is, don't bother.
+   Spell Trap: Staff of Magi gives you an undispellable spell trap (not even
+   Spell Strike can bring it down), therefore conveniently allowing you to
+   avoid this otherwise neat spell.
+   Wail of the Banshee: without a penalty to save (Greater malison alone
+   is not enough) this spell just doesn't cut it.
+
+   5.10 High Level Abilities
+   Starting at level 18 you will receive some high level abilities as
+   bonus 9th level spells. It is not a matter of choosing which ones to have
+   (as in the end you will have them all), but only in what order to get them.
+   Here are my recommendations...
+
+   Improved Alacrity: allows you to cast spells without any delay whatsowever
+   for 2 rounds. Combine this with Time stop and Robe of Vecna, then see for
+   yourself how it feels to get hit by four Abi-Dalzims simultaneously.
+   A definite winner that should be your first choice.
+
+   Summon Planetar/Dark Planetar: this guy is one helluva fighter, and one
+   helluva cleric. I dummped my cleric from the party after I got this spell,
+   which by itself if good enough of a reason t get this one.
+
+   Comet: it is sort of like a meteor swarm, but party-friendly. In other
+   words, better than meteor swarm in every respect.
+
+   Dragon's Breath: a super-sized fireball. Not too useful.
+
+   Energy Blades: Think of Improved Melf's Meteors. Now think of all the
+   reasons not to have Melf's Meteors. Those reasons still apply granting
+   this spell an undisputed last place in the hierarchy.
+
+
+6. Equipment
+
+   There are a few particularly potent items that will make your Sorcerer
+   extremely powerful. Listed in the order of importance...
+
+   Amulet of Power: Vocalize + Immunity to Level Drain + Spellcasting reduced
+   by 1. All three effects are VERY handy, making this the most important
+   artifact for your Sorcerer (or any spellcaster for that matter). It has
+   a magic resistance bonus as well, but that is really unimportant.
+   Location: Thieves Guild. A gift from (or loot from) Aran Linvail.
+
+   Robe of Vecna: Spellcasting reduced by 4(!), AC set to 5. Further
+   reduction in the spellcasting time makes it possible to cast most
+   spells instantly. Spells are literally cast faster than you can finish
+   the incantation. AC bonus is nice, but unimportant. With the introduction
+   of Time Stop and Improved Alacrity, this artifact becomes extremely
+   powerful.
+   Location: Sold by Deidre at the Adventurer's Mart (bonus CD).
+
+   Ring of Wizardry: Bonus 5th, 6th, and 7th level spells. A boon, for any
+   mage, more so for a Sorcerer. Very nice.
+   Location: Harper's Hold. After the first battle with Harpers. Of course,
+   for that to happen you need Jaheira in your party. [WheresTheBeef111]
+   An alternative way to get it, is to give it as an assignment to your
+   apprentices in Planar Sphere, but half the time they will fail at it,
+   and in any case there will be heavy casualties among them.
+
+   Ring of Acuity: Bonus 2nd, 3rd, and 4th level spells. Goes very well with
+   the ring of Wizardry.
+   Location: Planar Sphere, on Lavok's body.
+
+   AC 3 Bracers: These will take care of your AC once and for all. You can
+   get them early too.
+   Location: Sold by Ribald at the Adventurer's Mart.
+
+   +2 AC Cloak: aside from the AC bonus you also get +2 to saving throws
+   which is invaluable.
+   Location: Sahuagin city. You'll need to solve the riddle of the imps to
+   get the cloak. [WheresTheBeef111]
+
+   Staff of the Magi: +2 AC bonus, Invisibility, special version of Spell
+   Trap (lasts all day), Protection from Evil, hits as a +5 weapon,
+   dispels magic upon striking, casts Fireball/Lightning 3 times a day.
+   Wow. WOW! What's the downside? You'll have to fight Shandalar & friends
+   to get this one, so don't plan on having it until Chapter 6.
+   Location: Bridge District, Rogue Stone Passage.
+
+   Circlet of Netheril: a piece of head gear that allows you to memorize
+   an extra 7th level spell. Or was it 6th? Or both? In any case, it's not
+   like there are plenty of choices for headgear.
+   Location: ToB. Needs to be upgraded by the butler imp before becoming
+   useful.
+
+   That pretty much sums it up for your Sorcerer's equipment, there are a
+   few other items, but these are the best.
+
+7. Battle Tactics
+
+   Most of the battle tactics in ToB revolve around using the almighty Time
+   Stop. In fact, that pretty much sums it up for battle tactics. Just cast
+   Time Stop, then follow-up with Improved Alacrity, then, well...
+   Then you can do whatever you want, enemies are yours for taking. In that
+   short timeframe you can summon a bunch of Mordenkainen Swords or unleash
+   a few Abi-Dalzims, or cast Wish and wish the enemies never had a
+   misfortune of meeting you...All options are open and ready for taking.
+
+   Total Invulnerability:
+   Stoneskin + Blur + Mirror Image + Fire Shield makes your Sorcerer pretty
+   much invulnerable to melee attacks. Sort of... I still use this for
+   combat situations that last longer than 4 rounds (or I'd use Protection
+   from Magical Weapons), but not long enough to warrant the use of Time
+   Stop.
+
+   Finger of Death:
+   This is the ultimate one-shot killer spell, IF you do it right. In order
+   for it to work properly, you MUST insure its success, meaning...a  few
+   pre-emptive Secret Words a Warding Whip thrown in for good measure,
+   and (drumbeat!) Greater Malison. Add Lower resistance when necessary.
+   With this setup, Finger of Death usually works on the first try.
+   I successfully killed magic-immune Sarevok this way, although he did
+   require 4 Lower Resists.
+
+   Lightning Madness:
+   Yet another way of turning your Sorcerer into a scythe of death. This
+   one works best in small chambers with lots of enemies. Cast Minor Globe
+   of Invulnerability then start letting loose as many lightnings as you
+   can, as fast as you can. More walls + more enemies = more dead enemies.
+   Oh, and your caster better be alone, or your party WILL be BBQed along
+   with the bad guys. You'd think that you can use Fireball and Skull Trap
+   in the same manner (since they are both 3rd level), but no, Minor Globe
+   won't protect you from those. If you want to have fun with Skull Trap in
+   close quarters, you'll need Protection from Magical Energy (level 6).
+
+   Fun with Skull Traps:
+   Precast Protection from Magical Energy before battle (on yourself and
+   on the party members). Then, once the battle has begun, start releasing
+   Skull Traps right into the fray. Combine that with Improved Alacrity,
+   and you can send out 6 Skull Traps in rapid order. Your party members
+   will howl in pain but won't receive a single point of damage, while
+   enemies will be ripped to shreds. Once again, this strategy will NOT
+   work with Delayed Blast Fireball (if you have it). Consider yourself
+   warned.
+
+   I still occasionally use Slow in conjunction with Greater Malison to
+   make easy fights even easier, but with the introduction of Wish, I'm
+   always able to refresh my spell list, and therefore no longer have to
+   savor those Time Stops.
+
+   Note: in order for this to work, you must always leave one unused 9th
+   level spell, so that you can cast Wish.  A lifesaver in the last series
+   of battles when you cannot rest.
+
+   All in all, I find the Sorcerer class to be extremely enjoyable and quite
+   easy to play. It is the perfect class to learn the ins and outs of magic,
+   as long as you suit your spell picks to your gameplay style. And that
+   concludes my Sorcerer's Guide.
+
+8. Contributors
+
+   I would like to thank the following people for contributing
+   tips/corrections to this guide:
+
+   Rob Sevening
+   Cheloniophile
+   WheresTheBeef111
+
+   Thanks, folks.
+
+
+   Questions? Comments? Drop me a line at rvgrigoriev@mdeintl.com
+
+9. Legal Stuff
+
+   Disclaimer: the writer of this guide is in no way responsible for any
+   wrongdoing committed by anyone upon reading this guide, bla, bla, bla.
+   In other words, if you do something stupid, don't blame me.
+
+   Copyright notice: this guide is the sole property of Roman Grigoriev.
+   Feel free to distribute it, but do not modify it or charge money for it.
+   Okay? Thanks.
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+  Bonus :  http://www.shsforums.net/topic/37860-sorcerer-spell-choices/
+Level 1:
+
+Magic Missile
+Spook
+Protection from Evil
+Chromatic Orb
+Burning Hands (trolls)
+
+Level 2:
+
+Blur
+Mirror Image
+Annagazzar's Scorcher
+Glitterdust
+Melf's Acid Arrow
+
+Level 3:
+Flame Arrow
+Haste
+Melf's Minute Meteors
+Remove Magic
+Skull Trap
+
+Level 4:
+Emotion
+Greater Malison
+Spirit Armour
+Stoneskin
+Secret Word
+
+Level 5:
+Breach
+Animate Dead
+Cloudkill
+Spell Immunity
+Chaos
+
+Level 6:
+Death Spell
+Protection from Magical Weapons
+True Sight
+Summon Nishruu
+Globe of Invulnerbility
+
+Level 7:
+Mordenkainen's Sword
+Summon Haekeshar
+Project Image
+Khelben's Warding Whip
+Finger of Death
+
+Level 8:
+Abi-Dalzim's Horrid Wilting
+Protection from Energy
+Pierce Shield
+Bigby's Clenched Fist
+Maze
+
+Level 9:
+<HLAs>
+ShapeChange
+Wish
+Spellstrike
+Chain Contingency
+
+this is the BEST Chain Contingency I can think of: Greater Malison, Emotion, Abi Dalzim's Horrid Wilting. Lowers their saves, stuns them and then does an insane amount of damage
+
+
+
+
+
+Level 1:
+Magic Missile, Chromatic Orb, Find Familiar, Identify, (Friends, Protection from Evil/Petrification, Armor, Reflected Image)
+
+Level 2:
+Melf's Acid Arrow, Mirror Image, (Knock(depending on thief friends), Resist Fear, Horror(for Viekang), Vocalize, Strength, Ray of Enfeeblement, Aganazzar's Scorcher)
+
+Level 3:
+Flame Arrow, Fireball, Melf's Minute Meteors, (Haste, Vampiric Touch, Spell Thrust, Dire Charm, Dispel Magic Remove Magic)
+
+Level 4:
+Stoneskin, Minor Sequencer, Spirit Armor, (Otiluke's Resilient Sphere, Polymorph Other(great on low saves or in conjunction with spells like Doom), Wizard Eye, Improved Invisibility, Fire Shield: Red/Blue, Minor Globe of Invulnerability, Ice Storm, Spider Spawn)
+
+Level 5:
+Lower Resistance(Your first spell. Your best spell.), Sunfire, Breach, Shadow Door, (Animate Dead, Minor Spell Turning(only cast after buffs ;) ), Oracle, Cone of Cold)
+
+Level 6:
+Chain Lightning(an area effect that doesn't hurt your party, yes!), Protection from Magic Weapons(Invulnerability when combined with the immunity to +1 and less weapons from Hell Trials, though it only lasts 4 rounds), (Tensor's Transformation, Disintegrate, Death Spell, True Seeing, Globe of Invulnerability, Pierce Magic, Summon Nishru, Death Spell, Carrion Summons, Wyvern Call)
+
+Level 7:
+Spell Sequencer, Limited Wish(only if high Wisdom), Prismatic Spray, (Ruby Ray of Reversal, Sphere of Chaos, Mass Invisibility, Spell Turning, Summon Hakeashar, Cacofiend)
+
+Level 8:
+Abi-Dalzim's Horrid Wilting(your #1 against Fire Fiants ;) ), Spell Trigger, Wish(Again, only if high Wisdom), Simulacrum, (Pierce Shield, Protection from Energy(never actually tried this one, but it looks helpful), Summon Fiend)
+
+Level 9:
+Time Stop, Wail of the Banshee, Spellstrike, Spell Trap, (Meteor Swarm, Gate, Shapechange(if you like being unable to Dragonbreath their bums)
+
+Level 10: (Takes one daily casting of your level 9 spells)
+Dragon's Breath, Summon Planetar, Energy Blades (Improved Alacrity, Comet)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bonus 2: https://www.reddit.com/r/baldursgate/comments/7nw6it/updated_sorcerer_spell_list_and_guide/
+
+Level 1: (5 picks)
+
+    Shield - Amazing in the early game, good protection versus ranged weapons and immunity to magic missile.
+
+    Sleep - Amazing in the early game, disables hordes of enemies.
+
+    Blindness - Good vs strong single monsters and casters in general.
+
+    Magic missile - Bad in the early game, shines in the mid game. Best used to disrupt spellcasting or to remove mirror images.
+
+Optional level 1 spells:
+
+    Spook - The save penalty makes this useful in BG2 and maybe even TOB. I would pick this.
+
+    Chromatic orb - It's alright if you use greater malison and/or the clerical "doom" spell, can be loaded into minor sequencer too. A bit hard to get to work.
+
+    Identify - Saves a bit of gold and avoids cursed items. You can just get the Glasses of identification instead, but the fifth spell you pick isn't too important, so you might just want to do it for convenience anyway.
+
+    Don't learn this spell: Find familiar - Cast this from a scroll. I prefer the lawful neutral (Ferret) or Chaotic neutral (Cat) familiar because they have pick pocket. Pick pocketing familiars can be used to get adamantine gear out of the underdark. Can also be used to "keep" the rod from the Unseeing eye quest. To do this you need to pick pocket one of your party members or yourself, pick up the familiar, and when you get out of the place ask it to give you whatever it has pick pocketed. Adamantine items are destroyed by a script that triggers "on entering the underdark exit" and for the rod, the script triggers on leaving the cult area to go to the athkatla sewers".
+
+Level 2: (5 picks)
+
+    Mirror image - One of the best combat protections available. This also protects you from area of effect damage spells for some reason, including dragon breath attacks.
+
+    Web - Better than stinking cloud. Will disable most enemies in BG1 and early BG2. Use it with ranged weapons or AoE spells. Spiders are immune to this spell, which may be an advantage. Freedom of movement negates this, which is mostly a blessing.
+
+    Resist fear - Good protection against Mages and Dragons
+
+Optional level 2 spells:
+
+    Glitterdust - Removes invisibility and functions as mass blindness, party friendly. Only removes invisibility if they fail their save. I would pick this.
+
+    Knock - Crucical for solo'ers. I picked it as my second spell last i soloed with a sorc. I would pick this.
+
+    Invisibility - Some swear by this spell, i never found much use for it.
+
+    Stinking cloud - Affects spiders, undead are immune to this. The save bonus makes it worse than web. Combine with Animate dead for fun :)
+
+    Melf's acid arrow - Can finish off trolls. It can disrupt enemy spell casters over the course of multiple turns, but you are usually better off just casting magic missile and there are plenty of other ways to kill trolls.
+
+Level 3: (5 picks)
+
+    Skull trap - Second best damage spell in the game, does not cap at 10d6 like fireball. Tricky to use with sequencers and spell trigger, you need to be within the natural short range of skull trap for this to work.
+
+    Melf's minute meteors - Great spell! Fires at a rate of 5 per round. Can damage almost anything. The physical side of it tears down stoneskins, while the fire side of it disrupts spellcasters. Use it with Cast and attack and you can tear through most low level battles. Kills trolls too! Protection from magical weapons will stop the meteors however.
+
+    Haste - Great party buff, extra attacks for everyone! This is also great with summons, even soloers should probably pick this.
+
+Optional level 3 spells:
+
+    Flame arrow - Deals a good amount of single target damage. It is unfortunately fire damage, which is a common immunity and many monsters are also resistant. I rarely use this since skull trap is usually just better.
+
+    Dispel magic - Best if you are playing with a party, pretty useful all-around.
+
+    Remove magic - Party friendly dispel magic, if i had to pick between the two i'd go for Dispel magic.
+
+    Slow - Tough save, very debilitating if the monsters fail their save, party friendly.
+
+    Invisibility 10' Radius - Good for scouting, thief-heavy parties and for getting the jump on enemies.
+
+Level 4: (5 picks)
+
+    Stoneskin - The most important combat protection in the game. Cast it right before you rest, its duration is longer than it takes to rest.
+
+    Minor sequencer - Load up Magic missiles, buffs or two "Save or else" spells. 2 Glitterdust is a pretty solid choice.
+
+Optional level 4 spells:
+
+    Greater malison - Great with "save or else" spells, decent with "save for half" damage spells. I would pick this.
+
+    Spider spawn - Fine summon, synergizes with web.
+
+    Teleport field - Disables melee enemies with no save or magic resistance, it is also party friendly. Although your melee characters might have a hard time actually hitting the monsters as they teleport around the battlefield.
+
+    Emotion hopelessness - Big party friendly sleep spell. You also get a free personal resist fear.
+
+    Polymorph self - The mustard jelly form is immune to spells, which makes it good against enemy mages. If they summon anything, polymorph to wolf and get out of dodge. The spider is interesting because of web, it attacks fast which is good for disrupting enemy mages. The gnoll is weak, but it deals fire damage which can kill trolls and it wields a +3 weapon that has reach, so it can kill Iron Golems that get stuck in a door.
+
+    Polymorph other - Turns enemies into Squirrels, the save bonus makes it hard to get to work versus anything worth casting it on. Load it up in a sequencer if you want to use it.
+
+    Wizard eye/Far sight - Ah, the great debate? Which is better? Personally i pick both. These spells are used for "spotting" with your summons and (Project image/Simulacrum)clones. Wizard eye takes up a summon slot, which isn't great if you aren't using/abusing the clones but it can follow the clones around. Players who don't intend to use clones should not pick wizard eye.
+
+Level 5: (5 picks)
+
+    Breach - Removes almost all combat protections from the target with no save or MR. Some enemies are immune to this spell. This spell is very important if you have any fighters or summons, enemy mages will be almost invulnerable to physical attackers if you don't use breach.
+
+    Spell immunity - Great for protecting clones. Set it to Divination to protect them from true seeing. Set it to Abjuration to protect from dispel magic and imprisonment(Including demi-lich "Trap the soul"). Necromancy will protect you from most death-effects, including demi-lich Wail of the banshee. Tons of other uses too.
+
+Optional level 5 spells:
+
+    Lower resistance - There are usually better solutions to resistant monsters, but if you really must blast them then use this first. I would pick this.
+
+    Domination - Most powerful charm spell. Benefits from greater malison, but can be useful with or without it.
+
+    Sunfire - In the original release of ToB this ignores spell resistance. Can be useful if you are permanent invisible with either Staff of the magi or a Mislead clone, blast the enemy and stay hidden! In EE and original SoA, this spell isn't great.
+
+    Cloudkill - The main argument against picking Cloudkill is that you can get a wand to do the same. It is, in my opinion, the best cloud effect in the game.
+
+    Feeblemind - Cast it on enemies that start out with a blue circle, they don't turn hostile so you can keep spamming it until they fail their save. Quite cheesy.
+
+    Animate dead - Bad summon at early levels, once you reach level 15+ you get a powerful magic resistant monster. Haste them up and send them in. Main argument against picking this is that you will have access to Mordenkainen's sword by the time this summons skeletal warriors.
+
+Level 6: (5 picks)
+
+    Improved haste - Turns fighters into killing machines. Doubles the rate of regeneration effects, it also doubles the rate at which Blade barrier effects trigger. Can be used to throw Melf's Minute Meteors at a rate of 10 per round.
+
+    Contingency - Can be cast while the game is paused and does not count as your "one spell per round". I recommend setting it to 50% health and using either Stoneskin or protection from magical weapons.
+
+    Protection from magical weapons - If you have the "immune to +1 weapon and less" from the hell trials, you become completely immune to physical attacks for the duration. Also protects against non-physical damage from magical weapons.
+
+Optional level 6 spells:
+
+    Mislead - Best invisibility spell in the game. You are permanently invisible while the clone lives. Send if of to a corner of the map and do whatever you want. The Staff of the Magi makes this spell a bit redundant, i would still pick it.
+
+    True sight - Best anti-illusion spell in the game. Removes Mislead/Project image clones, invisibility and Mirror image. I would pick this.
+
+    Tenser's transformation - Turns you into a respectable fighter.
+
+    Death spell - Kills low level enemies and summons. It casts pretty fast so its a nice spell to have for summons and umber hulks.
+
+Level 7: (5 picks)
+
+    Project image - The most overpowered spell in the game. It gives you a complete copy of your spellbook, quick slot items and item special abilities. Cast Project image and have the clone summon all the Mordenkainen's swords you could ever want or need.
+
+    Mordenkainen's sword - Best fighting summon in SoA. It is immune to almost all disabling spells and it is immune to all damage except for magical damage. Use a scroll of protection from magic on it, and it can kill just about anything.
+
+    Spell sequencer - Load up three skull traps or multiple area disabling spells.
+
+Optional level 7 spells:
+
+    Mass invisibility - Improved invisibility for everyone.
+
+    Limited wish - This spell is amazing if you have high Wisdom. It can heal and remove conditions from your party, can protect your party from level drain and it can restore spells for the entire party.
+
+    Power word: Stun - Very good against enemy mages, they rarely have more than 90 hp. Many bosses are immune to this however.
+
+    Finger of death - Use it with chain contingency or have multiple casters cast it. Hard to get to work.
+
+Level 8: (4 picks)
+
+    Abi-dalzim's horrid wilting - The best damage spell in the game. Very few enemies are immune or resistant to magical damage. It is also party friendly, only downside is the casting time. Cast it on yourself to trigger the effect faster.
+
+    Spell trigger - Load up skull traps, party buffs or debuffs. I usually use it with Breach, Greater malison and/or Lower resistance.
+
+    Simulacrum - Discount project image. Simulacra are level drained copies of yourself, you can cast restoration spells on them to return the levels. Doesn't help mages much, since simulacra don't regain spell slots. Unlike the other clones simulacra does not die to true seeing.
+
+Optional level 8 spells:
+
+    Pierce shield - Works on some monsters that are immune breach, but does not remove Stoneskin/Mirror image.
+
+    Maze - Remove a monster temporarily. Cast a bunch of skull traps where it was standing and see it splat upon return. Maze is still subject to MR.
+
+    Power word: blind - Great anti mage spell. Cast it next to the caster to get around invisibility. I would pick this.
+
+Level 9: (4 picks)
+
+    Chain contingency - Can be cast while the game is paused and does not count as your "one spell per round". A good option is to load up three horrid wilting and set it to "on sight", instantly ends most encounters.
+
+    Time stop - Broken in SoA. In ToB there are a few monsters that are immune to this spell.
+
+Optional level 9 spells:
+
+    Imprisonment - Quite powerful, will remove most monsters with no save or MR. Unfortunately this removes the loot too. Can also be used with the freedom spell to grind xp, i find that rather tedious. There are a few monsters that are immune to this.
+
+    Spell trap - Main argument against picking this spell is that the Staff of the Magi casts a better longer lasting version of Spell trap. If you pick this, it can be used in "Endless spells schemes".
+
+    Spellstrike - Removes pretty much every protection spell from a monster, Spell shield will stop this however. Crucial in some mods, but you can get wands of spellstrike. I would skip this unless you know what you are doing.
+
+    Wish - Very powerful if you have a good wisdom. The time stop version this casts is actually a double length time stop + improved alacrity. Bosses that are immune to regular time stop are not immune to this*. It can also be used to rest the party, bringing back all those used spells. Can be used in "Endless spells schemes".
+
+    Shapechange - Iron golem form can be used to soak spells and the Mindflayer form can be used to kill otherwise hard to kill monsters or characters intended to be invulnerable. Have not used it much, but may have underestimated it.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+Bonus 3 : https://steamcommunity.com/sharedfiles/filedetails/?id=203232078
+ Spells and spell selection, level 1
+Level 1 is one of the more critical levels for a spellcaster because it's the one you're stuck with when you start the game. Also, due to a certain ring, you'll have a lot more level 1 slots than any other level combined. This is doubly true if you have Edwin or Baeloth on your team.
+
+Spook is probably one of the best spells in BG, period. Although it affects only a single enemy, it has a saving throw penalty, making it outright better at disabling enemies than Chromatic Orb or Blindness. It won't affect certain enemies -- most notably undead, but all of the undead in BGEE can be dealt with handily by a party cleric or simply by bashing them with your fighters.
+
+A lot of guides recommend Chromatic Orb, so I must go out and say that Spook is absolutely superior to it. Don't be fooled; +6 on save basically makes Chromatic Orb totally garbage. It's much better in IWD. Never use Chromatic Orb in this game.
+
+Charm Person has its uses, but my advice is to get a magic item or character that can use it without having to spend spell slots on it. Your main use of charm person is to charm neutral characters so you can kill them.
+
+Sleep is the bread and butter money spell of wizards in BGEE. A huge majority of the battles you will face in the game can be won with this spell, and it continues to retain value well into the latter parts of the game. It does fall off a bit by the end game, but you can simply put Spook instead into your level 1 slots. If you are a sorcerer and you are intending to import into BG2EE you may not want to get this spell as it is not very good in BG2. If you do, I recommend adding another arcane caster such as Xzar, Neera or Edwin early on so you can take advantage of this spell in BG1. If you can't find a scroll of Sleep, Color Spray does more or less the same thing (not quite as good) but can't be used from out of vision range and can hit friendly characters.
+
+Much like Sleep, Armor is a very good spell throughout BG1 but is not as good for importing if you are a sorcerer. With 19 dexterity and Armor, you can have AC2 as a wizard, which is pretty nice early on. It lasts for 9 hours, so you can cast it when you enter the area you want to explore and it will last until you leave or decide to rest. I would devote a single level 1 slot on all of your wizards to this spell once you've got enough castings of Sleep to handle most of the fights in a given day. Shield is better in terms of protection, but it only lasts 1 game hour so it is generally not as good.
+
+Of course no discussion would be complete without Magic Missile. It's more of a last resort when all other methods have failed, as there are not that many encounters in BG1 where Magic Missile is better than slotting Spook or Sleep. If you're a sorc, you probably want this spell since it is quite useful occasionally, and it's very nice in BG2.
+
+If you're a wizard you should probably start with Find Familiar, as a familiar is a whole lot better at fighting in the very early parts of the game than you are. If you're a sorcerer, you'll find a scroll eventually. Familiars are very, very good in BG1, and they give you more hit points. I could probably write an entire guide just about familiars.
+
+Grease is OK for keeping enemies caught in a web spell. If you know you're facing undead, grease is a better choice than sleep or color spray but it's not a very good spell most of the time.
+
+Although it is extremely short duration, the +2 AC bonus from Protection from Evil stacks with all other bonuses and is thus very good for hybrid mages. This spell can also be quite nice for summoning pit fiends in BG2, but is otherwise not that great.
+
+My sorc picks are obviously spook and magic missile. Shield is my next pick since it stacks with higher-AC bracers and immunity to magic missile is sometimes helpful. My next pick is identify, mostly because it's super convenient to have on a sorc and because level 1 spell choices aren't that tight. Lastly, it's a tie between Sleep, Friends (for shop discounts if you have high CHA), and Protection from Evil. Prot evil is generally better handled by clerics, so my choice is Sleep since it's super strong in this game.
+
+Level 1: Sleep, Spook
+Level 3: Identify
+Level 5: Magic Missile
+Level 7: Shield 
+
+Spells and spell selection, level 2
+Level 2 is all about area controls. There are three big spells: Glitterdust, Web, and Stinking Cloud. We'll address them all simultaneously.
+
+Glitterdust is the lightest CC of the three since enemies can still fight if blinded as long as they can get into melee with you. It still disables spellcasters and archers, which are by and large the bigger threats in the game, and gives a hefty THAC0 penalty to enemies that do manage to find your team. The biggest plus is that it reveals invisibility while still being a standard CC effect, and many mages in BG1 use improved invisibility/shadow door as their main defense. Glitterdust can also be cast into an ongoing battle; it will not affect allies. Glitterdust also works on everything that can fail a saving throw versus spell.
+
+Web, despite what it says in the spell description, completely locks down anything that fails its save. It has a definite plus in that it continuously pulses, though a failed save only shuts down an enemy for one round. The disadvantage of web is that it hits everything in its radius continuously for a very long time, and this can be a problem for your team, particularly in narrow quarters where you may not be able to maneuver ranged attackers to stand outside the web. On the plus side, you can use items that grant Free Action to ignore web and fight normally, and there's a particularly nice two-handed sword somewhere in the game that is designed to do just that. Web works on everyone that doesn't have Free Action, which puts it in the same boat as Glitterdust -- almost everything.
+
+Stinking Cloud is notable for its exotic save; it checks poison/death rather than spell, which makes it better for taking down enemy wizards. Like Web, it pulses continuously, knocking anything that fails its save unconscious. Note that this doesn't seem to be flagged as a sleep effect, and thus elves' 90% sleep resistance doesn't seem to help. It's not as good as the others, but it can be useful when layered over web to ensure that enemies don't get a chance to fight at all.
+
+Horror gets an honorable mention. It's not as good as the other spells, but it is an area crowd control similar to Glitterdust. Having enemies run around in outdoor areas is highly annoying though.
+
+Invisibility is really, really nice too. It lasts for a whopping 24 hours, so it can be really good if you cast it on someone who can contribute to your team without attacking or casting spells. Thieves with dispel illusions are one option, and bards are another. As we'll discuss in the classes section, unkitted bards are garbage, blades should be fighting and skalds and jesters are amazing invisible supports. Use your invisible character to scout entire maps! You can also just cast invisibility on your familiar to scout, too.
+
+Vocalize is really nice in BG2 but mages don't generally silence you in BG1. Also, you should be fighting most battles on your terms in BG1 (winning before enemy can cast), since you can scout virtually all of them ahead of time with stealth or invisibility.
+
+Mirror image is a good protection spell but there are few times where your mages will be a focus of attacks. I almost never end up using it, but it's amazing in BG2 and great in solo games. Blur is also nice as it gives bonuses to saves as well as AC; I still don't really find defensive spells to be that helpful when the enemy can't fight at all.
+
+Melf's Acid Arrow and Aganazzar's Scorcher are your offensive spells at this level. I don't really advise using them because in most cases you will want to cast glitterdust or web instead. If you have a lot of mages, preparing one or two of these is OK but I don't like having enough spells to handle an entire map. IDK. Melf's is a pretty good spell in BG2 due to its scaling damage, so if I was going to pick one, I'd pick it over Scorcher despite Scorcher being able to hit multiple enemies. If you need a weapon to kill trolls though, just use fire arrows.
+
+Sorc picks:
+4: Glitterdust
+5: Invisibility if you can't get someone else to cast it, Multiple Image otherwise
+7: Multiple Image unless you already have it, Web or Melf's otherwise
+9: Web. If you already have it, Melf's (get Vocalize @ level 11 in BG2)
+Spells and spell selection, level 3
+You won't have level 3 spells for much of the game, so level 1 and 2 are the most important levels to understand. You can win most battles without even needing level 3 spells, but let's go over what is available.
+
+Dispel Magic is vital. Quite frankly, clerics get the rather awesome Animate Dead at this level so chances are your mages will need to load Dispel. It's great for stripping off buffs from enemies, but it's sort of not needed unless the enemy has placed some defense you can't beat with conventional magic or just power through with attacks. Since you hopefully have Glitterdust somewhere in your team spell loadout there shouldn't be a lot of need for Dispel Magic. It is very, very nice for removing negative effects on you, such as someone casting Confusion or charm on your party fighter. It happens sometimes!
+
+If you're a sorc, consider Remove Magic as it cannot target allies. However, there are plenty of situations where you want to remove enemy CC from your team, which Remove Magic can't do.
+
+Skull Trap is your go-to nuke. It isn't stopped by fire resistance like Fireball, and you can layer several of them in a spot to trigger all at once (though generally you won't want to). Just cast it on an area with enemies like you normally would cast a fireball and blow everything away.
+
+Haste makes everyone on your team a killing machine, and perhaps more importantly, it makes your backline more able to kite around. Of all the "fighting support" spells, it's by far the most useful. Unfortunately, it exhausts your party afterwards. Only prepare one Haste and be prepared to rest afterwards, if you use Haste at all.
+
+Melf's Minute Meteors is a useful anti-troll weapon, it hits as a +5 weapon (thus defeating most types of weapon resistance) and attacks very rapidly (5 APR). I really like this spell and it is pretty good for dealing a bunch of damage to one enemy, especially one resistant to weapons without high level enchantments.
+
+Spell Thrust is critically useful. Let me punctuate this; Spell Thrust counters the huge majority of annoying spells that protect your enemies from your spells. For the most part, enemies in BG1 do not use these defensive spells, but it's still a valuable spell to have in your arsenal because the few enemies that do use anti-spell spells make you completely useless.
+
+Slow is your first group CC effect that has a saving throw penalty. It's very powerful, and if you're running an arcane-heavy party it can really pay dividends to slot it. It greatly reduces enemy attack rate and accuracy, and you can consider it a sort of "leveled up" version of Glitterdust (it doesn't reveal invisibility though).
+
+Sorc picks are hard here. You're stuck with only 3 in BGEE even if you eventually get 5 (where the choices are pretty easy).
+
+6: Dispel or Remove Magic, depending on personal taste
+7: Skull Trap (you can get this at 6 instead and get Dispel/Remove here)
+9: Slow
+
+A lot of these choices are predicated on having another mage. If you're the only mage in your party you probably want Spell Thrust at 7 and you'll have to let clerics handle dispelling (Skull Trap is too good to skip). Sorcs need backup to cover the niches they can't cover with their regular arsenal. My 4th and 5th picks are MMM and Spell Thrust (in reverse order, though MMM is more valuable of a spell in the long run) but Spell Thrust has alternatives in later levels.
+Spells and spell selection, level 4
+You don't need these spells to win the game. Level 4 is above what's needed for virtually everything, and many useful level 4 spells are unavailable except as random drops. If you're a sorc though, it's going to be the best time of your life.
+
+Greater Malison is the most useful spell to slot as a wizard, and it's an essential pick for sorc. Lowering saving throws makes stacked web/stinking cloud really powerful, and virtually guarantees that Spook or Slow will land.
+
+Confusion has a save penalty, making it somewhat stronger than area controls. It's especially nice when you cast it into an enemy group that can't see you, which usually causes them to fight each other. However, it's not a must-have spell; you probably already have enough area lockdown. You can slot it in wizard spell slots if you have your other needs met, though.
+
+Sorcs get some really, really sexy stuff that is mostly unavailable. Minor Sequencer is fantastic; it allows you to preload two level 2 area controls in one spell and fire them off whenever you want. It would be great on a wild mage, but it's unlikely that you'll ever get it without hacking it into the game.
+
+Sorcs can also get wizard eye, quite possibly the best scout in the game. Still, you can use your familiar and invisibility to accomplish the same thing, or a thief or other scouting character.
+
+Enchanted weapon is another combat buff for multi or dual-class mages. It's a +3 weapon so it has its uses, but not really in this game. Apparently in IWDEE you can hand it off to a party member. Neat.
+
+Stoneskin is a fairly essential part of a wizard's arsenal and renders him or her virtually immune to normal attacks. It's especially valuable in BG2 when you get a ton of free hits. The spell lasts for 12 hours too, so you don't have to use it in mid-combat.
+
+Emotion: Hopelessness is a Sleep-like effect that works on enemies of any HD (though not on undead). It has no save penalty, so I'm not as fond of it as I am of Confusion.
+
+Secret Word is the first potential replacement for Spell Thrust. It's the best spell protection removal in BGEE and the only one you really need until BG2. Because level 4 slots aren't generally as good as level 3 ones (at least with the spells available), I tend to prep this instead of Spell Thrust.
+
+Sorc picks of this level are hard because you only get two. In BG2 your options open up immensely and you can get whatever you want, but here you really have to pick and choose.
+
+8: Stoneskin
+9: Minor Spell Sequencer
+
+Again, this assumes you have another mage to handle Greater Malison while you drop a double Web/Glitterdust with your sequencer (or cast Slow). Minor Sequencer is godly for its ability to double-drop crowd controls and it's not really skippable. If you don't have another mage though you really have to give up something and Stoneskin is too good.
+
+Once you get into BG2 you can pick up Malison and then you can go wild with whatever picks you want.
+Spells and spell selection, level 5
+I shouldn't be discussing what you do with sorcs at this level, since you technically can't cast level 5 spells as a sorc until BG2. If you removed the level cap, well...
+
+Breach is the most essential level 5 spell in BG2, so if you are lucky enough to get a scroll of it, you'll be well on your way to importing. However, as far as I know there is no fixed Breach scroll in BGEE. It removes combat protections including protection from normal missiles/normal weapons, protection from magic weapons, mantle, stoneskin and so on. Very helpful.
+
+Cloudkill is one of the few level 5 scrolls you'll find in the game. If you can manage to cast it earlier on in the game as a wild mage, it can make some tough early fights very easy. It instantly kills creatures of 6HD or below with no save. Very useful!
+
+Chaos is another spell that you can actually find, and it is extremely good for wizards. It works on most foes, has a -4 save penalty and causes enemies to fight each other. Although it's a high level slot and there are many other good level 5 spells, it is a great spell to have if you have readied.
+
+Lower Resistance is sort of weak in BG1; you'll need to cast it several times to weaken a target's resistance enough to make spells effective. There are also very few enemies that actually warrant its use. In BG2 it's fantastic; you'll need it.
+
+There are a wide variety of single target -2 save or die spells at this level. Hold Monster is probably the strongest, since it works on the most things. You will probably not want to use any of them though.
+
+Spell Immunity deserves a very special mention since it is incredibly useful in BG2.
+
+Sorcs don't get level 5 spells in BGEE but if they could, I'd get Breach first. Spell Immunity is important for dealing with imprisonment but can be put off for later. Lower Resistance is pretty important too. Cloudkill is nice, Cone of Cold isn't bad, Chaos is good. I dunno, this isn't a BG2EE guide. 

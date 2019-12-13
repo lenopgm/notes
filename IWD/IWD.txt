@@ -1,0 +1,101 @@
+matos		http://mikesrpgcenter.com/icewind/index.html
+			https://icewinddale.fandom.com/wiki/Random_Treasures_in_Icewind_Dale:_Enhanced_Edition
+			https://forums.beamdog.com/discussion/47202/random-treasures-of-icewind-dale-enhanced-edition-complete-list-by-camdawg-workinprogress
+			https://icewinddale.fandom.com/wiki/Random_Treasures_in_Icewind_Dale:_Enhanced_Edition
+Dark Monk	https://forums.beamdog.com/discussion/38935/on-the-dark-side-of-the-moon-solo-monk-guide-hof
+dual-class	https://pihwiki.bgforge.net/Baldur%27s_Gate:_Dual_and_Multiclassing
+			https://steamcommunity.com/sharedfiles/filedetails/?id=185991458
+sorcerer	https://www.reddit.com/r/baldursgate/comments/7nw6it/updated_sorcerer_spell_list_and_guide/
+swash>fight	https://steamcommunity.com/app/321800/discussions/0/458606877327214506/
+spells		https://sorcerers.net/Games/BG2/SpellsReference/ArcaneSpells.htm
+			https://sorcerers.net/Games/BG2/SpellsReference/Main.htm
+invocations	https://forums.beamdog.com/discussion/21252/stats-for-summons-and-shapechanges-forms
+
+cheat : engine.lua : 
+SetPrivateProfileString('Program Options','Debug Mode','1')
+
+C:SetCurrentXP(5000000);
+C:SetCurrentXP(2500);
+
+Katanas:
+There's a +1 in AR3502 (http://mikesrpgcenter.com/icewind/maps/ar3502.html), Container 10, Location 1372, 1605.
+
+A +2 in AR9714 (sorry, no link, but it's in ToTL apparently), Container 28, Location 913, 2028.
+
+Darkened Glory +2 (+5% chance of scoring a critical hit (with this weapon only)/Casts Curse centered on the target each time a critical hit is scored), in AR4005 (http://mikesrpgcenter.com/icewind/maps/ar4005.html), Container 20, Location 1219, 916. Also on a variety of Spirit Troll (PPTROLL1.CRE) summoned by a spell (PPTROLL1.SPL) that doesn't appear to be used in game.
+
+Solemn Duty +3/+5 vs. outer planar creatures (Immunity to confusion/3% chance of decapitating an opponent on each hit), in Nym's Exotic Goods store, AR8004 (http://mikesrpgcenter.com/icewind/maps/ar8004.html).
+
+
+
+							tank	heal	dps		cast	locks
+gnome	illusionist/fighter									
+		illusionist/cleric									
+		illusionist/thief									++
+halfelf	cleric/ranger										
+		fighter/druid										
+dual	ranger>cleric										
+		fighter>druid										
+		kensai>mage							+++		+++		
+		berserk>mage						+++		+++		
+simple	sorcerer							++		+++		
+		monk												
+		shaman												
+		dragon
+
+gnome thief/illusionist
+
+
+dragon												CE
+cleric>mage		Talos (lightning bolt : lvl 10/11)	CN
+avenger												NN
+swashbuckler(>fighter?)								CN
+
+Cleric	https://icewinddale.fandom.com/wiki/Cleric
+Familiar	https://icewinddale.fandom.com/wiki/Find_Familiar
+
+thief/mage
+	https://www.reddit.com/r/baldursgate/comments/6a6gw5/dual_class_swashbuckler_mage/
+	https://www.reddit.com/r/baldursgate/comments/6a6gw5/dual_class_swashbuckler_mage/dhd4ymx/
+	https://www.reddit.com/r/baldursgate/comments/6a6gw5/dual_class_swashbuckler_mage/dhd6es6/
+Advantages:
+    multiclass means you can be a gnome for shorty bonuses and extra spells (you lose necromancy though) or you can be an elf for charm resistance and higher DEX.
+    Thief abilities covered for the party so it provides good utility and you're always gaining levels so you'll get UAI and spike/time traps.
+    Backstab, always beneficial to have in the party. Mage abilities pair up well with backstabbing: invisibility, mislead, Tenser's for Thac0, BBOD, etc.
+    Access to stoneskin, pfmw, etc. always beneficial to have
+	For those who see having a thief in the party as a necessary annoyance it's a great class that adds utility without sacrificing much. You'll have a caster who can use bows (always nice) and who can handle your locks/traps/scouting/pickpocketing.
+	For those who like to actively use thieves in combat it's a nice class since mage abilities pair well with, and can enhance, backstabbing. Plus constantly gaining thief levels gives you access to HLA traps which are ridiculously OP.
+	Basically it's a super versatile caster who can fulfill pretty much any role you want thanks to arcane spells and UAI.
+    If you use Mislead as a T/M all your attacks will hit as backstabs, since Mislead lets you stay invis until the clone is destroyed.
+    You can use Mage clones to place thief traps without using up your "real" traps. You can also send them to places ordinary thieves can't go without triggering events, such as The Ravager.
+    Shapeshifting+Time Stop is an extremely powerful combo for Mages alone, but was a bit weak due to having recast time stop unless you could kill them in one. Now imagine that with Thief Traps that allows for 70 second time stop at the start of the fight without having to re-cast.
+    Tenser's Transformation was always powerful in the hands of a mage, but never too powerful since they lacked APRs. Thieves, though, can stack 8-9 APRs dualwielding +1 APR weapons.
+	Also, if you're wondering why Thief/Mage multi over Thief/Mage dual, the answer is simply Thief Traps HLAs. They are the strongest endgame tool in the game outside of mage 9th level spells, and Thief/Mage multi is the only class that have access to both. Basically Time Traps lets you open with 70 second time stop everywhere you can place traps, and Spike Traps one-shots every boss in the game, except the Ravager, which it leaves at Nearly Dead. Every other boss dies, including Abazigal, Balthazar, Amelyssan and Demogorgon.
+	
+Sorcerer
+Dragon/Not ?	> -AC non stackable with Armor spell
+Familiar ?		> neutral-evil > 2APR, 15tach0, 1d2d, AC8 Glitterdust 1x/day
+				> chaotic-evil > 2APR, 19tach0, 1d6d, AC4 Horror 1x/day
+Starting spells	
+	My sorc picks are obviously spook and magic missile. Shield is my next pick since it stacks with higher-AC bracers and immunity to magic missile is sometimes helpful. My next pick is identify, mostly because it's super convenient to have on a sorc and because level 1 spell choices aren't that tight. Lastly, it's a tie between Sleep, Friends (for shop discounts if you have high CHA), and Protection from Evil. Prot evil is generally better handled by clerics, so my choice is Sleep since it's super strong in this game.
+	Level 1: Sleep, Spook
+	Level 3: Identify
+	Level 5: Magic Missile
+	Level 7: Shield 
+
+
+
+robe	8100	<
+bag		9000	<
+bow+1	2800
+bracers	3360	<
+plate	5600
+helm	8758
+scimitr	4368	<
+
+ring sells for 	9150
+necklace sells	1280
+katana		3750
+chain		800
+mace		750
+hammer		750
