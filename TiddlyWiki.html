@@ -259,6 +259,8 @@ Error message and password prompt
 
 <li>dev resources</li>
 
+<li>dev responsable</li>
+
 <li>douches froides</li>
 
 <li>Draft of 'Books / livres'</li>
@@ -272,6 +274,8 @@ Error message and password prompt
 <li>Emotion, décision, libre-arbitre - ÉLISABETH FEYTIT</li>
 
 <li>En finir avec la bedaine, en 5 leçons</li>
+
+<li>encoding av1</li>
 
 <li>english tips</li>
 
@@ -287,9 +291,13 @@ Error message and password prompt
 
 <li>Fallout 1.5</li>
 
+<li>ffmpeg</li>
+
 <li>File Sorter</li>
 
 <li>Franc-Maçonnerie</li>
+
+<li>get rid of YOUTUBE addiction</li>
 
 <li>Github repo</li>
 
@@ -308,6 +316,8 @@ Error message and password prompt
 <li>interests</li>
 
 <li>Jeux</li>
+
+<li>job hunt</li>
 
 <li>Kotlin</li>
 
@@ -366,6 +376,8 @@ Error message and password prompt
 <li>Philogynes BIG5</li>
 
 <li>PigCake recommandations</li>
+
+<li>PluralSight</li>
 
 <li>pupilles / trous noirs</li>
 
@@ -9342,7 +9354,7 @@ Error message and password prompt
 <div created="20190322150010774" modified="20190322150015029" title="$:/state/folded/organisation">
 <pre>show</pre>
 </div>
-<div created="20190322150900972" modified="20190814110932796" title="$:/state/showeditpreview">
+<div created="20190322150900972" modified="20200204143438940" title="$:/state/showeditpreview">
 <pre>no</pre>
 </div>
 <div created="20190108085015148" modified="20190108085029019" title="$:/state/ShowPaletteEditor">
@@ -9366,7 +9378,7 @@ Error message and password prompt
 <div created="20190108101211875" modified="20190521145518441" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/More</pre>
 </div>
-<div created="20200203100200576" list="Home" modified="20200203100200576" title="$:/StoryList">
+<div created="20200206145114371" list="Home" modified="20200206152052487" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20190131165140039" modified="20190131165140039" title="$:/temp/advancedsearch">
@@ -9426,8 +9438,8 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20190114084246125" modified="20200131153436140" title="$:/temp/search">
-<pre>quotes</pre>
+<div created="20190114084246125" modified="20200206150337223" title="$:/temp/search">
+<pre>tmp</pre>
 </div>
 <div created="20190108084849123" modified="20190108084857507" title="$:/theme">
 <pre>$:/themes/tiddlywiki/snowwhite</pre>
@@ -10544,6 +10556,13 @@ SELECT * FROM v$version;
 ! PHP
 * https://eilgin.github.io/php-the-right-way/</pre>
 </div>
+<div created="20200204131908423" modified="20200204143116520" tags="todo dev" title="dev responsable">
+<pre>* ''https://www.greencodelab.org/''
+* http://www.rntz.net/post/against-software-development.html
+* https://greenspector.com/fr/articles/2018-12-11-manifeste-developpement-plus-durable/
+* Dark Patterns https://arstechnica.com/information-technology/2016/07/dark-patterns-are-designed-to-trick-you-and-theyre-all-over-the-web/
+* https://a16z.com/2011/08/20/why-software-is-eating-the-world/</pre>
+</div>
 <div created="20190619121720593" modified="20190619121755787" tags="fiche_lecture santé" title="douches froides">
 <pre>* système immunitaire ++
 * - de stress
@@ -10651,6 +10670,30 @@ Alors, quelle activité privilégier pour perdre du ventre ? Tout dépendra en f
 - ''Régularité et motivation''. Il y aura nécessairement des jours où vous n’aurez pas envie de vous y mettre. Il faudra pourtant puiser dans vos réserves pour trouver la motivation. « Au bout de 3 semaines, un sédentaire connaîtra un pic de fatigue. C’est à ce moment qu’il ne faudra pas se laisser aller. Car les premiers résultats sont visibles au bout du premier mois » Ce serait dommage d’échouer si près du but !
 
 - ''Pratiquez à plusieurs'' C’est en effet l’une des clés du succès. Et cela pour une raison très simple. Entre amis, voisins ou encore en famille, vous vous motiverez dès que l’un d’entre vous se découragera.</pre>
+</div>
+<div created="20200206142250521" modified="20200206144345718" tags="fiche_lecture dev" title="encoding av1">
+<pre>* https://trac.ffmpeg.org/wiki/Encode/AV1
+
+
+! Constant Quality
+```
+.\ffmpeg.exe -i .\Steiner.mp4 -c:v libaom-av1 -crf 30 -b:v 0 -strict experimental av1Steiner.mkv
+```
+* [for] this mode, you must use a combination of -crf and -b:v 0. -b:v ''MUST ''be 0. 
+* The CRF value can be from 0–63. Lower values mean better quality and greater file size.
+
+! Constrained Quality
+
+```
+ffmpeg -i input.mp4 -c:v libaom-av1 -crf 30 -b:v 2000k -strict experimental output.mkv
+```
+*  The quality is determined by the -crf, and the bitrate limit by the -b:v where the bitrate MUST be non-zero. 
+*  You can also specify a minimum and maximum bitrate instead of a quality target: 
+
+```
+ffmpeg -i input.mp4 -c:v libaom-av1 -minrate 500k -b:v 2000k -maxrate 2500k -strict experimental output.mp4
+```
+</pre>
 </div>
 <div created="20200122122210343" modified="20200122122345257" tags="english" title="english tips">
 <pre>! yes
@@ -10879,6 +10922,12 @@ Maintenant, vous voulez en connaître plus sur votre passé.  Et quelque chose v
 encore grâce à &quot;fores.exe&quot;, dans le dossier Fallout 2 \ Resurrection. 
 </pre>
 </div>
+<div created="20200205101551096" modified="20200205101622758" tags="resources" title="ffmpeg">
+<pre>```
+.\ffmpeg.exe -i .\DBL5.mp4 .\DBL5.mp3
+```
+</pre>
+</div>
 <div created="20190119173755790" modified="20190123171606917" tags="" title="File Sorter">
 <pre>```
 video
@@ -10930,6 +10979,22 @@ Augustin Barruel - Mémoires pour servir à l'histoire du jacobinisme	https://fr
 * neutralisation
 * déviation</pre>
 </div>
+<div created="20200204100720701" modified="20200204100912106" tags="todo fiche_lecture" title="get rid of YOUTUBE addiction">
+<pre>! remove YT addiction	https://www.youtube.com/watch?v=cdyh9s0gUZo
+# have a greater demand for your time than supply
+# replace YT with something else
+# increase the friction it takes to go to YT : DF YouTube (Distraction Free)
+# recognize the opportunity cost of the time spent on YT
+
+! https://www.youtube.com/watch?v=q_xm5Weu3nE
+* replace YT-watch-time with smthn else
+* meditation on breath
+* create the emotion you need to get off your ass, do smthn notYT
+# think about DEATH
+# think about SHADOW-YOU , GHOST-YOU - who is getting ahead of you (~trackmania)
+* OR bypass the emotion completely
+# 5 seconds rule : countdown 5-4-3-2-1-go!</pre>
+</div>
 <div created="20190114084328196" modified="20190114095411736" tags="git todo" title="Github repo">
 <pre>https://github.com/lenopgm/
 
@@ -10940,13 +11005,17 @@ Augustin Barruel - Mémoires pour servir à l'histoire du jacobinisme	https://fr
 * photos ? (big)
 * useful code snippets</pre>
 </div>
-<div created="20190108105358377" modified="20200203151231561" tags="home current" title="Home">
+<div created="20190108105358377" modified="20200206145112485" tags="home current" title="Home">
 <pre>! Daily
 * https://www.epicgames.com/store/en-US/free-games epicgames.osef.osef@xoxy.net 7/19
 * https://mail.yahoo.com
+* https://webmail.ausy.fr
 * https://facebook.com/messages
 * https://www.youtube.com/feed/subscriptions
 * [[pw]]
+* [[dev responsable]]
+* ''&gt;&gt;&gt;'' [[job hunt]]
+* [[PluralSight]]
 
 ! Ressources
 * https://annuel.framapad.org/p/leno
@@ -10955,6 +11024,8 @@ Augustin Barruel - Mémoires pour servir à l'histoire du jacobinisme	https://fr
 * http://leno.1fr1.net/
 
 ! TODO
+* ''Cynthia Fleury''
+* Olivier Philippot / GreenIT / ''Green code lab'' https://www.linkedin.com/company/greenspector/ / https://www.linkedin.com/in/olivier-philippot-06a7907/
 * ''AUSY: ATTESTATION TITRE DE TRANSPORT''
 * ''extract leno.1fr1.net''
 * ''Talend | Norsys''
@@ -11439,6 +11510,12 @@ Pillars of Eternity
 
 ```
 </pre>
+</div>
+<div created="20200204155721673" modified="20200204160214961" tags="todo" title="job hunt">
+<pre>* Talend https://www.indeed.fr/cmp/Talend-Inc/jobs?jk=2a86a4e2fddfe932&amp;q=&amp;l=Nantes%20(44)
+* Green code lab https://www.greencodelab.org/
+* Greenspector https://www.linkedin.com/company/greenspector/ https://www.linkedin.com/in/olivier-philippot-06a7907/
+* Norsys</pre>
 </div>
 <div created="20190814104929247" modified="20190814110508622" tags="dev todo language" title="Kotlin">
 <pre>! Overview
@@ -12189,6 +12266,29 @@ Lucie Aubrac, Raymond Aubrac, Henri Bartoli, Daniel Cordier, Philippe Dechartre,
 * World's Greatest Magic 1-4
 * James Randi Secret of The Psychics</pre>
 </div>
+<div created="20200206145235827" modified="20200206150312606" tags="todo dev tmp" title="PluralSight">
+<pre>* https://www.pluralsight.com/product/downloads
+# http://windowsapp.pluralsight.com/Release/Releases/Setup.exe?utm_source=pluralsightappspage&amp;utm_medium=Windows%20App
+
+! Scala
+* Scala for Java Developers
+* Thinking Functionally in Scala
+* Scala Fundamentals
+
+! Python
+* Python Fundamentals
+
+! Kotlin
+* Kotlin Fundamentals
+* Getting Started with Kotlin
+* Kotlin: Using Coroutines
+
+! Design Patterns
+* Design Patterns in Java
+* Design Patterns with Python
+* Design Patterns Playbook: Structural Patterns
+</pre>
+</div>
 <div created="20200131132103939" modified="20200131132141970" tags="entropie conscience" title="pupilles / trous noirs">
 <pre>[Boris Laurent / Boris Crevin]
 [Les pupilles sont] Littéralement des trous noirs, comme ceux dans l'espace.
@@ -12198,7 +12298,7 @@ La question est : si à l'intérieur de nos yeux se trouve notre système nerveu
 Et si nos yeux servent à capter les particules de lumière, les photons, pour que notre cerveau puisse se fabriquer l'illusion du monde physique, à quoi sert la captation de la lumière par les trous noirs ?
 </pre>
 </div>
-<div created="20190130144059269" modified="20200113143029954" tags="pw" title="pw">
+<div created="20190130144059269" modified="20200206152333105" tags="pw" title="pw">
 <pre>```
 FREEBOX =&gt; 1/20
 youtube =&gt; osef@grr.la	5/19    cf https://www.guerrillamail.com/fr/inbox?mail_id=476361683
@@ -12212,7 +12312,7 @@ ebay =&gt; 3/18 ebay.s.lemoine@xoxy.net
 illicado =&gt; 1/18 illicado.s.lemoine@xoxy.net
 amazon =&gt; 1/14 amazon.s.lemoine@xoxy.net
 intra.ausy.fr =&gt; 11/17 || 1/20
-webmail.ausy.fr =&gt; 1/20
+webmail.ausy.fr =&gt; https, s.l@a.f 1/20
 coffreo.com =&gt; samuel.lemoine@yahoo.com 8/18 
 facebook.com =&gt; 7/17
 yahoo.com =&gt; 1/20
@@ -12255,6 +12355,8 @@ mondebio =&gt; mondebio.s.lemoine@xoxy.net 9/19
 cgb.fr =&gt; s.l@y.c 10/19
 riotgames.net =&gt; lenopgm / groudaf 12/19
 linkedin =&gt; 1/20
+pluralsight =&gt; s.l.y.c 1/20
+interepargne.natixis.fr =&gt; 14290097 [troll]00
 ```
 </pre>
 </div>
@@ -12276,8 +12378,7 @@ linkedin =&gt; 1/20
 * https://perso.limsi.fr/pointal/python:accueil</pre>
 </div>
 <div created="20190529145620246" modified="20200203104403534" tags="quotes" title="Quotes, citations">
-<pre>
-&lt;&lt;&lt;
+<pre>&lt;&lt;&lt;
 « Content de peu n’a rien à craindre » - Lao Tseu
 &lt;&lt;&lt;
 
