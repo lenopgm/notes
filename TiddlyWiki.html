@@ -143,7 +143,13 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions</li>
 
+<li>$:/config/Plugins/Disabled/$:/plugins/danielo515/2click2edit</li>
+
 <li>$:/config/RelinkOnRename</li>
+
+<li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit</li>
+
+<li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/fold</li>
 
 <li>$:/core</li>
 
@@ -155,13 +161,29 @@ Error message and password prompt
 
 <li>$:/palette</li>
 
+<li>$:/plugins/ajh/favorites</li>
+
+<li>$:/plugins/ajh/favorites/list</li>
+
+<li>$:/plugins/ajh/favorites/template</li>
+
+<li>$:/plugins/danielo515/2click2edit</li>
+
+<li>$:/plugins/danielo515/ContextPlugin</li>
+
 <li>$:/plugins/danielo515/encryptTiddler</li>
+
+<li>$:/plugins/snowgoon88/edit-comptext</li>
+
+<li>$:/plugins/sq/editor-autolist</li>
 
 <li>$:/SiteSubtitle</li>
 
 <li>$:/SiteTitle</li>
 
 <li>$:/state/encrypt</li>
+
+<li>$:/state/folded/Home</li>
 
 <li>$:/state/folded/leboncoin</li>
 
@@ -179,13 +201,19 @@ Error message and password prompt
 
 <li>$:/state/tab--2112689675</li>
 
+<li>$:/state/tab-1528275152</li>
+
 <li>$:/state/tab-1749438307</li>
 
 <li>$:/state/tab/moresidebar-1850697562</li>
 
 <li>$:/state/tab/sidebar--595412856</li>
 
+<li>$:/state/tabs/controlpanel/toolbars-1345989671</li>
+
 <li>$:/StoryList</li>
+
+<li>$:/tags/ViewToolbar</li>
 
 <li>$:/temp/advancedsearch</li>
 
@@ -443,6 +471,8 @@ Error message and password prompt
 
 <li>Movies</li>
 
+<li>Nànie</li>
+
 <li>Narrative Disembodied</li>
 
 <li>Nico Pène misc</li>
@@ -600,8 +630,17 @@ Now comes the &quot;hard&quot; part. Take the deck face up (slightly angled so t
 <div created="20190218082926488" modified="20190218082926488" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions">
 <pre>show</pre>
 </div>
+<div created="20220125155134107" modified="20220125155134107" title="$:/config/Plugins/Disabled/$:/plugins/danielo515/2click2edit">
+<pre>yes</pre>
+</div>
 <div created="20190514152312956" modified="20200917085342047" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
+</div>
+<div created="20220124175925076" modified="20220125155157531" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit">
+<pre>show</pre>
+</div>
+<div created="20220124175348771" modified="20220124175348771" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/fold">
+<pre>show</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.19">
 <pre>{
@@ -9483,14 +9522,184 @@ Now comes the &quot;hard&quot; part. Take the deck face up (slightly angled so t
 <div status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
 
-# [[Untitled]]
-# [[$:/plugins/danielo515/encryptTiddler]]</pre>
+# [[$:/plugins/danielo515/ContextPlugin]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
 <div created="20190108084925545" modified="20190108085034126" title="$:/palette">
 <pre>$:/palettes/Vanilla</pre>
+</div>
+<div core-version="&gt;=5.1.14" created="20150902052640307" creator="Andrew Harrison" dependents="$:/language/Buttons/Choose/Caption $:/language/Buttons/Choose/Hint $:/language/Buttons/Favorites/Caption $:/language/Buttons/Favorites/Hint $:/language/SideBar/Favorites/Caption $:/plugins/ajh/favorites/icon $:/plugins/ajh/favorites/readme $:/plugins/ajh/favorites/SideBar $:/plugins/ajh/favorites/image $:/plugins/ajh/favorites/stylesheet $:/plugins/ajh/favorites/template" description="Favorites" list="readme" modified="20170803012318453" modifier="Andrew Harrison" plugin-type="plugin" source="http://favorites.tiddlyspot.com" title="$:/plugins/ajh/favorites" type="application/json" version="3.0.5">
+<pre>{
+    &quot;tiddlers&quot;: {
+        &quot;$:/language/Buttons/Choose/Caption&quot;: {
+            &quot;text&quot;: &quot;choose&quot;,
+            &quot;title&quot;: &quot;$:/language/Buttons/Choose/Caption&quot;
+        },
+        &quot;$:/language/Buttons/Choose/Hint&quot;: {
+            &quot;text&quot;: &quot;Add to favorites list&quot;,
+            &quot;title&quot;: &quot;$:/language/Buttons/Choose/Hint&quot;
+        },
+        &quot;$:/language/Buttons/Favorites/Caption&quot;: {
+            &quot;text&quot;: &quot;favorite&quot;,
+            &quot;title&quot;: &quot;$:/language/Buttons/Favorites/Caption&quot;
+        },
+        &quot;$:/language/Buttons/Favorites/Hint&quot;: {
+            &quot;text&quot;: &quot;Remove from favorites list&quot;,
+            &quot;title&quot;: &quot;$:/language/Buttons/Favorites/Hint&quot;
+        },
+        &quot;$:/language/SideBar/Favorites/Caption&quot;: {
+            &quot;text&quot;: &quot;Favorites&quot;,
+            &quot;title&quot;: &quot;$:/language/SideBar/Favorites/Caption&quot;
+        },
+        &quot;$:/plugins/ajh/favorites/icon&quot;: {
+            &quot;text&quot;: &quot;\\define my-svg()\n&lt;svg class='tc-image-favorites tc-image-button' width='22pt' height='22pt' viewBox='0 0 192 192'&gt;&lt;path fill='#f08' stroke='#30f' stroke-width='7.5' d='m13.5,52.2l82.5,-48l82.5,48v87.3l-82.5,48l-82.5,-48v-87.3z'/&gt;&lt;path fill='#ff0' stroke='#f90' stroke-width='5' d='m$(m)$$(path)$'/&gt;&lt;/g&gt;&lt;/svg&gt;\n\\end\n\n&lt;$vars m='96,122' path={{$:/plugins/ajh/favorites/image!!path}}&gt;\n&lt;&lt;my-svg&gt;&gt;\n&lt;/$vars&gt;&quot;,
+            &quot;title&quot;: &quot;$:/plugins/ajh/favorites/icon&quot;,
+            &quot;tags&quot;: &quot;$:/tags/Image&quot;
+        },
+        &quot;$:/plugins/ajh/favorites/readme&quot;: {
+            &quot;text&quot;: &quot;This plugin adds the &lt;$list filter='[&lt;tv-config-toolbar-icons&gt;prefix[yes]]'&gt;&lt;span class='tc-btn-dropdown'&gt;{{$:/core/images/star-filled}}&lt;/span&gt;&lt;/$list&gt; &lt;$list filter='[&lt;tv-config-toolbar-text&gt;prefix[yes]]'&gt;{{$:/language/Buttons/Choose/Caption}}&lt;/$list&gt; button to the View Toolbar and also the &lt;span class='tc-favorites'&gt;{{$:/core/images/star-filled}}&lt;/span&gt; tab to the Sidebar. The button becomes &lt;$list filter='[&lt;tv-config-toolbar-icons&gt;prefix[yes]]'&gt;&lt;span class='tc-favorites'&gt;{{$:/core/images/star-filled}}&lt;/span&gt;&lt;/$list&gt; &lt;$list filter='[&lt;tv-config-toolbar-text&gt;prefix[yes]]'&gt;{{$:/language/Buttons/Favorites/Caption}}&lt;/$list&gt; when selected and then the tiddler appears in the list on the &lt;span class='tc-favorites'&gt;{{$:/core/images/star-filled}}&lt;/span&gt; tab.  The list can be sorted using drag and drop. To drag an item, select it, then hold down the mouse or track-pad button while you drag it to a new location in the list. Release the button to drop the item into place. Unneeded favorites can be removed from the list by using the &lt;$list filter='[&lt;tv-config-toolbar-icons&gt;prefix[yes]]'&gt;&lt;span class='tc-favorites'&gt;{{$:/core/images/star-filled}}&lt;/span&gt;&lt;/$list&gt; &lt;$list filter='[&lt;tv-config-toolbar-text&gt;prefix[yes]]'&gt;{{$:/language/Buttons/Favorites/Caption}}&lt;/$list&gt; button in the tiddler.\n\nSimply drag $:/plugins/ajh/favorites to the top of your tiddlywiki display, save and reload.\n\nThis plugin comprises:\n\n* Icon\n* Template\n* Stylesheet\n* Sidebar tab\n* Caption and hint&quot;,
+            &quot;title&quot;: &quot;$:/plugins/ajh/favorites/readme&quot;
+        },
+        &quot;$:/plugins/ajh/favorites/SideBar&quot;: {
+            &quot;text&quot;: &quot;\\define drop-actions()\n&lt;$action-listops $tiddler='$:/plugins/ajh/favorites/list' $subfilter='+[insertbefore:currentTiddler&lt;actionTiddler&gt;]'/&gt;\n\\end\n\n&lt;$list filter='[list[$:/plugins/ajh/favorites/list]]'&gt;\n&lt;div style='position: relative;'&gt;\n&lt;$droppable actions=&lt;&lt;drop-actions&gt;&gt;&gt;\n&lt;div class='tc-droppable-placeholder'&gt;\n&amp;nbsp;\n&lt;/div&gt;\n&lt;div&gt;\n &lt;$link to={{!!title}}&gt;\n&lt;$view field='caption'&gt;&lt;$view field='title'/&gt;&lt;/$view&gt;&lt;/$link&gt;\n&lt;/div&gt;\n&lt;/$droppable&gt;\n&lt;/div&gt;\n&lt;/$list&gt;\n&quot;,
+            &quot;title&quot;: &quot;$:/plugins/ajh/favorites/SideBar&quot;,
+            &quot;tags&quot;: &quot;$:/tags/SideBar&quot;,
+            &quot;list-before&quot;: &quot;&quot;,
+            &quot;caption&quot;: &quot;&lt;span class='tc-tab-buttons' title={{$:/language/SideBar/Favorites/Caption}}&gt;{{$:/plugins/ajh/favorites/image}}&lt;/span&gt;&lt;span class='tc-favorites-hidden'&gt;{{$:/language/SideBar/Favorites/Caption}}&lt;/span&gt;&quot;
+        },
+        &quot;$:/plugins/ajh/favorites/template&quot;: {
+            &quot;text&quot;: &quot;\\define add() [[$(currentTiddler)$]]\n\\define remove() -[[$(currentTiddler)$]]\n\\define my-svg()\n&lt;svg class='tc-image-favorites tc-image-button' width='22pt' height='22pt' viewBox='0 0 128 128'&gt;&lt;path fill='$(fill)$' stroke='$(stroke)$' stroke-width='5' d='m$(m)$$(path)$'/&gt;&lt;/g&gt;&lt;/svg&gt;\n\\end\n\n&lt;$list filter='[list[$:/plugins/ajh/favorites/list]is[current]]'&gt;&lt;$button tooltip={{$:/language/Buttons/Favorites/Hint}} aria-label={{$:/language/Buttons/Favorites/Caption}} class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;\n&lt;$action-listops $tiddler='$:/plugins/ajh/favorites/list' $field='list' $subfilter=&lt;&lt;remove&gt;&gt;/&gt;\n&lt;$list filter='[&lt;tv-config-toolbar-icons&gt;prefix[yes]]'&gt;\n&lt;$vars fill={{$:/plugins/ajh/favorites/stylesheet!!button-color}} stroke={{$:/plugins/ajh/favorites/stylesheet!!button-outline-color}} m='64,96.1' path={{$:/plugins/ajh/favorites/image!!path}}&gt;\n&lt;&lt;my-svg&gt;&gt;\n&lt;/$vars&gt;\n&lt;/$list&gt;\n&lt;$list filter='[&lt;tv-config-toolbar-text&gt;prefix[yes]]'&gt;\n&lt;span class='tc-btn-text'&gt;\n&lt;$text text={{$:/language/Buttons/Favorites/Caption}}/&gt;\n&lt;/span&gt;\n&lt;/$list&gt;\n&lt;/$button&gt;&lt;/$list&gt;&lt;$list filter='[all[current]!list[$:/plugins/ajh/favorites/list]]'&gt;&lt;$button tooltip={{$:/language/Buttons/Choose/Hint}} aria-label={{$:/language/Buttons/Choose/Caption}} class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;\n&lt;$action-listops $tiddler='$:/plugins/ajh/favorites/list' $field='list' $subfilter=&lt;&lt;add&gt;&gt;/&gt;\n&lt;$list filter='[&lt;tv-config-toolbar-icons&gt;prefix[yes]]'&gt;\n{{$:/core/images/star-filled}}\n&lt;/$list&gt;\n&lt;$list filter='[&lt;tv-config-toolbar-text&gt;prefix[yes]]'&gt;\n&lt;span class='tc-btn-text'&gt;\n&lt;$text text={{$:/language/Buttons/Choose/Caption}}/&gt;\n&lt;/span&gt;\n&lt;/$list&gt;\n&lt;/$button&gt;&lt;/$list&gt;&quot;,
+            &quot;title&quot;: &quot;$:/plugins/ajh/favorites/template&quot;,
+            &quot;tags&quot;: &quot;$:/tags/ViewToolbar&quot;,
+            &quot;list-after&quot;: &quot;$:/core/ui/Buttons/more-tiddler-actions&quot;,
+            &quot;description&quot;: &quot;{{$:/language/Buttons/Favorites/Hint}}&quot;,
+            &quot;caption&quot;: &quot;{{ $:/core/images/star-filled}} {{$:/language/Buttons/Favorites/Caption}}&quot;
+        },
+        &quot;$:/plugins/ajh/favorites/stylesheet&quot;: {
+            &quot;text&quot;: &quot;.tc-tab-buttons + .tc-favorites-hidden {\n    display: none;\n}\n.tc-tab-buttons button.tc-tab-selected {\n    fill: {{!!tab-icon-selected-color}};\n    stroke: {{!!tab-icon-outline-color}}; \n}\n.tc-tab-buttons button:not(.tc-tab-selected) {\n    fill: {{!!tab-icon-unselected-color}};\n}\n.tc-favorites {\n    stroke: {{!!button-outline-color}};\n    stroke-width:5;\n    fill: {{!!button-color}};\n}\n.tc-image-star-filled {\n    height:1em;\n    width:1em;\n}&quot;,
+            &quot;title&quot;: &quot;$:/plugins/ajh/favorites/stylesheet&quot;,
+            &quot;tags&quot;: &quot;$:/tags/Stylesheet&quot;,
+            &quot;tab-icon-unselected-color&quot;: &quot;#999&quot;,
+            &quot;tab-icon-selected-color&quot;: &quot;#ff0&quot;,
+            &quot;tab-icon-outline-color&quot;: &quot;#000&quot;,
+            &quot;caption&quot;: &quot;Favorites&quot;,
+            &quot;button-outline-color&quot;: &quot;#000&quot;,
+            &quot;button-color&quot;: &quot;#ff0&quot;
+        },
+        &quot;$:/plugins/ajh/favorites/image&quot;: {
+            &quot;text&quot;: &quot;\\define my-svg()\n&lt;svg class='tc-image-favorites tc-image-button' width='22pt' height='22pt' viewBox='0 0 128 128'&gt;&lt;path stroke-width='5' d='m$(m)$$(path)$'/&gt;&lt;/svg&gt;\n\\end\n\n&lt;$vars m='64,96.1' path={{!!path}}&gt;\n&lt;&lt;my-svg&gt;&gt;\n&lt;/$vars&gt;&quot;,
+            &quot;title&quot;: &quot;$:/plugins/ajh/favorites/image&quot;,
+            &quot;tags&quot;: &quot;$:/tags/Image&quot;,
+            &quot;path&quot;: &quot;l32.7,24.2c2.4,1.7 5.6,-0.6 4.6,-3.4l-12.4,-38.6l32.5,-23.8c2.4,-1.7 1.1,-5.5 -1.8,-5.5l-40.2,0l-12.5,-38.5c-0.9,-2.8 -4.8,-2.8 -5.8,0l-12.5,38.5l-40.2,0c-2.9,0 -4.2,3.8 -1.8,5.5l32.5,23.8l-12.4,38.6c-0.9,2.8 2.3,5.1 4.6,3.4l32.7,-24.2z&quot;
+        }
+    }
+}</pre>
+</div>
+<div created="20220124175913842" list="pw [[Perçou kid talk Perceval]]" modified="20220125155343558" title="$:/plugins/ajh/favorites/list">
+<pre></pre>
+</div>
+<div caption="{{ $:/core/images/star-filled}} {{$:/language/Buttons/Favorites/Caption}}" created="20220124175934967" description="{{$:/language/Buttons/Favorites/Hint}}" modified="20220124175934967" tags="$:/tags/ViewToolbar" title="$:/plugins/ajh/favorites/template">
+<pre>\define add() [[$(currentTiddler)$]]
+\define remove() -[[$(currentTiddler)$]]
+\define my-svg()
+&lt;svg class='tc-image-favorites tc-image-button' width='22pt' height='22pt' viewBox='0 0 128 128'&gt;&lt;path fill='$(fill)$' stroke='$(stroke)$' stroke-width='5' d='m$(m)$$(path)$'/&gt;&lt;/g&gt;&lt;/svg&gt;
+\end
+
+&lt;$list filter='[list[$:/plugins/ajh/favorites/list]is[current]]'&gt;&lt;$button tooltip={{$:/language/Buttons/Favorites/Hint}} aria-label={{$:/language/Buttons/Favorites/Caption}} class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;
+&lt;$action-listops $tiddler='$:/plugins/ajh/favorites/list' $field='list' $subfilter=&lt;&lt;remove&gt;&gt;/&gt;
+&lt;$list filter='[&lt;tv-config-toolbar-icons&gt;prefix[yes]]'&gt;
+&lt;$vars fill={{$:/plugins/ajh/favorites/stylesheet!!button-color}} stroke={{$:/plugins/ajh/favorites/stylesheet!!button-outline-color}} m='64,96.1' path={{$:/plugins/ajh/favorites/image!!path}}&gt;
+&lt;&lt;my-svg&gt;&gt;
+&lt;/$vars&gt;
+&lt;/$list&gt;
+&lt;$list filter='[&lt;tv-config-toolbar-text&gt;prefix[yes]]'&gt;
+&lt;span class='tc-btn-text'&gt;
+&lt;$text text={{$:/language/Buttons/Favorites/Caption}}/&gt;
+&lt;/span&gt;
+&lt;/$list&gt;
+&lt;/$button&gt;&lt;/$list&gt;&lt;$list filter='[all[current]!list[$:/plugins/ajh/favorites/list]]'&gt;&lt;$button tooltip={{$:/language/Buttons/Choose/Hint}} aria-label={{$:/language/Buttons/Choose/Caption}} class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;
+&lt;$action-listops $tiddler='$:/plugins/ajh/favorites/list' $field='list' $subfilter=&lt;&lt;add&gt;&gt;/&gt;
+&lt;$list filter='[&lt;tv-config-toolbar-icons&gt;prefix[yes]]'&gt;
+{{$:/core/images/star-filled}}
+&lt;/$list&gt;
+&lt;$list filter='[&lt;tv-config-toolbar-text&gt;prefix[yes]]'&gt;
+&lt;span class='tc-btn-text'&gt;
+&lt;$text text={{$:/language/Buttons/Choose/Caption}}/&gt;
+&lt;/span&gt;
+&lt;/$list&gt;
+&lt;/$button&gt;&lt;/$list&gt;</pre>
+</div>
+<div author="Danielo Rodriguez" bag="default" core-version="&gt;=5.1.0" dependents="" description="double click to edit tiddlers" list="readme" plugin-type="plugin" revision="0" source="https://github.com/danielo515/TW5-2click2edit" title="$:/plugins/danielo515/2click2edit" type="application/json" version="0.1">
+<pre>{
+    &quot;tiddlers&quot;: {
+        &quot;$:/plugins/danielo515/2click2edit/ClickListener.js&quot;: {
+            &quot;text&quot;: &quot;/*\\\ntitle: $:/plugins/danielo515/2click2edit/ClickListener.js\ntype: application/javascript\nmodule-type: widget\n\nThis widgets adds an double click event listener to its parent\n\n\\*/\n\n(function(){\n\n/*jslint node: true, browser: true */\n/*global $tw: false */\n\&quot;use strict\&quot;;\n\nvar Widget = require(\&quot;$:/core/modules/widgets/widget.js\&quot;).widget;\n\nvar ClickListener = function(parseTreeNode,options) {\n\tthis.initialise(parseTreeNode,options);\n};\n\n/*\nInherit from the base widget class\n*/\nClickListener.prototype = new Widget();\n\n/*\nRender this widget into the DOM\n*/\nClickListener.prototype.render = function(parent,nextSibling) {\n\tthis.parentDomNode = parent;\n\tthis.execute();\n\tvar self = this;\n    /*Since the event listener have been added to the parent, the \&quot;this\&quot; property is pointing to the\n    wrong object, we should call our edit function with our widget object set as the this property.*/\n    parent.addEventListener(\&quot;dblclick\&quot;,function(event){self.editTiddler.call(self,event)});\n};\n\nClickListener.prototype.editTiddler = function(event) {\n    this.dispatchEvent({type: \&quot;tm-edit-tiddler\&quot;, param: this.getVariable(\&quot;currentTiddler\&quot;)});    \n};\n\n/*\nCompute the internal state of the widget\n*/\nClickListener.prototype.execute = function() {\n};\n\n/*\nSelectively refreshes the widget if needed. Returns true if the widget or any of its children needed re-rendering\n*/\nClickListener.prototype.refresh = function(changedTiddlers) {\n\treturn false;\n};\n\nexports.click = ClickListener;\n\n})();&quot;,
+            &quot;title&quot;: &quot;$:/plugins/danielo515/2click2edit/ClickListener.js&quot;,
+            &quot;type&quot;: &quot;application/javascript&quot;,
+            &quot;module-type&quot;: &quot;widget&quot;
+        },
+        &quot;$:/plugins/danielo515/2click2edit/readme&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/danielo515/2click2edit/readme&quot;,
+            &quot;text&quot;: &quot;This plugin adds the ability to edit tiddlers by double clicking on its body.\nJust try to edit any tiddler shown here by double clicking on it.\n\nThis can be considered a fast solution. It is only to fill the gap until TiddlyWiki adds support \nfor it officially.\n&quot;
+        },
+        &quot;$:/plugins/danielo515/2click2edit/ui/ViewTemplate&quot;: {
+            &quot;tags&quot;: &quot;$:/tags/ViewTemplate&quot;,
+            &quot;title&quot;: &quot;$:/plugins/danielo515/2click2edit/ui/ViewTemplate&quot;,
+            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
+            &quot;text&quot;: &quot;&lt;$click&gt;&quot;
+        }
+    }
+}</pre>
+</div>
+<div author="Danielo Rodrigez" bag="default" core-version="&gt;=5.1.0" dependents="" description="Context search - provides visual highlight of search results" list="readme" plugin-type="plugin" revision="0" source="https://github.com/danielo515/TW5-contextPlugin" title="$:/plugins/danielo515/ContextPlugin" type="application/json" version="2.1.0">
+<pre>{
+    &quot;tiddlers&quot;: {
+        &quot;$:/plugins/danielo515/ContextPlugin/widgets/context.js&quot;: {
+            &quot;created&quot;: &quot;20140418153435777&quot;,
+            &quot;creator&quot;: &quot;danielo&quot;,
+            &quot;modified&quot;: &quot;20140530231943517&quot;,
+            &quot;modifier&quot;: &quot;danielo&quot;,
+            &quot;module-type&quot;: &quot;widget&quot;,
+            &quot;title&quot;: &quot;$:/plugins/danielo515/ContextPlugin/widgets/context.js&quot;,
+            &quot;type&quot;: &quot;application/javascript&quot;,
+            &quot;text&quot;: &quot;/*\\\\\ntitle: $:/core/modules/widgets/danielo/context-widget.js\ntype: application/javascript\nmodule-type: widget\n\nEdit-text widget\n\n\\*/\n(function(){\n\n/*jslint node: true, browser: true */\n/*global $tw: false */\n\&quot;use strict\&quot;;\n\nvar Widget = require(\&quot;$:/core/modules/widgets/widget.js\&quot;).widget;\nvar contextWidget = function(parseTreeNode,options) {\n\tthis.initialise(parseTreeNode,options);\n};\n\n/*\nInherit from the base widget class\n*/\ncontextWidget.prototype = new Widget();\n\n/*\nRender this widget into the DOM\n*/\ncontextWidget.prototype.render = function(parent,nextSibling) {\n   // Save the parent dom node\n\tthis.parentDomNode = parent;\n\t// Compute our attributes\n\tthis.computeAttributes();\n\t// Execute our logic\n\tthis.execute();\n    \n  if(this.term &amp;&amp; this.term.length&gt;3){\n     \n      this.createRegexp();\n      var matches = this.executeRegexp();\n\t  if(matches.length &gt; 0){ \n        this.domNode = this.document.createElement(this.element);\n        this.domNode.className=\&quot;tw-context\&quot;;\n        this.composeResults( matches ); //this appends to domNode        \n      \t// Insert element\n      \tparent.insertBefore(this.domNode,nextSibling);\n      \tthis.renderChildren(this.domNode,null);\n\t  \tthis.domNodes.push(this.domNode);\n      }\n  }\n\t\n};\n\n/*\nCompute the internal state of the widget\n*/\ncontextWidget.prototype.execute = function() {\n\t// Get the parameters from the attributes\n    this.matchedClass = this.getAttribute(\&quot;matchClass\&quot;,\&quot;matched\&quot;);\n\tthis.tiddler = this.getAttribute( \&quot;tiddler\&quot;,this.getVariable(\&quot;currentTiddler\&quot;) );\n    this.term =  this.getAttribute(\&quot;term\&quot;,this.getAttribute(\&quot;searchTerm\&quot;));\n\tthis.contextLength = this.getAttribute(\&quot;length\&quot;,50);\n    this.before = this.getAttribute(\&quot;before\&quot;,this.contextLength);\n    this.after = this.getAttribute(\&quot;after\&quot;,this.contextLength);\n    this.maxMatches = this.getAttribute(\&quot;maxMatches\&quot;,10);\n    this.element = this.getAttribute(\&quot;element\&quot;,\&quot;pre\&quot;);\n\tthis.makeChildWidgets();\n};\n\n  /*Create the regular expression*/\ncontextWidget.prototype.createRegexp = function()\n{\n  var regString = \&quot;(\\\\w+[\\\\s\\\\S]{0,#before#})?(#term#)([\\\\s\\\\S]{0,#after#}\\\\w+)?\&quot;;\n\n  var regString = regString.replace(\&quot;#before#\&quot;,this.before).replace(\&quot;#term#\&quot;, $tw.utils.escapeRegExp(this.term) ) .replace(\&quot;#after#\&quot;,this.after);\n  this.regexp = new RegExp(regString,\&quot;ig\&quot;);\n  //console.log(regString);\n};\n/*\nexecute the regular expresion\n*/\ncontextWidget.prototype.executeRegexp = function()\n{\n  var text = this.wiki.getTiddlerText(this.tiddler), match,results = new Array();\n  while( (match = this.regexp.exec( text ) ) &amp;&amp; (results.length &lt; this.maxMatches) )\n      { results.push(match) }\n  //console.log(\&quot;matches\&quot;,results);\n  return results;\n};\n\n/*\ncompose the results\nmatches : array of match objects from regular expression execute\n*/\ncontextWidget.prototype.composeResults = function(matches){\n var result=[], self=this, node = this.domNode,\n dots = textNode(\&quot;...\\n\&quot;),\n span = matchedNode( this.term );\n\n  for(var i=0; i &lt; matches.length; i++){\n   processMatch( matches[i] );\n }\n  \n  function processMatch(match){\n    if( match.index !== 0) node.appendChild( dots.cloneNode(true) );\n    for( var i=1;i&lt;match.length;i++ ) {//match[0] full matched text (all groups together)\n      if( match[i] ) {\n        if ( match[i].toLowerCase() == self.term.toLowerCase() ) \n          node.appendChild( match[i] == self.term ? span.cloneNode(true) : matchedNode( match[i] ) )\n          else\n            node.appendChild( textNode( match[i]) )\n      }\n    }\n    if( match.index + match[0].length &lt; match.input.length) node.appendChild( dots.cloneNode(true) );\n  }\n  \n  function textNode(text){ return self.document.createTextNode(text) }\n  function matchedNode(text) { \n    var node = self.document.createElement(\&quot;span\&quot;); node.appendChild( textNode(text) );  node.className = self.matchedClass;\n    return node }\n  \n};\n/*\nSelectively refreshes the widget if needed. Returns true if the widget or any of its children needed re-rendering\n*/\ncontextWidget.prototype.refresh = function(changedTiddlers) {\n\tvar changedAttributes = this.computeAttributes();\n\tif(changedAttributes.tiddler || changedAttributes.term || changedAttributes.length || changedAttributes.matchedClass) {\n\t\tthis.refreshSelf();\n\t\treturn true;\n\t}\n    return this.refreshChildren(changedTiddlers);\n};\n\nexports.context = contextWidget;\n\n})();&quot;
+        },
+        &quot;$:/plugins/danielo515/ContextPlugin/visualizer&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/danielo515/ContextPlugin/visualizer&quot;,
+            &quot;tags&quot;: &quot;$:/tags/SearchResults&quot;,
+            &quot;caption&quot;: &quot;Context&quot;,
+            &quot;text&quot;: &quot;&lt;$list filter=\&quot;[!is[system]search{$:/temp/search}sort[title]limit[250]]\&quot;&gt;\r\n  {{!!title||$:/core/ui/ListItemTemplate}}\r\n  &lt;$context term={{$:/temp/search}} /&gt;\r\n&lt;/$list&gt;\r\n&quot;
+        },
+        &quot;$:/plugins/danielo515/ContextPlugin/Stylesheet/results&quot;: {
+            &quot;created&quot;: &quot;20140529162823729&quot;,
+            &quot;tags&quot;: &quot;$:/tags/Stylesheet contextPlugin&quot;,
+            &quot;title&quot;: &quot;$:/plugins/danielo515/ContextPlugin/Stylesheet/results&quot;,
+            &quot;type&quot;: &quot;text/css&quot;,
+            &quot;text&quot;: &quot;.matched{background-color:yellow}\n.tw-context {/*border:1px solid;\n  /*word-break: break-all; word-wrap: break-word*/}&quot;
+        },
+        &quot;$:/plugins/danielo515/ContextPlugin/Caption&quot;: {
+            &quot;created&quot;: &quot;20140530174219263&quot;,
+            &quot;tags&quot;: &quot;contextPlugin&quot;,
+            &quot;title&quot;: &quot;$:/plugins/danielo515/ContextPlugin/Caption&quot;,
+            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
+            &quot;text&quot;: &quot;Context search&quot;
+        },
+        &quot;Context Search&quot;: {
+            &quot;caption&quot;: &quot;{{$:/plugins/danielo515/ContextPlugin/Caption}}&quot;,
+            &quot;created&quot;: &quot;20140530173407542&quot;,
+            &quot;tags&quot;: &quot;$:/tags/AdvancedSearch&quot;,
+            &quot;title&quot;: &quot;Context Search&quot;,
+            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
+            &quot;text&quot;: &quot;\\define lingo-base() $:/language/Search/\n&lt;$linkcatcher to=\&quot;$:/temp/advancedsearch\&quot;&gt;\n\n&lt;&lt;lingo Standard/Hint&gt;&gt;\n\n&lt;div class=\&quot;tw-search\&quot;&gt;&lt;$edit-text tiddler=\&quot;$:/temp/advancedsearch\&quot; type=\&quot;search\&quot; tag=\&quot;input\&quot;/&gt;&lt;$reveal state=\&quot;$:/temp/advancedsearch\&quot; type=\&quot;nomatch\&quot; text=\&quot;\&quot;&gt; &lt;$link to=\&quot;\&quot; class=\&quot;btn-invisible\&quot;&gt;{{$:/core/images/close-button}}&lt;/$link&gt;&lt;/$reveal&gt;&lt;/div&gt;\n\n&lt;/$linkcatcher&gt;\n\n&lt;$reveal state=\&quot;$:/temp/advancedsearch\&quot; type=\&quot;nomatch\&quot; text=\&quot;\&quot;&gt;\n&lt;div class=\&quot;tw-search-results\&quot;&gt;\n\n&lt;&lt;lingo Standard/Matches&gt;&gt;\n\n&lt;$list filter=\&quot;[!is[system]search{$:/temp/advancedsearch}sort[title]limit[250]]\&quot;&gt;\n{{!!title||$:/core/ui/ListItemTemplate}}\n&lt;$context term={{$:/temp/advancedsearch}}/&gt;\n&lt;/$list&gt;\n\n&lt;/div&gt;\n\n&lt;/$reveal&gt;\n\n&lt;$reveal state=\&quot;$:/temp/advancedsearch\&quot; type=\&quot;match\&quot; text=\&quot;\&quot;&gt;\n\n&lt;/$reveal&gt;\n&quot;
+        },
+        &quot;$:/plugins/danielo515/ContextPlugin/readme&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/danielo515/ContextPlugin/readme&quot;,
+            &quot;text&quot;: &quot;!Usage\n\nAfter installing the plugin you will have a new tab in [[$:/AdvancedSearch]] called [[Context Search]]. If you want this functionality in other places you will have to edit the desired tiddler yourself adding the ''context widget''. For more details about using the widget see the section below.\n\n!!Using the widget\n\nThe very basic usage of the widget is the following:\n\n```\r\n&lt;$context term=\&quot;lorem\&quot;/&gt;\r\n```\r\nWhich will render as:\r\n&lt;$context term=\&quot;lorem\&quot;/&gt;\n\nThe widgets will search inside the current tiddler by default. Because that you see the same content twice here. This example is not very useful. Other more meaningful would be:\n\n```\r\n&lt;$list filter=\&quot;[search{$:/temp/advancedsearch}sort[title]limit[250]]\&quot;&gt;\r\n{{!!title||$:/core/ui/ListItemTemplate}}\r\n&lt;$context term={{$:/temp/advancedsearch}}/&gt;\r\n&lt;/$list&gt;\r\n```\n\nThat will search for tiddlers containing the text specified in [[$:/temp/advancedsearch]] and will display a link to the matching tiddlers plus a preview of the matching content. Something very similar is used in [[Context Search]]. Below you can find a complete list of parameters and their default values.\n\n|! parameter |! description | !default |\r\n| term | The term you want to search ||\r\n| searchTerm | An alias for the previous one ||\r\n| tiddler | The tiddler's name to look into | current tiddler |\r\n| length | Number of context characters to show | 50 |\r\n| before | Number of characters before the matched term to show | the value of the length parameter |\r\n| after | Number of characters after the matched term to show | the value of the length parameter |\r\n| maxMatches | maximun number of matched elements to show. Incrementing this can cause several performance issues | 10 |\r\n| element | Node element to create. This element will contain the results of the search. If you want to style it its class is `tw-context` | `&lt;pre&gt;` |\r\n| matchClass | The css class to assign to the matched terms in the results. This is used to highlight the results | matched |\n\n!Customizing the output\r\nThere are not many ways to customize the output of this widget. You can specify ''what type of node you want to create'' to wrap the results (div,span...). The default is `&lt;pre&gt;`. This container is created with the class `tw-context` so you can easily apply styles to it. Something similar happens to the ''highlighted'' words. You can specify the name of the class to assign to it and also you can apply styles to that class.\n\nA very basic example of customization could be:\n\n# Create a tiddler, for example [[$/plugins/danielo515/context/css]]\r\n# Paste the following text or any css rule you want: \&quot;\&quot;\&quot;\n\n&lt;pre&gt;\r\n.matched{background-color:yellow}\r\n.tw-context {\r\n  border:1px solid blue;\r\n  word-break: break-all; word-wrap: break-word;}\r\n&lt;/pre&gt;\r\n\&quot;\&quot;\&quot;\r\n# Tag it with `$:/tags/stylesheet`\r\n# Save the tiddler&quot;
+        }
+    }
+}</pre>
 </div>
 <div author="DanieloRodrigez" bag="default" core-version="&gt;=5.1.1" dependents="" description="adds the ability to encrypt single tiddlers" list="Encrypt-Tiddler Changelog" plugin-type="plugin" released="2021-02-22T06:48:17.409Z" revision="0" source="https://github.com/danielo515/TIddlywiki5-EncryptTiddlerPlugin" title="$:/plugins/danielo515/encryptTiddler" type="application/json" version="2.4">
 <pre>{
@@ -9595,6 +9804,165 @@ Now comes the &quot;hard&quot; part. Take the deck face up (slightly angled so t
     }
 }</pre>
 </div>
+<div author="AlainD" core-version="&gt;=5.1.13" dependents="" description="Editor with some on-line completion capabilities" list="readme usage examples" plugin-type="plugin" source="https://github.com/snowgoon88/TW5-extendedit" title="$:/plugins/snowgoon88/edit-comptext" type="application/json" version="0.9.3">
+<pre>{
+    &quot;tiddlers&quot;: {
+        &quot;$:/plugins/snowgoon88/edit-comptext/config&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/snowgoon88/edit-comptext/config&quot;,
+            &quot;type&quot;: &quot;application/json&quot;,
+            &quot;text&quot;: &quot;{\n  \&quot;configuration\&quot;: {\n      \&quot;caseSensitive\&quot; : false,\n      \&quot;maxMatch\&quot; : 8,\n      \&quot;minPatLength\&quot; : 2,\n      \&quot;triggerKeyCombination\&quot; : \&quot;^ \&quot;\n  },\n  \&quot;template\&quot;: [{\n      \&quot;pattern\&quot;: \&quot;[[\&quot;,\n      \&quot;filter\&quot;: \&quot;[all[tiddlers]!is[system]]\&quot;,\n      \&quot;start\&quot;: \&quot;[[\&quot;,\n      \&quot;end\&quot;: \&quot;]]\&quot;\n      },\n      {\n      \&quot;pattern\&quot;: \&quot;||\&quot;,\n      \&quot;filter\&quot;: \&quot;[all[tiddlers]!is[system]]\&quot;,\n      \&quot;start\&quot;: \&quot;[[|\&quot;,\n      \&quot;end\&quot;: \&quot;]]\&quot;,\n      \&quot;startOffset\&quot; : 2\n      }\n  ]\n}\n&quot;
+        },
+        &quot;$:/plugins/snowgoon88/edit-comptext/edit-comptext.js&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/snowgoon88/edit-comptext/edit-comptext.js&quot;,
+            &quot;text&quot;: &quot;/*\\\ntitle: $:/plugins/snowgoon88/edit-comptext/edit-comptext.js\ntype: application/javascript\nmodule-type: widget\n\nTaken from original Edit-text widget\nVersion 5.1.13 of TW5\nAdd link-to-tiddler completion in framed.js and simple.js\n\nTODO : CHECK usefull, and particularly save_changes after every input ??\nTODO : where should popupNode be created in the DOM ?\nTODO : check that options are valid (numeric ?)\nvar isNumeric = function(n) {\n  return !isNaN(parseFloat(n)) &amp;&amp; isFinite(n);\n};\n\n\\*/\n(function(){\n\n/*jslint node: true, browser: true */\n/*global $tw: false */\n\&quot;use strict\&quot;;\n\nvar editTextWidgetFactory = require(\&quot;$:/core/modules/editor/factory.js\&quot;).editTextWidgetFactory,\n\tFramedCompEngine = require(\&quot;$:/plugins/snowgoon88/edit-comptext/framed.js\&quot;).FramedCompEngine,\n\tSimpleCompEngine = require(\&quot;$:/plugins/snowgoon88/edit-comptext/simple.js\&quot;).SimpleCompEngine;\n\nexports[\&quot;edit-comptext\&quot;] = editTextWidgetFactory(FramedCompEngine,SimpleCompEngine);\n\n})();\n&quot;,
+            &quot;type&quot;: &quot;application/javascript&quot;,
+            &quot;module-type&quot;: &quot;widget&quot;
+        },
+        &quot;$:/plugins/snowgoon88/edit-comptext/examples&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/snowgoon88/edit-comptext/examples&quot;,
+            &quot;text&quot;: &quot;The configuration file [[$:/plugins/snowgoon88/edit-comptext/config]] allow you to use the completion plugin for various usages. Here are some examples...\n\n!! Link Completion\nThe basic and default usage. Completion is triggered by `[[`, the search is among all non-system tiddlers. When selected, the `title` of the tiddler is inserted in the text, surrounded by `[[` and `]]`. This gives the following Completion Template.\n\n\n```\n{\n      \&quot;pattern\&quot;: \&quot;[[\&quot;,\n      \&quot;title\&quot;: \&quot;[all[tiddlers]!is[system]]\&quot;,\n      \&quot;start\&quot;: \&quot;[[\&quot;,\n      \&quot;end\&quot;: \&quot;]]\&quot;\n}\t     \n```\n\n!! Link Completion and reposition to add Alias\nAnother basic usage. Completion is triggered by `||`, the search is among all non-system tiddlers. When selected, the `title` of the tiddler is inserted in the text, surrounded by `[[|` and `]]`. The cursor is positionned just before the `|`, ready for typing an Alias.\n\n```\n{\n      \&quot;pattern\&quot;: \&quot;||\&quot;,\n      \&quot;filter\&quot;: \&quot;[all[tiddlers]!is[system]]\&quot;,\n      \&quot;start\&quot;: \&quot;[[|\&quot;,\n      \&quot;end\&quot;: \&quot;]]\&quot;,\n      \&quot;startOffset\&quot; : 2\n      }\n\n```\n\n!! Special macro completion\nI have a 'pnjin' macro that is invoked by `&lt;&lt;pnjin \&quot;TiddlerPNJName\&quot;&gt;&gt;` where 'TiddlerPNJName is a tiddler that hold data about a PNJ. I use tiddlywiki to organise my Role Playing Games campaigns. So, I want `&lt;p` to trigger the completion. The search is among all non-system tiddlers tagged `PNJ` and, once selected, the title of the tiddler must be inserted surrouned by `&lt;&lt;pnjin \\\&quot;` and `\\\&quot;&gt;&gt;`. So...\n\n```\n{\n\t\&quot;pattern\&quot;: \&quot;&lt;p\&quot;,\n      \t\&quot;title\&quot;: \&quot;[tag[PNJ]!is[system]]\&quot;,\n      \t\&quot;start\&quot;: \&quot;&lt;&lt;pnjin  \\\&quot;\&quot;,\n      \t\&quot;end\&quot;: \&quot;\\\&quot;&gt;&gt;\&quot;\n}\n```\n\n!! Insert some templates or stamp or snippets into text.\nI frequently use some text pattern and I want to insert them easily. So, I could create several tiddlers, tagged '$:stamp' and in their body are the piece of texte I want to insert. The titles of these tiddlers always start with `$:/config/stamp/` (i.e. $:/config/stamp/macro, $:/config/stamp/list1, $:/config/stamp/list2). I want to trigger the completion by using `&lt;&lt;`, then I only want to chose among the last part of the titles of tiddlers tagged `$:stamp` so I use a mask (`$:/config/stamp/`) to only display the last part of the tiddlers title. When selectected, the `body` of the tiddler is inserted, with no surrounding strings. As a results, the Completion Template is (notice the `body` field):\n\n```\n{\n      \&quot;pattern\&quot;: \&quot;&lt;&lt;\&quot;,\n      \&quot;body\&quot;: \&quot;[tag[$:stamp]]\&quot;,\n      \&quot;mask\&quot; : \&quot;$:/config/stamp/\&quot;,\n      \&quot;start\&quot;: \&quot;\&quot;,\n      \&quot;end\&quot;: \&quot;\&quot;\n}\n```\n\n!! And you ?\nIf you have funny usages of completion, let me know. If you'd like to do something that is not yet possible, let me know...\n\nmail : snowgoon88(AT)gmail(DOT)com&quot;
+        },
+        &quot;$:/plugins/snowgoon88/edit-comptext/framed.js&quot;: {
+            &quot;text&quot;: &quot;/*\\\ntitle: $:/plugins/snowgoon88/edit-comptext/framed.js\ntype: application/javascript\nmodule-type: library\n\nTaken from $:/core/modules/editor/engines/framed.js\nText editor engine based on a simple input or textarea within an iframe. This is done so that the selection is preserved even when clicking away from the textarea\n\n\\*/\n(function(){\n\n/*jslint node: true,browser: true */\n/*global $tw: false */\n\&quot;use strict\&quot;;\n\nvar HEIGHT_VALUE_TITLE = \&quot;$:/config/TextEditor/EditorHeight/Height\&quot;;\n\n// Configuration tiddler\nvar COMPLETION_OPTIONS = \&quot;$:/plugins/snowgoon88/edit-comptext/config\&quot;;\nvar Completion = require(\&quot;$:/plugins/snowgoon88/edit-comptext/completion.js\&quot;).Completion;\nvar FramedEngine = require(\&quot;$:/core/modules/editor/engines/framed.js\&quot;).FramedEngine;\n\t\nfunction FramedCompEngine(options) {\n\tFramedEngine.call(this,options);\n\tthis._configOptions = $tw.wiki.getTiddlerData( COMPLETION_OPTIONS, {} );\n\tthis._completion = new Completion( this.widget, this.domNode, this._configOptions, this.dummyTextArea, this.iframeNode.offsetTop, this.iframeNode.offsetLeft );\n};\n\nFramedCompEngine.prototype = Object.create(FramedEngine.prototype);\n\nFramedCompEngine.prototype.constructor = FramedCompEngine;\n\nexports.FramedCompEngine = FramedCompEngine;\n$tw.modules.types.library[\&quot;$:/core/modules/editor/engines/framed.js\&quot;].exports.FramedEngine = FramedCompEngine;\n})();\n&quot;,
+            &quot;type&quot;: &quot;application/javascript&quot;,
+            &quot;title&quot;: &quot;$:/plugins/snowgoon88/edit-comptext/framed.js&quot;,
+            &quot;module-type&quot;: &quot;startup&quot;
+        },
+        &quot;$:/plugins/snowgoon88/edit-comptext/simple.js&quot;: {
+            &quot;text&quot;: &quot;/*\\\ntitle: $:/plugins/snowgoon88/edit-comptext/simple.js\ntype: application/javascript\nmodule-type: library\n\nTaken from $:/core/modules/editor/engines/simple.js\nText editor engine based on a simple input or textarea tag\n\n\\*/\n(function(){\n\n/*jslint node: true, browser: true */\n/*global $tw: false */\n\&quot;use strict\&quot;;\n\nvar HEIGHT_VALUE_TITLE = \&quot;$:/config/TextEditor/EditorHeight/Height\&quot;;\n\n// Configuration tiddler\nvar COMPLETION_OPTIONS = \&quot;$:/plugins/snowgoon88/edit-comptext/config\&quot;;\nvar Completion = require(\&quot;$:/plugins/snowgoon88/edit-comptext/completion.js\&quot;).Completion;\nvar SimpleEngine = require(\&quot;$:/core/modules/editor/engines/simple.js\&quot;).SimpleEngine;\n\t\nfunction SimpleCompEngine(options) {\n\tSimpleEngine.call(this,options);\n\tthis._configOptions = $tw.wiki.getTiddlerData( COMPLETION_OPTIONS, {} );\n\tthis._completion = new Completion( this.widget, this.domNode, this._configOptions );\n};\n\nSimpleCompEngine.prototype = Object.create(SimpleEngine.prototype);\n\nSimpleCompEngine.prototype.constructor = SimpleCompEngine;\n\n\nexports.SimpleCompEngine = SimpleCompEngine;\n$tw.modules.types.library[\&quot;$:/core/modules/editor/engines/simple.js\&quot;].exports.SimpleEngine = SimpleCompEngine;\n})();\n&quot;,
+            &quot;type&quot;: &quot;application/javascript&quot;,
+            &quot;title&quot;: &quot;$:/plugins/snowgoon88/edit-comptext/simple.js&quot;,
+            &quot;module-type&quot;: &quot;startup&quot;
+        },
+        &quot;$:/plugins/snowgoon88/edit-comptext/cursor-position.js&quot;: {
+            &quot;text&quot;: &quot;/*\\\nModule that compute the pixel position of the cursor of a text\nements.\n\nTaken from https://github.com/component/textarea-caret-position\n\n(as https://github.com/kir/js_cursor_position is not updated any more)\n\\*/\n// Fonction anonyme executée immediatement\n( function(){\n \n// The properties that we copy into a mirrored div.\n// Note that some browsers, such as Firefox,\n// do not concatenate properties, i.e. padding-top, bottom etc. -&gt; padding,\n// so we have to do every single property specifically.\nvar properties = [\n  'direction',  // RTL support\n  'boxSizing',\n  'width',  // on Chrome and IE, exclude the scrollbar, so the mirror div wraps exactly as the textarea does\n  'height',\n  'overflowX',\n  'overflowY',  // copy the scrollbar for IE\n\n  'borderTopWidth',\n  'borderRightWidth',\n  'borderBottomWidth',\n  'borderLeftWidth',\n  'borderStyle',\n\n  'paddingTop',\n  'paddingRight',\n  'paddingBottom',\n  'paddingLeft',\n\n  // https://developer.mozilla.org/en-US/docs/Web/CSS/font\n  'fontStyle',\n  'fontVariant',\n  'fontWeight',\n  'fontStretch',\n  'fontSize',\n  'fontSizeAdjust',\n  'lineHeight',\n  'fontFamily',\n\n  'textAlign',\n  'textTransform',\n  'textIndent',\n  'textDecoration',  // might not make a difference, but better be safe\n\n  'letterSpacing',\n  'wordSpacing',\n\n  'tabSize',\n  'MozTabSize'\n\n];\nvar isFirefox = false;\nif($tw.browser) {\n    isFirefox = window.mozInnerScreenX != null;\n}\n\nfunction getCaretCoordinates(element, position, options) {\n\n  var debug = options &amp;&amp; options.debug || false;\n  if (debug) {\n    var el = document.querySelector('#input-textarea-caret-position-mirror-div');\n    if ( el ) { el.parentNode.removeChild(el); }\n  }\n\n  // mirrored div\n  var div = document.createElement('div');\n  div.id = 'input-textarea-caret-position-mirror-div';\n  document.body.appendChild(div);\n\n  var style = div.style;\n  var computed;\n  if($tw.browser) {\n      computed = window.getComputedStyle? getComputedStyle(element) : element.currentStyle;  // currentStyle for IE &lt; 9\n  } \n  else {\n      computed = element.currentStyle;\n  }\n    \n\n  // default textarea styles\n  style.whiteSpace = 'pre-wrap';\n  if (element.nodeName !== 'INPUT')\n    style.wordWrap = 'break-word';  // only for textarea-s\n\n  // position off-screen\n  style.position = 'absolute';  // required to return coordinates properly\n  if (!debug)\n    style.visibility = 'hidden';  // not 'display: none' because we want rendering\n\n  // transfer the element's properties to the div\n  properties.forEach(function (prop) {\n    style[prop] = computed[prop];\n  });\n\n  if (isFirefox) {\n    // Firefox lies about the overflow property for textareas: https://bugzilla.mozilla.org/show_bug.cgi?id=984275\n    if (element.scrollHeight &gt; parseInt(computed.height))\n      style.overflowY = 'scroll';\n  } else {\n    style.overflow = 'hidden';  // for Chrome to not render a scrollbar; IE keeps overflowY = 'scroll'\n  }\n\n  div.textContent = element.value.substring(0, position);\n  // the second special handling for input type=\&quot;text\&quot; vs textarea: spaces need to be replaced with non-breaking spaces - http://stackoverflow.com/a/13402035/1269037\n  if (element.nodeName === 'INPUT')\n    div.textContent = div.textContent.replace(/\\s/g, \&quot;\\u00a0\&quot;);\n\n  var span = document.createElement('span');\n  // Wrapping must be replicated *exactly*, including when a long word gets\n  // onto the next line, with whitespace at the end of the line before (#7).\n  // The  *only* reliable way to do that is to copy the *entire* rest of the\n  // textarea's content into the &lt;span&gt; created at the caret position.\n  // for inputs, just '.' would be enough, but why bother?\n  span.textContent = element.value.substring(position) || '.';  // || because a completely empty faux span doesn't render at all\n  div.appendChild(span);\n\n  var coordinates = {\n    top: span.offsetTop + parseInt(computed['borderTopWidth']),\n    left: span.offsetLeft + parseInt(computed['borderLeftWidth'])\n  };\n\n  if (debug) {\n    span.style.backgroundColor = '#aaa';\n  } else {\n    document.body.removeChild(div);\n  }\n\n  return coordinates;\n}\n\n// Exporte as a module of node.js otherwise set as global\nif (typeof module != \&quot;undefined\&quot; &amp;&amp; typeof module.exports != \&quot;undefined\&quot;) {\n  module.exports = getCaretCoordinates;\n} else {\n  window.getCaretCoordinates = getCaretCoordinates;\n}\n\n})();\n&quot;,
+            &quot;type&quot;: &quot;application/javascript&quot;,
+            &quot;title&quot;: &quot;$:/plugins/snowgoon88/edit-comptext/cursor-position.js&quot;,
+            &quot;module-type&quot;: &quot;library&quot;
+        },
+        &quot;$:/plugins/snowgoon88/edit-comptext/completion.js&quot;: {
+            &quot;text&quot;: &quot;/*\\\ntitle: $:/plugins/snowgoon88/edit-comptext/completion.js\ntype: application/javascript\nmodule-type: library\n\nTry to make self-contained completion module.\n\nTo use this 'module', you need a `widget` with a kind of `editarea` node.\nI do not know the exacte prerequisites of this editarea node for the module to\nwork, but mostly one should be able to attach the following `eventHandler` to\nit:\n - input\n - keydown\n - keypress\n - keyup\nThe `widget` is needed because I use:\n - widget.document\n - widget.wiki.filterTiddlers(...)\n\nFrom the Widget, once you have a proper editarea, you just have to call\n - var completion = new Completion( theWidget, theEditAreaNode, configObject);\nwhere `configObject` is expected to have the following fields. if a field is missing, a default value will be given.\nOne can have many `elements' in the template array.\n\n{\n  \&quot;configuration\&quot;: {\n      \&quot;caseSensitive\&quot; : false,\n      \&quot;maxMatch\&quot; : 8,\n      \&quot;minPatLength\&quot; : 2,\n      \&quot;triggerKeyCombination\&quot; : \&quot;^ \&quot;\n  },\n  \&quot;template\&quot;: [{\n      \&quot;pattern\&quot;: \&quot;[[\&quot;,\n      \&quot;filter\&quot;: \&quot;[all[tiddlers]!is[system]]\&quot;,\n      \&quot;start\&quot;: \&quot;[[\&quot;,\n      \&quot;end\&quot;: \&quot;]]\&quot;\n      }\n  ]\n}\n\nTODO : CHECK if needed\n\\*/\n\n(function(){\n\n/*jslint node: true, browser: true */\n/*global $tw: false */\n\&quot;use strict\&quot;;\n\n// To compute pixel coordinates of cursor\nvar getCaretCoordinates = require(\&quot;$:/plugins/snowgoon88/edit-comptext/cursor-position.js\&quot;);\n\n/** Default Completion Attributes */\nvar DEFATT = { maxMatch: 5, minPatLength: 2, caseSensitive: false, triggerKeyCombination: \&quot;^ \&quot; };\n\n/** \n * Struct for generic Completion Templates.\n * &lt;ul&gt;\n * &lt;li&gt;pat : pattern searched for.&lt;/li&gt;\n * &lt;li&gt;filter : filter operation used to find the list of completion options&lt;/li&gt;\n * &lt;li&gt;mask: replaced by \&quot;\&quot; when presenting completion options&lt;/li&gt;\n * &lt;/ul&gt;\n */\n    var Template = function( pat, filter, mask, field, start, end, startOffset  ) {\n    this.pat = pat;\n        this.filter = filter;\n    this.mask = \&quot;^\&quot;+regExpEscape(mask);\n    this.field = field;\n    this.start = start;\n    this.end = end;\n        this.pos = 0;\n        this.startOffset  = startOffset;\n};\n/**\n * Struct for storing completion options, as we need to memorise \n * the titles of the tiddlers when masked and when body must be displayed.\n */\nvar OptCompletion = function( title, str ) {\n    this.title = title;\n    this.str = str;\n};\n\nvar keyMatchGenerator = function(combination) {\n\tlet singleMatchGenerator = function(character) {\n\t\tif (character === '^') {\n\t\t\treturn event =&gt; event.ctrlKey;\n\t\t}\n\t\telse if (character === '+') {\n\t\t\treturn event =&gt; event.shiftKey;\n\t\t}\n\t\telse if (character === '!') {\n\t\t\treturn event =&gt; event.altKey;\n\t\t}\n\t\telse {\n\t\t\treturn event =&gt; (event.keyCode || event.which) === character.charCodeAt(0);\n\t\t}\n\t};\n\n\tlet matchers = [];\n\tfor (let i = 0; i &lt; combination.length; i++) {\n\t\tmatchers.push(singleMatchGenerator(combination[i]));\n\t}\n\n\treturn event =&gt; {\n\t\tfor (let i = 0; i &lt; matchers.length; i++) {\n\t\t\tif (!matchers[i](event)) {\n\t\t\t\treturn false;\n\t\t\t}\n\t\t}\n\t\treturn true;\n\t};\n};\n\n/**\n * Widget is needed in creating popupNode.\n * - widget.document\n * - widget.wiki.filterTiddlers(...)\n * - sibling : where to create the popup in the DOM.\n */\n\tvar Completion = function( editWidget, areaNode, param, sibling, offTop, offLeft ) {\n\tconsole.log( \&quot;==Completion::creation\&quot; );\n\n\t//check if the widget uses the framed engine\n\tif(typeof sibling !== 'undefined') {\n\t\t//The framed engine propagates all keydown events to the parent document\n\t\t//Disable this and only propagate keydown events not handled by the autocompletion in our handleKeydown method\n\t\teditWidget._original_handleKeydownEvent = editWidget.handleKeydownEvent;\n\t\teditWidget.handleKeydownEvent = function(event) {\n\t\t\treturn false;\n\t\t};\n\t}\n\n    // About underlying Widget\n    this._widget = editWidget;\n\tthis._areaNode = areaNode;\n\tthis._sibling  = (typeof sibling !== 'undefined') ?  sibling : this._areaNode;\n\tthis._offTop = (typeof offTop !== 'undefined') ?  offTop : 0;\n\tthis._offLeft = (typeof offLeft !== 'undefined') ?  offLeft : 0;\t\n\t\t\n    // Completions attributes\n    /** State */\n    this._state = \&quot;VOID\&quot;;\n    this._template = undefined;\n    /** Best matches */\n    this._bestMatches = []; // An array of OptCompletion\n    this._idxChoice = -1;\n    /** Param */\n            // maximum nb of match displayed\n            //DEBUG console.log( \&quot;__PARAM\&quot; );\n            //DEBUG console.log( param.configuration );\n    this._maxMatch     = param.configuration.maxMatch || DEFATT.maxMatch;   \n            // Beware that a (0 || 2) gives 2 !, so change way attributs are checked.\n            this._minPatLength = DEFATT.minPatLength;\n            if ('minPatLength' in param.configuration) {\n                this._minPatLength = param.configuration.minPatLength;\n            }\n    this._caseSensitive= param.configuration.caseSensitive || DEFATT.caseSensitive;\n    this._triggerKeyMatcher = keyMatchGenerator(param.configuration.triggerKeyCombination || DEFATT.triggerKeyCombination);\n    /** Input information */\n    this._lastChar = \&quot;\&quot;;\n    this._hasInput = false;\n    /** List of Completion Templates */\n    this._listTemp = [];\n    \n    // Read templates from Param\n    if( param.template ) {\n    \tvar idT;\n    \tfor( idT=0; idT&lt;param.template.length; idT++ ) {\n    \t    var temp = param.template[idT];\n\t    // field 'body' ou 'title' (default)\n\t    if( temp.body ) {\t\t\n    \t\tthis._listTemp.push( \n    \t\t    new Template( temp.pattern, temp.body,\n\t\t\t\t  temp.mask ? temp.mask : \&quot;\&quot;,\n\t\t\t\t  \&quot;body\&quot;,\n    \t\t\t\t  temp.start, temp.end,\n                                temp.startOffset)\n    \t\t);\n\t    }\n\t    else {\n    \t\tthis._listTemp.push( \n    \t\t    new Template( temp.pattern, \n\t\t\t\t  temp.title ? temp.title : temp.filter,\n\t\t\t\t  temp.mask ? temp.mask : \&quot;\&quot;,\n\t\t\t\t  \&quot;title\&quot;,\n    \t\t\t\t  temp.start, temp.end,\n                                temp.startOffset )\n    \t\t);\n\t    }\n\t    //DEBUG temp = this._listTemp[this._listTemp.length-1];\n\t    //DEBUG console.log( \&quot;__CONF : \&quot;+temp.pattern+\&quot;:\&quot;+temp.filter+\&quot;:\&quot;+temp.mask+\&quot;:\&quot;+temp.field+\&quot;:\&quot;+temp.start+\&quot;:\&quot;+temp.end );\n    \t}\n    }\n    // or defaut template\n    else {\n    \tthis._listTemp = [\n    \t    new Template( \&quot;[[\&quot;, \&quot;[all[tiddlers]!is[system]]\&quot;, \n\t\t\t  \&quot;\&quot;, \&quot;title\&quot;,\n\t\t\t  \&quot;[[\&quot;, \&quot;]]\&quot; )\n    \t];\n    }\n    // Create Popup\n\t//this._popNode = createPopup(this._widget, this._areaNode );\n\tthis._popNode = createPopup(this._widget, this._sibling );\t\n    \n    // Listen to the Keyboard\n    $tw.utils.addEventListeners( this._areaNode,[\n\t{name: \&quot;input\&quot;, handlerObject: this, handlerMethod: \&quot;handleInput\&quot;},\n\t{name: \&quot;keydown\&quot;, handlerObject: this, handlerMethod: \&quot;handleKeydown\&quot;},\n\t{name: \&quot;keypress\&quot;, handlerObject: this, handlerMethod: \&quot;handleKeypress\&quot;},\n    \t{name: \&quot;keyup\&quot;, handlerObject: this, handlerMethod: \&quot;handleKeyup\&quot;}\n    ]);\n   \n    /** \n     * Find the bestMatches among listChoice with given pattern\n     * @param listChoice : array of String\n     * @change : this._bestMatches =&gt; array of OptCompletion\n     */\n    this._findBestMatches = function( listChoice, pattern, nbMax) {\n\t// regexp search pattern, case sensitive\n\tvar flagSearch = this._caseSensitive ? \&quot;\&quot; : \&quot;i\&quot; ;\n\tvar regpat = RegExp( regExpEscape(pattern), flagSearch );\n\tvar regpat_start = RegExp( \&quot;^\&quot;+regExpEscape(pattern), flagSearch );\n\tvar regMask = RegExp( this._template.mask ? this._template.mask : \&quot;\&quot;,\&quot;\&quot;);\n\tvar nbMatch = 0;\n\t// nbMax set to _maxMatch if no value given\n\tnbMax = nbMax !== undefined ? nbMax : this._maxMatch;\n\n\t//DEBUG console.log( \&quot;__FIND masked=\&quot;+regMask+\&quot; regPat=\&quot;+regpat);\n\n\tthis._bestMatches= [];\n\tvar otherMatches = [];\n\t// We test every possible choice\n\tfor( var i=0; i&lt; listChoice.length; i++ ) {\n\t    // apply mask over potential choice\n\t    var maskedChoice = listChoice[i].replace( regMask, \&quot;\&quot;);\n\t    // Test first if pattern is found at START of the maskedChoice\n\t    // THEN added to BestMatches\n \t    if( regpat_start.test( maskedChoice )) {\n\t\tif (nbMatch &gt;= nbMax) {\n\t\t    this._bestMatches.push( new OptCompletion(\&quot;\&quot;,\&quot;...\&quot;) );\n\t\t    return;\n\t\t} else {\n\t\t    this._bestMatches.push( new OptCompletion(listChoice[i],maskedChoice) );\n\t\t    nbMatch += 1;\n\t\t}\n\t    }\n\t    // then if pattern is found WITHIN the maskedChoice\n\t    // added AFTER the choices that starts with pattern\n\t    else if( regpat.test( maskedChoice ) ) {\n\t\tif (nbMatch &gt;= nbMax) {\n\t\t    // add all otherMatches to _bestMatches\n\t\t    this._bestMatches.push( new OptCompletion(\&quot;\&quot;,\&quot;&lt;hr&gt;\&quot;) ) ; //separator\n\t\t    this._bestMatches = this._bestMatches.concat( otherMatches );\n\t\t    this._bestMatches.push( new OptCompletion(\&quot;\&quot;,\&quot;...\&quot;) );\n\t\t    return;\n\t\t} else {\n\t\t    otherMatches.push( new OptCompletion(listChoice[i],maskedChoice) );\n\t\t    nbMatch += 1;\n\t\t}\n\t    }\n\t}\n\t// Here, must add the otherMatches\n\tthis._bestMatches.push( new OptCompletion(\&quot;\&quot;,\&quot;&lt;hr&gt;\&quot;) ) ; //separator\n\tthis._bestMatches = this._bestMatches.concat( otherMatches );\n    };\n    /**\n     * Change Selected Status of Items\n     */\n    this._next = function (node) {\n\tvar count = node.children.length;\n\t//DEBUG console.log( \&quot;__NEXT: co=\&quot;+count+\&quot; nbMatch=\&quot;+this._bestMatches.length);\n\tif( this._bestMatches.length &gt; 0 ) \n\t    this._goto( node, this._idxChoice &lt; count - 1 ? this._idxChoice + 1 : -1);\n\t//DEBUG this._logStatus( \&quot;NexT\&quot; );\n    };\n    this._previous = function (node) {\n\tvar count = node.children.length;\n\tvar selected = this._idxChoice &gt; -1;\n\t//DEBUG console.log( \&quot;__PREV: co=\&quot;+count+\&quot; nbMatch=\&quot;+this._bestMatches.length);\n\tif( this._bestMatches.length &gt; 0 ) \n\t    this._goto( node, selected ? this._idxChoice - 1 : count - 1);\n\t//DEBUG this._logStatus( \&quot;PreV\&quot; );\n    };\n    // Should not be used, highlights specific item without any checks!\n    this._goto = function (node, idx) {\n\tvar lis = node.children;\n\tvar selected = this._idxChoice &gt; -1;\n\tif (selected) {\n\t    lis[this._idxChoice].setAttribute(\&quot;patt-selected\&quot;, \&quot;false\&quot;);\n\t}\n\n\tthis._idxChoice = idx;\n    \n\tif (idx &gt; -1 &amp;&amp; lis.length &gt; 0) {\n\t    lis[idx].setAttribute(\&quot;patt-selected\&quot;, \&quot;true\&quot;);\n\t}\n    };\n    /**\n     * Abort pattern and undisplay.\n     */\n    this._abortPattern = function (displayNode) {\n\tthis._state = \&quot;VOID\&quot;;\n\tthis._bestChoices = [];\n\tthis._idxChoice = -1;\n\tthis._undisplay( displayNode );\n\tthis._template = undefined;\n    };\n    /**\n     * Display popupNode at the cursor position in areaNode.\n     */\n    this._display = function( areaNode, popupNode ) {\n\tif ( popupNode.style.display == 'none' ) {\n\t    // Must get coordinate\n\t    // Cursor coordinates within area + area coordinates + scroll\n            var coord = getCaretCoordinates(areaNode, areaNode.selectionEnd);\n            var styleSize = getComputedStyle(areaNode).getPropertyValue('font-size');\n            var fontSize = parseFloat(styleSize); \n\t\t\n\t    popupNode.style.left = (this._offLeft+areaNode.offsetLeft-areaNode.scrollLeft+coord.left) + 'px';\n\t    popupNode.style.top = (this._offTop+areaNode.offsetTop-areaNode.scrollTop+coord.top+fontSize*2) + 'px';\n\t    popupNode.style.display = 'block';\n\t}\n    };\n    /**\n     * Undisplay someNode\n     */\n    this._undisplay = function( displayNode ) {\n\tif ( displayNode.style.display != 'none' ) {\n\t    displayNode.style.display = 'none';\n\t}\n    };\n\n     /**\n     * Used for debug\n     */\n    this._logStatus = function(msg) {\n\tconsole.log( \&quot;__STATUS: \&quot;+this._state+\&quot;:-\&quot;+msg+\&quot;- idx=\&quot;+this._idxChoice );\n    };\n\n};\n// **************************************************************************\n// ******************************************************************eventCbk\n// **************************************************************************\n/**\n * Disable the *effects* of ENTER / UP / DOWN / ESC when needed.\n * Set _hasInput to false.\n */\nCompletion.prototype.handleKeydown = function(event) {\n    // key \n    var key = event.keyCode;\n    this._hasInput = false;\n    \n    //DEBUG console.log( \&quot;__KEYDOWN (\&quot;+key+\&quot;) hasI=\&quot;+this._hasInput);\n    \n    // ENTER while selecting\n    if( (this._state === \&quot;PATTERN\&quot; || this._state === \&quot;SELECT\&quot;) &amp;&amp; key === 13 ) {\n    \tevent.preventDefault();\n    \tevent.stopPropagation();\n    }\n    // ESC while selecting\n    else if( (this._state === \&quot;PATTERN\&quot; || this._state === \&quot;SELECT\&quot;) &amp;&amp; key === 27 ) {\n    \tevent.preventDefault();\n    \tevent.stopPropagation();\n    }\n    // UP/DOWN while a pattern is extracted\n    else if( (key===38 || key===40) &amp;&amp; \n\t(this._state === \&quot;PATTERN\&quot; || this._state === \&quot;SELECT\&quot;) ) {\n\t\tevent.preventDefault();\n    } else {\n\t\t//If we have not handled the keydown event, allow the widget to propagate it to the parent document\n\t\tif(this._widget._original_handleKeydownEvent) {\n\t\t\tthis._widget._original_handleKeydownEvent(event);\n\t\t}\n\t}\n};\n/**\n * Means that something has been added/deleted =&gt; set _hasInput\n */\nCompletion.prototype.handleInput = function(event) {\n    this._hasInput = true;\n    //DEBUG console.log( \&quot;__INPUT hasI=\&quot;+this._hasInput );\n};\n\t\n/**\n * Set _lastChar, detects CTRL+SPACE.\n */\nCompletion.prototype.handleKeypress = function(event) {\n    var curPos = this._areaNode.selectionStart;  // cursor position\n    var val = this._areaNode.value;   // text in the area\n    // key \n    var key = event.keyCode || event.which;\n\t\n    this._lastChar = String.fromCharCode(key);\n    //DEBUG console.log( \&quot;__KEYPRESS (\&quot;+key+\&quot;) hasI=\&quot;+this._hasInput+\&quot; char=\&quot;+this._lastChar );\n    //DEBUG this._logStatus( \&quot;KEYPRESS\&quot; );\n    \n    // Detect Ctrl+Space\n    if( this._triggerKeyMatcher(event) &amp;&amp; this._state === \&quot;VOID\&quot; ) {\n\t//Find a proper Template\n\t// first from which we can extract a pattern\n\tif( this._template === undefined ) {\n\t    //DEBUG console.log(\&quot;__SPACE : find a Template\&quot; );\n\t    var idT, res;\n\t    for( idT=0; idT &lt; this._listTemp.length; idT++ ) {\n\t\tres = extractPattern( val, curPos, this._listTemp[idT] );\n\t\t//DEBUG console.log(\&quot;  t=\&quot;+this._listTemp[idT].pat+\&quot; res=\&quot;+res);\n\t\t// res is not undefined =&gt; good template candidate\n\t\tif( res ) {\n\t\t    this._template = this._listTemp[idT];\n\t\t    this._state = \&quot;PATTERN\&quot;;\n\t\t    break;\n\t\t}\n\t    }\n\t}\n\telse {\n\t    //DEBUG console.log(\&quot;__SPACE : already a template\&quot; );\n\t    this._state = \&quot;PATTERN\&quot;;\n\t}\n    }\n};\n/**\n * ESC -&gt; abort; \n * Detect [ -&gt; VOID switch to _state=PATTERN\n * PATTERN || SELECT : ENTER -&gt; insertText\n *                     UP/DOWN -&gt; previous/next\n *                     pattern.length &gt; _minPatternLength -&gt; display  \n */\nCompletion.prototype.handleKeyup = function(event) {\n    var curPos = this._areaNode.selectionStart;  // cursor position\n    var val = this._areaNode.value;   // text in the area\n    // key a\n    var key = event.keyCode;\n    \n    //DEBUG console.log( \&quot;__KEYUP (\&quot;+key+\&quot;) hasI=\&quot;+this._hasInput );\n\n  // ESC\n    if( key === 27 ) {\n\tthis._abortPattern( this._popNode );\n\t//DEBUG this._logStatus( \&quot;\&quot; );\n    }\n    // Check for every template\n    if( this._hasInput &amp;&amp; this._state === \&quot;VOID\&quot; ) {\n\t// check every template's pattern\n\tvar idT, template;\n\tfor( idT=0; idT &lt; this._listTemp.length; idT++ ) {\n\t    template = this._listTemp[idT];\n\t    if( this._lastChar === template.pat[template.pos] ) {\n\t\ttemplate.pos += 1;\n\t\t//DEBUG console.log( \&quot;__CHECK : pat=\&quot;+template.pat+\&quot; pos=\&quot;+template.pos );\n\t\t// Pattern totaly matched ?\n\t\tif( template.pos === template.pat.length ) {\n\t\t    //DEBUG console.log( \&quot;__CHECK =&gt; found \&quot;+template.pat );\n\t\t    this._state = \&quot;PATTERN\&quot;;\n\t\t    this._template = template;\n\t\t    \n\t\t    break; // get out of loop\n\t\t}\n\t    }\n\t    else {\n\t\ttemplate.pos = 0;\n\t\t//DEBUG console.log( \&quot;__CHECK : pat=\&quot;+template.pat+\&quot; pos=\&quot;+template.pos );\n\t    }\n\t}\n    }\n    // a pattern\n    else if( this._state === \&quot;PATTERN\&quot; || this._state === \&quot;SELECT\&quot; ) {\n\t// Pattern below cursor : undefined if no pattern\n\tvar pattern = extractPattern( val, curPos, this._template );\n\tif( key === 13 ) { // ENTER\n\t    //DEBUG console.log( \&quot;KEY : Enter\&quot; );\n    \t    // Choice made in the displayNode ?\n    \t    var selected = this._idxChoice &gt; -1 &amp;&amp; this._idxChoice !== this._maxMatch;\n    \t    //DEBUG console.log( \&quot;   &gt; sel=\&quot;+selected+\&quot; len=\&quot;+this._bestChoices.length );\n    \t    if( selected ) {\n    \t\t//DEBUG console.log( \&quot;   &gt; selected\&quot; );\n\t\tvar temp = this._bestMatches[this._idxChoice];\n\t      var str = temp.str;\n              // if str is \&quot;&lt;hr&gt;\&quot; or \&quot;...\&quot;, abort\n              if (str === \&quot;&lt;hr&gt;\&quot; || str === \&quot;...\&quot;) {\n                this._abortPattern( this._popNode );\n                this._areaNode.focus();\n                return;\n              }\n\t\tif( this._template.field === \&quot;body\&quot; ) {\n\t\t    str = $tw.wiki.getTiddlerText( temp.title );\n\t\t}\n    \t\tinsertInto( this._areaNode,\n\t\t\t    str,\n\t\t\t    pattern.start, curPos, this._template );\n\t\t// save this new content\n\t\tthis._widget.saveChanges( this._areaNode.value );\n\t    }\n\t    // otherwise take the first choice (if exists)\n\t    else if( this._bestMatches.length &gt; 0 ) {\n    \t\t//DEBUG console.log( \&quot;   &gt; take first one\&quot; );\n\t\tvar temp = this._bestMatches[0];\n\t      var str = temp.str;\n              // if str is \&quot;&lt;hr&gt;\&quot; or \&quot;...\&quot;, abort\n              if (str === \&quot;&lt;hr&gt;\&quot; || str === \&quot;...\&quot;) {\n                this._abortPattern( this._popNode );\n                this._areaNode.focus();\n                return;\n              }\n\t\tif( this._template.field === \&quot;body\&quot; ) {\n\t\t    str = $tw.wiki.getTiddlerText( temp.title );\n\t\t}\n    \t\tinsertInto( this._areaNode,\n\t\t\t    str,\n\t\t\t    pattern.start, curPos, this._template );\n\t\t// save this new content\n\t\tthis._widget.saveChanges( this._areaNode.value );\n\t    }\n\t    this._abortPattern( this._popNode );\n\t\t//DEBUG this._logStatus( \&quot;\&quot; );\n    \t    }\n\t    else if( key === 38 &amp;&amp; this._hasInput === false) { // up\n\t\tthis._state = \&quot;SELECT\&quot;;\n    \t\tevent.preventDefault();\n    \t\tthis._previous( this._popNode );\n\t\t//DEBUG this._logStatus( pattern.text );\n    \t\t//event.stopPropagation();\n    \t    }\n    \t    else if( key === 40 &amp;&amp; this._hasInput === false) { // down\n\t\tthis._state = \&quot;SELECT\&quot;;\n    \t\tevent.preventDefault();\n    \t\tthis._next( this._popNode );\n\t\t//DEBUG this._logStatus( pattern.text );\n    \t\t//event.stopPropagation();\n    \t    }\n    \t    else if( pattern ) { // pattern changed by keypressed\n\t\tthis._idxChoice = -1;\n    \t\t// log\n                //DEBUG console.log( \&quot;  PATTERN changed\&quot; );\n\t\t//DEBUG this._logStatus( pattern.text );\n                //DEBUG console.log( \&quot;  pat.length\&quot;,pattern.text.length, \&quot; min\&quot;,this._minPatLength);\n    \t\t// Popup with choices if pattern at least minPatLength letters long\n\t\tif( pattern.text.length &gt; (this._minPatLength-1) ) {\n                    //DEBUG console.log( \&quot;  should compute\&quot; );\n\t\t    // compute listOptions from templateFilter\n\t\t    var allOptions;\n\t\t    if( this._template )\n\t\t\tallOptions = this._widget.wiki.filterTiddlers( this._template.filter );\n\t\t    else\n\t\t\tallOptions = this._widget.wiki.filterTiddlers(\&quot;[all[tiddlers]]\&quot;);\n\t\t    this._findBestMatches( allOptions, pattern.text );\n    \t\t    this._popNode.innerHTML = \&quot;\&quot;;\n    \t\t    //console.log( \&quot;BC \&quot;+ this._pattern + \&quot; =&gt; \&quot; + choice );\n    \t\t    if (this._bestMatches.length &gt; 0) {\n\t\t      for( var i=0; i&lt;this._bestMatches.length; i++) {\n                        let li_elem = itemHTML(this._bestMatches[i].str,\n\t\t\t\t\t       pattern.text);\n                        // pass this as comp to eventHandler\n                        li_elem.addEventListener( \&quot;click\&quot;,\n                                                  function( idx, event) {\n                                                    //DEBUG console.log( \&quot;__ITEM Listener\&quot;, this, idx, event );\n                                                    this.handleItemClik( idx );\n                                                  }.bind(this,i));\n                        li_elem.addEventListener( \&quot;touchstart\&quot;,\n                                                  function( idx, event) {\n                                                    //comp is the completion object, passed using 'bind' \n                                                    this.handleItemClik( idx );\n                                                  }.bind(this,i));\n                        li_elem.addEventListener( \&quot;mouseover\&quot;,\n                                                  function( idx, event) {\n                                                    this._goto( this._popNode,\n                                                                idx );\n                                                  }.bind(this,i));\n                        \n                        // li_elem.addEventListener( \&quot;click\&quot;,\n                        //                           this.handleItemClick );\n    \t\t\tthis._popNode.appendChild( li_elem );\n    \t\t      }\n\t\t      this._display( this._areaNode, this._popNode );\t\t\t\n    \t\t    }\n\t\t    else { // no matches\n\t\t\tthis._state = \&quot;PATTERN\&quot;;\n\t\t\tthis._undisplay( this._popNode );\n\t\t    }\n\t\t}\n    \t    }\n\t    else { // no pattern detected\n\t\tthis._abortPattern( this._popNode );\n\t    }\n\t}\n\t// to ensure that one MUST add an input (through onInput())\n\tthis._hasInput = false;\n};\n// not real event handler as awaits the index of the clicked/touched bestChoice\nCompletion.prototype.handleItemClik = function( idx_select) {\n  \n  var curPos = this._areaNode.selectionStart;  // cursor position\n  var val = this._areaNode.value;   // text in the area\n  var pattern = extractPattern( val, curPos, this._template );\n  \n  //DEBUG console.log( \&quot;__handleItemClik idx=\&quot;+idx_select, this );\n  \n  // insert choice into document\n  var temp = this._bestMatches[idx_select];\n  var str = temp.str;\n\n  // if str is \&quot;&lt;hr&gt;\&quot; or \&quot;...\&quot;, abort\n  if (str === \&quot;&lt;hr&gt;\&quot; || str === \&quot;...\&quot;) {\n    this._abortPattern( this._popNode );\n    this._areaNode.focus();\n    return;\n  }\n  \n  if( this._template.field === \&quot;body\&quot; ) {\n    str = $tw.wiki.getTiddlerText( temp.title );\n  }\n  insertInto( this._areaNode,\n\t      str,\n\t      pattern.start, curPos, this._template );\n  // save this new content\n  this._widget.saveChanges( this._areaNode.value );\n  this._abortPattern( this._popNode );\n  this._areaNode.focus();\n  //DEBUG this._logStatus( \&quot;\&quot; );\n}\n// **************************************************************************\n// ******************************************************** private functions\n// **************************************************************************\n/**\n * Create popup element.\n */\nvar createPopup = function( widget, node ) {\n    // Insert a special \&quot;div\&quot; element for poping up\n    // Its 'display' property in 'style' control its visibility\n    var popupNode = widget.document.createElement(\&quot;div\&quot;);\n    popupNode.setAttribute( \&quot;style\&quot;, \&quot;display:none; position: absolute;\&quot;);\n    popupNode.className = \&quot;tc-block-dropdown ect-block-dropdown\&quot;;\n    // Insert the element into the DOM\n    node.parentNode.insertBefore(popupNode,node.nextSibling);\n    //CHECK the domNodes is a attribute of Widget [widget.js]\n    //CHECK this.domNodes.push(popupNode);\n    \n    return popupNode;\n};\n/**\n * Extract Pattern from text at a given position.\n *\n * Between previous template.pat (or '[[') and pos\n * \n * If no pattern -&gt; undefined\n */\nvar extractPattern = function( text, pos, template ) {\n    // Detect previous and next ]]=&gt;STOP or [[=&gt;START\n    var sPat = template.pat ? template.pat : '[[';\n    var pos_prevOpen = text.lastIndexOf( sPat, pos );\n    var ePat = template.end ? template.end : ']]';\n    var pos_prevClosed = text.lastIndexOf( ePat, pos );\n    var pos_nextClosed = text.indexOf( ePat, pos  );\n    //DEBUG console.log(\&quot;__CALC st=\&quot;+sPat+\&quot; -&gt; en=\&quot;+ePat );\n    //DEBUG console.log(\&quot;__CALC po=\&quot;+pos_prevOpen+\&quot; pc=\&quot;+pos_prevClosed+\&quot; nc=\&quot;+pos_nextClosed+\&quot; pos=\&quot;+pos);\n    pos_nextClosed = (pos_nextClosed &gt;= 0) ? pos_nextClosed : pos;\n    \n    if( (pos_prevOpen &gt;= 0) &amp;&amp;                 // must be opened\n\t((pos_prevOpen &gt; pos_prevClosed ) ||  // not closed yet\n\t (pos_prevClosed === pos))) {          // closed at cursor\n\t//DEBUG console.log(\&quot;     pat=\&quot;+text.slice( pos_prevOpen+sPat.length, pos) );\n\treturn { text: text.slice( pos_prevOpen+sPat.length, pos ),\n\t\t start: pos_prevOpen,\n\t\t end: pos_nextClosed\n\t       };\n    }\n};\n/**\n * Controls how list items are generated.\n * Function that takes two parameters :\n *  - text : suggestion text\n *  - input : the user’s input\n * Returns : list item. \n * Generates list items with the user’s input highlighted via &lt;mark&gt;.\n */\n  var itemHTML = function (text, input) {\n    // text si input === ''\n    // otherwise, build RegExp that is global (g) and case insensitive (i)\n    // to replace with &lt;mark&gt;$&amp;&lt;/mark&gt; where \&quot;$&amp;\&quot; is the matched pattern\n  var html = input === '' ? text : text.replace(RegExp(regExpEscape(input.trim()), \&quot;gi\&quot;), \&quot;&lt;mark&gt;$&amp;&lt;/mark&gt;\&quot;);\n  // the DOM element created\n  var elem = create(\&quot;li\&quot;, {\n    innerHTML: html,\n    \&quot;patt-selected\&quot;: \&quot;false\&quot;,\n  });\n  return elem; \n};\n/**\n * Insert text into a textarea node, \n * enclosing in 'template.start..template.end'\n *\n * - posBefore : where the 'template.pat+pattern' starts\n * - posAfter : where the cursor currently is\n */\nvar insertInto = function(node, text, posBefore, posAfter, template ) {\n    //DEBUG console.log( \&quot;__INSERT : \&quot;+template.pattern+\&quot;:\&quot;+template.filter+\&quot;:\&quot;+template.mask+\&quot;:\&quot;+template.field+\&quot;:\&quot;+template.start+\&quot;:\&quot;+template.end );\n    var val = node.value;\n    var sStart = template.start !== undefined ? template.start : '[[';\n    var sEnd = template.end !== undefined ? template.end : ']]';\n    var newVal = val.slice(0, posBefore) + sStart + text + sEnd + val.slice(posAfter);\n    //console.log(\&quot;__INSERT s=\&quot;+sStart+\&quot; e=\&quot;+sEnd);\n    //console.log (\&quot;__INSERT pb=\&quot;+posBefore+\&quot; pa=\&quot;+posAfter+\&quot; txt=\&quot;+text);\n    //console.log( \&quot;NEW VAL = \&quot;+newVal );\n    // WARN : Directly modifie domNode.value.\n    // Not sure it does not short-circuit other update methods of the domNode....\n    // i.e. could use widget.updateEditor(newVal) from edit-comptext widget.\n    //      but how to be sure that cursor is well positionned ?\n    node.value = newVal;\n\n    // if startOffset in Template, set cursor at beginning of inserted value,\n    // with an Offset (usefull for aliasing links)\n    if (template.startOffset) {\n        let cursorPos = posBefore+template.startOffset;\n        node.setSelectionRange( cursorPos, cursorPos );\n    }\n    else {\n        node.setSelectionRange(posBefore+text.length+sStart.length+sEnd.length, posBefore+text.length+sStart.length+sEnd.length );\n    }\n};\n/**\n * Add an '\\' in front of -\\^$*+?.()|[]{}\n */\nvar regExpEscape = function (s) {\n    return s.replace(/[-\\\\^$*+?.()|[\\]{}]/g, \&quot;\\\\$&amp;\&quot;);\n};\n/**\n * Add an element in the DOM.\n */\nvar create = function(tag, o) {\n    var element = document.createElement(tag);\n    \n    for (var i in o) {\n\tvar val = o[i];\n\t\n\tif (i === \&quot;inside\&quot;) {\n\t    $(val).appendChild(element);\n\t}\n\telse if (i === \&quot;around\&quot;) {\n\t    var ref = $(val);\n\t    ref.parentNode.insertBefore(element, ref);\n\t    element.appendChild(ref);\n\t}\n\telse if (i in element) {\n\t    element[i] = val;\n\t}\n\telse {\n\t    element.setAttribute(i, val);\n\t}\n    }\n    \n    return element;\n};\n\n\nexports.Completion = Completion;\n\n})();\n\n    \n&quot;,
+            &quot;type&quot;: &quot;application/javascript&quot;,
+            &quot;title&quot;: &quot;$:/plugins/snowgoon88/edit-comptext/completion.js&quot;,
+            &quot;module-type&quot;: &quot;library&quot;
+        },
+        &quot;$:/plugins/snowgoon88/edit-comptext/edit-comptext.css&quot;: {
+            &quot;text&quot;: &quot;\n\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline macrocallblock\n\n/* The \\rules pragma at the top of the tiddler restricts the WikiText \n * to just allow macros and transclusion. This avoids mistakenly \n * triggering unwanted WikiText processing.\n * \n * MUST not save as text/css for macro to be processed\n*/\n\n.ect-block-dropdown li {\n    display: block;\n    padding: 4px 14px 4px 14px;\n    text-decoration: none;\n    color: &lt;&lt;colour tiddler-link-foreground&gt;&gt;; /*#5778d8;*/ \n    background: transparent;\n}\n.ect-block-dropdown li[patt-selected=\&quot;true\&quot;] {\n    color: &lt;&lt;colour tiddler-link-background&gt;&gt;; /*#ffffff; */\n    background-color: &lt;&lt;colour tiddler-link-foreground&gt;&gt;; /*#5778d8; */\n}\n.ect-block-dropdown li[patt-selected=\&quot;true\&quot;] mark {\n    background: hsl(86, 100%, 21%);\n    color: inherit;\n}\n\n&quot;,
+            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
+            &quot;title&quot;: &quot;$:/plugins/snowgoon88/edit-comptext/edit-comptext.css&quot;,
+            &quot;tags&quot;: &quot;[[$:/tags/Stylesheet]]&quot;
+        },
+        &quot;$:/plugins/snowgoon88/edit-comptext/readme&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/snowgoon88/edit-comptext/readme&quot;,
+            &quot;text&quot;: &quot;!! What ?\nThis plugin adds ''completion'' when editing the body of a tiddler.\n\n* Enter completion-mode by typing `[[` or `CTRL+SPACE`\n* A list of tiddlers with a title that matches the pattern between `[[` and cursor appears\n* `UP/DOWN` keys can select a tiddler, `ENTER` to validate\n* `NEW` : can click with mouse or touch surface to select your completion.\n* If there is only one match, `ENTER` selects it.\n* you can specify you own trigger pattern and the list of possible completions. See [[$:/plugins/snowgoon88/edit-comptext/usage]] for more details.\n* `NEW` : after completion, the cursor can be set inside the inserted text. This allows for easier creation of \&quot;aliased links\&quot; (try completion with `||` for example).\n* `NEW` : version 0.9.1 and higher, the default TW5 editor automatically has autocompletion as soon as the plugin is enabled (if TW5 version 5.1.22 or higher)\n\n!! To try it or get the latest news\nSee [[http://snowgoon88.github.io/TW5-extendedit]]\n\n!! Install \n\nTo add the plugin to your own TiddlyWiki5, just drag this link to the browser window:\n\n[[$:/plugins/snowgoon88/edit-comptext]]\n\nSometime (prior to TW5.1.22), a small configuration step is then needed\n\nin `$:/ControlPanel -&gt; Advanced -&gt; Editor Type -&gt; text/vnd.tiddlywiki` you must chose `comptext` instead of `text`.\n\nReload and « voilà »...\n\nThis plugin is quite mature now :o)\n\n!! Old version\n\n* A version compatible with 5.0.8 to 5.1.11 : [[http://snowgoon88.github.io/TW5-extendedit/index_5.1.11.html]]\n\n!! Source code\nOn github [[https://github.com/snowgoon88/TW5-extendedit]]\n\nGet in touch : snowgoon88(AT)gmail(DOT)com\n&quot;
+        },
+        &quot;$:/plugins/snowgoon88/edit-comptext/usage&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/snowgoon88/edit-comptext/usage&quot;,
+            &quot;text&quot;: &quot;Now, this plugin should be automatically integrated in the common editors.\n\nIn some older version of Tiddlywiki, you might have to change things in `$:/ControlPanel -&gt; Advanced -&gt; Editor Type -&gt; text/vnd.tiddlywiki` to put `comptext` instead of `text`.\n\nConfiguration of the edit-comptext plugin can be done through the tiddler [[$:/plugins/snowgoon88/edit-comptext/config]]. Use a JSON tiddler (do not forget to set the type to `application/json`. See some examples at [[$:/plugins/snowgoon88/edit-comptext/examples]]\n\nIn the `configuration` object you can set :\n\n* `caseSensitive`: `true`/`false` (is search case sensitive ?)\n* `maxMatch` : an `integer` (max number of match displayed)\n* `minPatLength` : an `integer` (minimal length of a pattern to trigger completion search)\n* `triggerKeyCombination ` : a `string` representing the key combination that triggers the autocompletion popup. To use modifier keys in your combination, use following conversions : `ctrl` -&gt; `^`, `alt` -&gt; `!`, `shift` -&gt; `+`. Note: ` ` (literally a whitespace) represents the `space` key.\n\nIn the `template` array you can specify the various completion templates that will be used. Every template can have the following members.\n\n* `pattern` : `string` (pattern that triggers a completion, default \&quot;[[\&quot; )\n* `title` or `body`: `string` (the filter operators that gives the list of valid completions, default \&quot;[all[tiddlers]!is[system]]\&quot;). If you specify `body`, then the body of the tiddler will be inserted on selection.\n* `start` : `string` (when completion is chosen, start is put before the completion, default \&quot;[[\&quot;)\n* `end` : `string` (when completion is chosen, end is put after the completion, default \&quot;]]\&quot;)\n* `startOffset` : `interger` but OPTIONNAL. If provided, the cursor will be positionned `startOffset` characters after the beginning of the completed text. This is useful to create aliased links using \&quot;||\&quot; as a trigger.\n\n!! Current body of Config Tiddler\n\n{{$:/plugins/snowgoon88/edit-comptext/config}}\n\n&quot;
+        }
+    }
+}</pre>
+</div>
+<div author="Saq Imtiaz" created="20200803172923614" description="Editor AutoList - editor extension to automatically continue lists" modified="20200803173012976" name="Editor AutoList" plugin-type="plugin" title="$:/plugins/sq/editor-autolist" type="application/json" version="0.1.10">
+<pre>{
+    &quot;tiddlers&quot;: {
+        &quot;$:/plugins/sq/editor-autolist/editor-operation-autolist&quot;: {
+            &quot;text&quot;: &quot;/*\\\ntitle: $:/plugins/sq/editor-autolist/editor-operation-autolist.js\ntype: application/javascript\nmodule-type: texteditoroperation\nText editor operation to automate syntax for lists\n\\*/\n(function(){\n\n/*jslint node: true, browser: true */\n/*global $tw: false */\n\&quot;use strict\&quot;;\n\nexports[\&quot;autolist\&quot;] = function(event,operation) {\n\t\n\tvar lineStart = $tw.utils.findPrecedingLineBreak(operation.text,operation.selStart);\n\tvar lineEnd = $tw.utils.findFollowingLineBreak(operation.text,operation.selStart);\n\tvar line = operation.text.substring(lineStart,lineEnd);\t\n\t\n\tvar listPrefixRegex = /^((\\*|#)+).*/;\n\tvar match = line.match(listPrefixRegex);\n\t\n\tvar mode = event.paramObject? event.paramObject.mode : undefined;\n\t\n\t//ensure we only handle lines starting with * or #\n\tif(match != null &amp;&amp; match[1]) {\n\t\t// check if we are handling indent level\n\t\tif(mode === \&quot;indent\&quot; || mode === \&quot;unindent\&quot;) {\n\t\t\tvar indentRegExp = /^((\\*|#)+)(.*)$/;\n\t\t\tvar indentMatch = line.match(indentRegExp);\n\t\t\tif(indentMatch != null) {\n\t\t\t\t//check if the line has content\n\t\t\t\tvar content = (indentMatch[3].trim().length != 0) ? indentMatch[3].trim() : \&quot;\&quot;;\n\t\t\t\toperation.cutStart = lineStart;\n\t\t\t\toperation.cutEnd = lineEnd;\n\t\t\t\tif(mode === \&quot;indent\&quot;) {\t\t\t\t\n\t\t\t\t\t//indent a line\n\t\t\t\t\toperation.replacement = indentMatch[1] + indentMatch[2] + \&quot; \&quot; + content;\n\t\t\t\t\toperation.newSelStart = operation.selStart + 1;\n\t\t\t\t\toperation.newSelEnd = operation.selEnd + 1;\n\t\t\t\t} else if(mode === \&quot;unindent\&quot;) {\n\t\t\t\t\t//unindent a line\n\t\t\t\t\toperation.replacement = indentMatch[1].substring(0,indentMatch[1].length - 1) + \&quot; \&quot; + content;\n\t\t\t\t\toperation.newSelStart = operation.selStart - 1;\n\t\t\t\t\toperation.newSelEnd = operation.selEnd - 1;\t\t\t\t\t\n\t\t\t\t}\n\t\t\t}\n\t\t} else {\n\t\t\t//handle enter key, meaning new line\n\t\t\tvar trimmed = match[0].replace(/\\s\\s*$/, '');\n\t\t\tvar prefixRegEx = /^((\\*|#)+)$/;\n\t\t\tvar trimmedMatch = trimmed.match(prefixRegEx);\n\t\t\tif(trimmedMatch != null) {\n\t\t\t\t// the line only contains * or # characters and optional whitespace\n\t\t\t\t//terminate the list\n\t\t\t\toperation.replacement = \&quot;\\n\&quot;;\n\t\t\t\toperation.cutStart = lineStart;\n\t\t\t\toperation.cutEnd = operation.selStart;\n\t\t\t\toperation.newSelStart = lineStart + 1;\n\t\t\t\toperation.newSelEnd = lineStart + 1;\n\t\t\t} else {\n\t\t\t\t// continue indent level on next line\n\t\t\t\tvar prefix = match[1];\n\t\t\t\toperation.replacement = \&quot;\\n\&quot; + prefix + \&quot; \&quot;;\n\t\t\t\toperation.cutStart = operation.selStart;\n\t\t\t\toperation.cutEnd = operation.selStart;\n\t\t\t\t\n\t\t\t\t//check if there is trailing whitespace on the line we are on\n\t\t\t\tvar lineEnd = $tw.utils.findFollowingLineBreak(operation.text,operation.selStart);\n\t\t\t\tvar trailingText = operation.text.substring(operation.selStart,lineEnd);\n\t\t\t\tif(trailingText.trim().length == 0) {\n\t\t\t\t\toperation.cutEnd = lineEnd;\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\toperation.newSelStart = operation.selStart + prefix.length + 2;\n\t\t\t\toperation.newSelEnd = operation.selEnd + prefix.length + 2;\n\t\t\t}\n\t\t}\n\t} else if(mode != \&quot;indent\&quot; &amp;&amp; mode != \&quot;unindent\&quot;) {\n\t\t// we need to manually add a linebreak for lines not starting with list markup\n\t\toperation.replacement = \&quot;\\n\&quot;;\n\t\toperation.cutStart = operation.selStart;\n\t\toperation.cutEnd = operation.selEnd;\n\t\toperation.newSelStart = operation.selStart + 1;\n\t\toperation.newSelEnd = operation.selEnd + 1;\n\t}\n};\n\n})();&quot;,
+            &quot;type&quot;: &quot;application/javascript&quot;,
+            &quot;title&quot;: &quot;$:/plugins/sq/editor-autolist/editor-operation-autolist&quot;,
+            &quot;tags&quot;: &quot;&quot;,
+            &quot;module-type&quot;: &quot;texteditoroperation&quot;,
+            &quot;modified&quot;: &quot;20200804125155562&quot;,
+            &quot;created&quot;: &quot;20200803160356743&quot;
+        },
+        &quot;$:/plugins/sq/editor-autolist/EditorToolbar-autolist&quot;: {
+            &quot;created&quot;: &quot;20200803165453913&quot;,
+            &quot;text&quot;: &quot;&lt;$action-sendmessage\n\t$message=\&quot;tm-edit-text-operation\&quot;\n\t$param=\&quot;autolist\&quot;\n/&gt;\n&quot;,
+            &quot;title&quot;: &quot;$:/plugins/sq/editor-autolist/EditorToolbar-autolist&quot;,
+            &quot;tags&quot;: &quot;$:/tags/EditorToolbar&quot;,
+            &quot;shortcuts&quot;: &quot;((autolist-newline))&quot;,
+            &quot;modified&quot;: &quot;20200804124434675&quot;,
+            &quot;icon&quot;: &quot;$:/core/images/list-bullet&quot;,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;condition&quot;: &quot;[&lt;targetTiddler&gt;!has[type]] [&lt;targetTiddler&gt;type[text/vnd.tiddlywiki]]&quot;,
+            &quot;caption&quot;: &quot;&quot;,
+            &quot;button-classes&quot;: &quot;sq-text-editor-btn-hidden&quot;
+        },
+        &quot;$:/plugins/sq/editor-autolist/styles&quot;: {
+            &quot;text&quot;: &quot;.sq-text-editor-btn-hidden {\n\tdisplay: none;\n}&quot;,
+            &quot;title&quot;: &quot;$:/plugins/sq/editor-autolist/styles&quot;,
+            &quot;tags&quot;: &quot;$:/tags/Stylesheet&quot;,
+            &quot;modified&quot;: &quot;20200803172530073&quot;,
+            &quot;created&quot;: &quot;20200803171440138&quot;
+        },
+        &quot;$:/plugins/sq/editor-autolist/EditorToolbar-autolist-indent&quot;: {
+            &quot;created&quot;: &quot;20200803213912954&quot;,
+            &quot;text&quot;: &quot;&lt;$action-sendmessage\n\t$message=\&quot;tm-edit-text-operation\&quot;\n\t$param=\&quot;autolist\&quot;\n\tmode=\&quot;indent\&quot;\n/&gt;\n&quot;,
+            &quot;title&quot;: &quot;$:/plugins/sq/editor-autolist/EditorToolbar-autolist-indent&quot;,
+            &quot;tags&quot;: &quot;$:/tags/EditorToolbar&quot;,
+            &quot;shortcuts&quot;: &quot;((autolist-indent))&quot;,
+            &quot;modified&quot;: &quot;20200804124659294&quot;,
+            &quot;icon&quot;: &quot;$:/core/images/list-bullet&quot;,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;condition&quot;: &quot;[&lt;targetTiddler&gt;!has[type]] [&lt;targetTiddler&gt;type[text/vnd.tiddlywiki]]&quot;,
+            &quot;caption&quot;: &quot;&quot;,
+            &quot;button-classes&quot;: &quot;sq-text-editor-btn-hidden&quot;
+        },
+        &quot;$:/plugins/sq/editor-autolist/EditorToolbar-autolist-unindent&quot;: {
+            &quot;created&quot;: &quot;20200804122848593&quot;,
+            &quot;text&quot;: &quot;&lt;$action-sendmessage\n\t$message=\&quot;tm-edit-text-operation\&quot;\n\t$param=\&quot;autolist\&quot;\n\tmode=\&quot;unindent\&quot;\n/&gt;\n&quot;,
+            &quot;title&quot;: &quot;$:/plugins/sq/editor-autolist/EditorToolbar-autolist-unindent&quot;,
+            &quot;tags&quot;: &quot;$:/tags/EditorToolbar&quot;,
+            &quot;shortcuts&quot;: &quot;((autolist-unindent))&quot;,
+            &quot;modified&quot;: &quot;20200804124808496&quot;,
+            &quot;icon&quot;: &quot;$:/core/images/list-bullet&quot;,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;condition&quot;: &quot;[&lt;targetTiddler&gt;!has[type]] [&lt;targetTiddler&gt;type[text/vnd.tiddlywiki]]&quot;,
+            &quot;caption&quot;: &quot;&quot;,
+            &quot;button-classes&quot;: &quot;sq-text-editor-btn-hidden&quot;
+        },
+        &quot;$:/config/shortcuts/autolist-newline&quot;: {
+            &quot;created&quot;: &quot;20200804124551033&quot;,
+            &quot;title&quot;: &quot;$:/config/shortcuts/autolist-newline&quot;,
+            &quot;text&quot;: &quot;Enter&quot;,
+            &quot;modified&quot;: &quot;20200804124551033&quot;
+        },
+        &quot;$:/config/shortcuts/autolist-indent&quot;: {
+            &quot;created&quot;: &quot;20200804124746636&quot;,
+            &quot;title&quot;: &quot;$:/config/shortcuts/autolist-indent&quot;,
+            &quot;text&quot;: &quot;Tab&quot;,
+            &quot;modified&quot;: &quot;20200804124746636&quot;
+        },
+        &quot;$:/config/shortcuts/autolist-unindent&quot;: {
+            &quot;created&quot;: &quot;20200804124833452&quot;,
+            &quot;title&quot;: &quot;$:/config/shortcuts/autolist-unindent&quot;,
+            &quot;text&quot;: &quot;shift-Tab&quot;,
+            &quot;modified&quot;: &quot;20200804124833452&quot;
+        },
+        &quot;$:/config/ShortcutInfo/autolist-newline&quot;: {
+            &quot;created&quot;: &quot;20200804124436341&quot;,
+            &quot;text&quot;: &quot;Add a newline and list markup if in a list&quot;,
+            &quot;tags&quot;: &quot;&quot;,
+            &quot;title&quot;: &quot;$:/config/ShortcutInfo/autolist-newline&quot;,
+            &quot;modified&quot;: &quot;20200804124533962&quot;
+        },
+        &quot;$:/config/ShortcutInfo/autolist-indent&quot;: {
+            &quot;created&quot;: &quot;20200804124703604&quot;,
+            &quot;text&quot;: &quot;Indent a line in a list&quot;,
+            &quot;tags&quot;: &quot;&quot;,
+            &quot;title&quot;: &quot;$:/config/ShortcutInfo/autolist-indent&quot;,
+            &quot;modified&quot;: &quot;20200804124720020&quot;
+        },
+        &quot;$:/config/ShortcutInfo/autolist-unindent&quot;: {
+            &quot;created&quot;: &quot;20200804124811668&quot;,
+            &quot;text&quot;: &quot;Unindent a line in a list&quot;,
+            &quot;tags&quot;: &quot;&quot;,
+            &quot;title&quot;: &quot;$:/config/ShortcutInfo/autolist-unindent&quot;,
+            &quot;modified&quot;: &quot;20200804124823040&quot;
+        }
+    }
+}</pre>
+</div>
 <div created="20190108084725221" modified="20190108084734933" title="$:/SiteSubtitle">
 <pre>leno's personal non-linear notebook</pre>
 </div>
@@ -9603,6 +9971,9 @@ Now comes the &quot;hard&quot; part. Take the deck face up (slightly angled so t
 </div>
 <div created="20210313142530656" modified="20210715143203482" title="$:/state/encrypt">
 <pre></pre>
+</div>
+<div created="20220124175419175" modified="20220125155012051" title="$:/state/folded/Home">
+<pre>show</pre>
 </div>
 <div created="20190109093959757" modified="20190109094005946" title="$:/state/folded/leboncoin">
 <pre>show</pre>
@@ -9616,28 +9987,37 @@ Now comes the &quot;hard&quot; part. Take the deck face up (slightly angled so t
 <div created="20190108085015148" modified="20190108085029019" title="$:/state/ShowPaletteEditor">
 <pre>no</pre>
 </div>
-<div created="20201029110134256" modified="20201029110147520" title="$:/state/sidebar">
+<div created="20201029110134256" modified="20220124180011854" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20190131165208354" modified="20190131165208354" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Standard</pre>
 </div>
-<div created="20190108084900836" modified="20190108085042919" title="$:/state/tab--1963855381">
-<pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
+<div created="20190108084900836" modified="20220124175318609" title="$:/state/tab--1963855381">
+<pre>$:/core/ui/ControlPanel/Toolbars</pre>
 </div>
 <div created="20190108084835586" modified="20190108084835586" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Advanced</pre>
 </div>
+<div created="20220125155353788" modified="20220125155409531" title="$:/state/tab-1528275152">
+<pre>$:/core/ui/DefaultSearchResultList</pre>
+</div>
 <div created="20190108084833171" modified="20200210151117653" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Appearance</pre>
 </div>
-<div created="20190108104722609" modified="20210415091850835" title="$:/state/tab/moresidebar-1850697562">
-<pre>$:/core/ui/MoreSideBar/Tags</pre>
+<div created="20190108104722609" modified="20220125155122250" title="$:/state/tab/moresidebar-1850697562">
+<pre>$:/core/ui/MoreSideBar/Plugins</pre>
 </div>
-<div created="20190108101211875" modified="20210415091847885" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/More</pre>
+<div created="20190108101211875" modified="20220125155424739" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Tools</pre>
 </div>
-<div created="20220110121053014" list="[[code snippets]] Home" modified="20220110121053014" title="$:/StoryList">
+<div created="20220124175326357" modified="20220124175343928" title="$:/state/tabs/controlpanel/toolbars-1345989671">
+<pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
+</div>
+<div created="20220125155130948" list="Home" modified="20220125155339548" title="$:/StoryList">
+<pre></pre>
+</div>
+<div created="20220124175934968" list="$:/core/ui/Buttons/more-tiddler-actions $:/plugins/danielo515/encryptTiddler/crypt-button $:/plugins/ajh/favorites/template $:/core/ui/Buttons/info $:/core/ui/Buttons/new-here $:/core/ui/Buttons/new-journal-here $:/core/ui/Buttons/clone $:/core/ui/Buttons/export-tiddler $:/core/ui/Buttons/edit $:/core/ui/Buttons/delete $:/core/ui/Buttons/permalink $:/core/ui/Buttons/permaview $:/core/ui/Buttons/open-window $:/core/ui/Buttons/close-others $:/core/ui/Buttons/fold-others $:/core/ui/Buttons/fold $:/core/ui/Buttons/fold-bar $:/core/ui/Buttons/close" modified="20220124175956927" title="$:/tags/ViewToolbar">
 <pre></pre>
 </div>
 <div created="20190131165140039" modified="20190131165140039" title="$:/temp/advancedsearch">
@@ -9656,7 +10036,7 @@ Now comes the &quot;hard&quot; part. Take the deck face up (slightly angled so t
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///C:/slemoine/priv%C3%A9%20perso/PortableGit/lenopgm/notes/TiddlyWiki.html&quot;
+            &quot;text&quot;: &quot;file:///C:/slemoine/priv%C3%A9%20perso/PortableGit/lenopgm/notes/TiddlyWiki%20+2clics%20+autocomp%20+autolist%20+fav%20+searchcontext.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -9676,7 +10056,7 @@ Now comes the &quot;hard&quot; part. Take the deck face up (slightly angled so t
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/C:/slemoine/priv%C3%A9%20perso/PortableGit/lenopgm/notes/TiddlyWiki.html&quot;
+            &quot;text&quot;: &quot;/C:/slemoine/priv%C3%A9%20perso/PortableGit/lenopgm/notes/TiddlyWiki%20+2clics%20+autocomp%20+autolist%20+fav%20+searchcontext.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -9688,11 +10068,11 @@ Now comes the &quot;hard&quot; part. Take the deck face up (slightly angled so t
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
-            &quot;text&quot;: &quot;1696&quot;
+            &quot;text&quot;: &quot;1536&quot;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;954&quot;
+            &quot;text&quot;: &quot;864&quot;
         }
     }
 }</pre>
@@ -9703,8 +10083,8 @@ Now comes the &quot;hard&quot; part. Take the deck face up (slightly angled so t
 <div created="20210313142548541" modified="20210715143200077" title="$:/temp/password2">
 <pre></pre>
 </div>
-<div created="20190114084246125" modified="20220110121050718" title="$:/temp/search">
-<pre>sni</pre>
+<div created="20190114084246125" modified="20220125155338045" title="$:/temp/search">
+<pre>perce</pre>
 </div>
 <div created="20190108084849123" modified="20190108084857507" title="$:/theme">
 <pre>$:/themes/tiddlywiki/snowwhite</pre>
@@ -10057,7 +10437,7 @@ CECI EST UNE ALERTE BLAGUE NULLE DE NIVEAU 8. IL NE S'AGIT PAS D'UN EXERCICE.
 DIRIGEZ VOUS DANS LE CALME VERS LA SORTIE LA PLUS PROCHE.
 </pre>
 </div>
-<div created="20190131165226977" modified="20210623094646358" tags="download core" title="Books / livres">
+<div created="20190131165226977" modified="20220113143506206" tags="download core" title="Books / livres">
 <pre>* What Every Body is Saying - Joe Navarro (body language)
 * Jonathan Metzl - Étouffer la révolte / The Protest Psychosis
 * ''I Am a Strange Loop - Douglas Hofstadter'' https://en.wikipedia.org/wiki/I_Am_a_Strange_Loop
@@ -10081,6 +10461,10 @@ DIRIGEZ VOUS DANS LE CALME VERS LA SORTIE LA PLUS PROCHE.
 * Roger Penrose - L'Esprit, l'ordinateur et les lois de la physique
 * Roger Penrose - Les ombres de l'esprit
 
+! Loïc Finaz, sous-marinier Thinkerview
+* ''L'usage du monde - Nicolas Bouvier'' &gt; comprendre le monde
+* ''Guerre &amp; Paix - Tolstoï ''&gt; comprendre la guerre
+* ''Les Enfants Jéromine - Ernst Wiechert'' &gt; comprendre l'humanité
 ! Guillaume Meurice
 * ''Schopenhauer - l'art d'avoir toujours raison''
 * ''Machiavel - Le Prince''
@@ -12085,21 +12469,22 @@ http://www.celestialheavens.com/viewpage.php?id=24
 * Individual Computer Players won't hire heroes is they already have six or more.
 * Computer Players as a whole will not hire Heroes if they have 20 or more among them. </pre>
 </div>
-<div created="20190108105358377" modified="20211207141721802" tags="core" title="Home">
-<pre>* ''dez Tugan 7 mai 2020'' https://mail.yahoo.com/d/search/keyword=Tugan/messages/17172
+<div created="20190108105358377" modified="20220124084117198" tags="core" title="Home">
+<pre>* [[pw]]
+* ''dez Tugan 7 mai 2020'' https://mail.yahoo.com/d/search/keyword=Tugan/messages/17172
 * ''DIF'' / CPF / 
 * [[Tugan TODO]]
-* One Piece https://www.glenatmangamax.com/manga/one-piece-edition-originale/
-* ''Python gamification'' https://py-rates.fr/ https://py.checkio.org/
 * ''&gt;&gt;&gt;'' [[pointeur current TODO]]
 * ''&gt;&gt;&gt;'' [[todo DL]]
 * [[dev responsable &amp; job hunt]]
-* [[pw]]
 
 ! misc todo current
+* https://www.epargne-retraite-entreprises.bnpparibas.com
 * Parenting CNV ''https://ggia.berkeley.edu/#filters=parenting''
 * ''Advanced Personal Development http://actualized.org/''
 * Mental Models ''https://fs.blog/mental-models/#what_are_mental_models''
+* One Piece https://www.glenatmangamax.com/manga/one-piece-edition-originale/
+* ''Python gamification'' https://py-rates.fr/ https://py.checkio.org/
 
 ! achats
 * ''Heroquest Nouvelle Édition'' / Advanced Quest https://www.okkazeo.com/jeux/view/30557
@@ -12110,18 +12495,12 @@ http://www.celestialheavens.com/viewpage.php?id=24
 ! playlists
 * campagnes Zonakron	https://www.youtube.com/user/Ekmule/videos / https://www.youtube.com/user/Ekmule/playlists
 
-! Daily
+! Daily / Weekly
+* https://www.epicgames.com/store/en-US/free-games epicgames.osef.osef@xoxy.net 7/19
 * https://mail.yahoo.com l.d@y 6+20
 * https://webmail.ausy.fr sa.le@a.f 11+20
-* https://covidtracker.fr/
-
-! Weekly
-* https://www.epicgames.com/store/en-US/free-games epicgames.osef.osef@xoxy.net 7/19
-* https://www.dannygoldsmithmagic.com/blog
 * https://facebook.com/messages l.d@y7+17
 * https://monespace.ausy.fr sa.le@au.f1121long
-* Ecole Directe https://www.ecoledirecte.com =&gt; sjlemoine 9/19
-* https://ogmagraf.blogspot.com/
 
 ! Hypnomachie
 * hypnomachie facebook https://www.facebook.com/Hypnomachie/posts/
@@ -12134,9 +12513,9 @@ http://www.celestialheavens.com/viewpage.php?id=24
 
 ! Formations
 * TUGAN https://marketing-underground.teachable.com/courses/enrolled tugan.x.os@x.n 520
-* Phoenix Magic https://wandering-magic.teachable.com/courses/enrolled/100938
 * RéinfoSanté : activité physique https://reinfosante.fr/thematique-activite-physique/
 * RéinfoSanté : émotions https://reinfosante.fr/thematique-emotions/
+* Phoenix Magic https://wandering-magic.teachable.com/courses/enrolled/100938
 
 ! Ressources
 * [[pw]]
@@ -12161,15 +12540,9 @@ http://www.celestialheavens.com/viewpage.php?id=24
 * https://sebsauvage.net/wiki/doku.php?id=services_web
 * https://chatons.org/fr/find
 
-! encours
-* https://m.ing.fr/secure/login/cif 1332108
-* https://www.epargne-retraite-entreprises.bnpparibas.com
-
 ! TODO
-* ''AUSY: ATTESTATION TITRE DE TRANSPORT''
 * ''Talend | Norsys''
 * [[Torrent]]
-* [[Books / livres]]
 * Remember Me (Alain Damasio) https://www.youtube.com/watch?v=zq0oYmBJ3hs
 * ''Turing indéterminabilité de l'arrêt / Incomplétude de Goedel / caractère fini de la connaissance''
 * Litobox musculation à poids de corps
@@ -12188,7 +12561,6 @@ http://www.celestialheavens.com/viewpage.php?id=24
 * https://melchior.xcard.me
 
 ! current
-* ''Congé de paternité 25 jours https://www.service-public.fr/particuliers/actualites/A14932''
 * https://protonvpn.com/free-vpn
 * ''https://tgdmb.com/'' The Gaming Den - Frank Trollman
 * ''HMM3 Horn of the Abyss '': http://www.jeuxvideo.com/forums/42-10531-55944943-1-0-1-0-heroes-of-might-magic-iii-mod-hd-horn-of-the-habyss-traduction.htm http://heroescommunity.com/viewthread.php3?TID=39830
@@ -14022,6 +14394,14 @@ micmsilver@aol.com</pre>
 * IA
 * L'Homme Bicentenaire</pre>
 </div>
+<div created="20220125155238254" modified="20220125155244156" tags="" title="Nànie">
+<pre>décédé la nuit de lundi à mardi 10-11 janvier 2022
+
+! Expressions fétiches de Nànie
+* on est pas venu déguisé en feuille de choux pour se faire bouffer l'cul par des lapins.
+* affûté comme les genous d'une bonne soeur
+* j'étais pas très loin de finir la bite dans un nain</pre>
+</div>
 <div created="20210415091913461" modified="20210415091947701" tags="hypnomachie conscience" title="Narrative Disembodied">
 <pre>https://www.youtube.com/watch?v=jixwIFb0Kqw
 
@@ -14136,7 +14516,7 @@ Pour les aspects scientifiques de mon propos, qui le fondent et le justifient, l
 C'est en me fondant sur un puissant socle scientifique, historique, symbolique, que j'ai pu concevoir cette approche de la musculation.
 </pre>
 </div>
-<div created="20190322150105505" modified="20210923201246404" tags="improve core" title="online services, addons &amp; resources">
+<div created="20190322150105505" modified="20220113151709762" tags="improve core" title="online services, addons &amp; resources">
 <pre>! sub
 * https://www.sous-titres.eu/
 * https://www.opensubtitles.org/fr/search/subs
@@ -14156,6 +14536,7 @@ C'est en me fondant sur un puissant socle scientifique, historique, symbolique, 
 * fb private videos : https://downloadfacebook.net/fr/facebook-private-video-downloader.html
 
 ! leechers
+* https://filehostlist.miraheze.org/wiki/Free_Premium_Leeches
 * https://leechall.com/
 * nitroflare :  https://leechpremium.link/index.php  
 * https://cocoleech.com/  
@@ -14914,7 +15295,7 @@ http://liens.howtommy.net/?Be1gEQ
 * Tout en respirant par le ventre, parlez sur un ton plus grave que d’habitude pour dire vos répliques. Les femmes devront s’exercer plus que les hommes, car en général leur voix est plus aiguë et ne porte pas loin. Donc, respiration « basse » et voix grave : vous projetterez votre voix au maximum.
 Faites de tels exercices régulièrement durant vos répétitions. Vous verrez : la différence sera remarquable! On vous entendra de loin… et sans micro.</pre>
 </div>
-<div created="20190130144059269" modified="20211124143631811" tags="core" title="pw">
+<div created="20190130144059269" modified="20220118101543644" tags="core" title="pw">
 <pre>pw passw
 
 cnpnet.cnp.fr =&gt;  CnpNet521t 
@@ -15021,7 +15402,7 @@ dasan.co	osef@grr.la osefosef 221
 airbnb.s.le@xn818
 maxi-debrid.com &gt; osef@grr.la 221
 nantesmetropole.s.le@xn321
-PE esle0090 1021
+PE esle0090 122
 PE Agate a1021 long
 https://steve-s-school-76e5.thinkific.com/enrollments stevefaulkner.os.os@xn421
 petitbambou.com	osef@grr.la 421
@@ -15033,6 +15414,7 @@ laposte.fr =&gt; sa.le@yc 821
 erdnasemagicstore.io erdnasemagicstore.s.le@xnE821
 sncf/ter =&gt; sa.le@yc 821
 discord =&gt; sa.le@yc921
+zbigz.com	osefgrrla 122
 ```
 
 
