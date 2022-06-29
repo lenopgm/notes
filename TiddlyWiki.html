@@ -10101,7 +10101,7 @@ Home
 <div created="20220124175326357" modified="20220124175343928" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
 </div>
-<div created="20220613151133195" list="[[jeux à faire avec enfants]] [[current bookmarks]] DecomissionPcTt [[daily routine à inclure]] [[Flashcards à faire]] everywhere-bundle Home" modified="20220613151247394" title="$:/StoryList">
+<div created="20220629130822268" list="[[idées jeu société]] [[conscience - notes &amp; idées diverses]] [[current bookmarks]] DecomissionPcTt [[daily routine à inclure]] [[Flashcards à faire]] everywhere-bundle Home" modified="20220629130931403" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20220124175934968" list="$:/core/ui/Buttons/more-tiddler-actions $:/core/ui/Buttons/edit $:/plugins/ajh/favorites/template $:/plugins/danielo515/encryptTiddler/crypt-button $:/core/ui/Buttons/info $:/core/ui/Buttons/new-here $:/core/ui/Buttons/new-journal-here $:/core/ui/Buttons/clone $:/core/ui/Buttons/export-tiddler $:/core/ui/Buttons/delete $:/core/ui/Buttons/permalink $:/core/ui/Buttons/permaview $:/core/ui/Buttons/open-window $:/core/ui/Buttons/close-others $:/core/ui/Buttons/fold-others $:/core/ui/Buttons/fold $:/core/ui/Buttons/fold-bar $:/core/ui/Buttons/close" modified="20220126091628309" title="$:/tags/ViewToolbar">
@@ -10155,11 +10155,11 @@ Home
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
-            &quot;text&quot;: &quot;1920&quot;
+            &quot;text&quot;: &quot;1536&quot;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;1080&quot;
+            &quot;text&quot;: &quot;864&quot;
         }
     }
 }</pre>
@@ -10170,8 +10170,8 @@ Home
 <div created="20210313142548541" modified="20220531145637269" title="$:/temp/password2">
 <pre></pre>
 </div>
-<div created="20190114084246125" modified="20220613151236210" title="$:/temp/search">
-<pre>kid talk</pre>
+<div created="20190114084246125" modified="20220628084405915" title="$:/temp/search">
+<pre>idées</pre>
 </div>
 <div created="20190108084849123" modified="20190108084857507" title="$:/theme">
 <pre>$:/themes/tiddlywiki/snowwhite</pre>
@@ -11257,7 +11257,7 @@ sentiment = émotion x temps
 
 bonheur = joie x temps</pre>
 </div>
-<div created="20190725145732868" modified="20220603085918167" tags="dev" title="code snippets">
+<div created="20190725145732868" modified="20220615105318096" tags="dev" title="code snippets">
 <pre>! Java stream regroupement d'objets en Map&lt;A, B&gt; à partir d'une liste d'objets
 
 ```
@@ -11309,6 +11309,12 @@ IntStream.range(0, proposals.size()).forEach
         }
     }
 
+```
+
+! Kotlin : création d'un lambda
+
+```
+var assert200 = { response: ApiCallResponseWrapper -&gt; assertThatResponseStatusIs(response, 200) }
 ```
 
 
@@ -13931,8 +13937,13 @@ Heureusement, tout cela n’est pas inéluctable. Comme cette guerre se dérou
 ** en titane
 * quand il va trop vite, est-ce qu'un schizophrène ?</pre>
 </div>
-<div created="20220610153021952" modified="20220610153429264" tags="improve jeux" title="idées jeu société">
-<pre>! jeu à plateau, positionnement
+<div created="20220610153021952" modified="20220629131902910" tags="improve jeux" title="idées jeu société">
+<pre>! jeu à plateau, positionnement (inspi : AGoT melee, jeu de quidditch de Oz)
+! pve ET pvp (inspi : Shadowrun Crossfire, Munchkin, Horreur à Arkham &amp; autre jce coop, ...)
+* les joueurs affrontent des &quot;monstres&quot;, mais se tirent la bourre
+* possibilité de &quot;positionnement&quot; par rapport aux monstres
+** proche/loin/caché
+** en face / flanc gauche ou dorit / dans le dos
 
 ! jeu à background &quot;mage l'ascension&quot; : 
 * un joueur peut &quot;bluffer&quot; n'importe quelle carte d'action (voire mm n'importe quel &quot;niveau de puissance&quot; d'un sortilège)
@@ -13987,16 +13998,112 @@ Heureusement, tout cela n’est pas inéluctable. Comme cette guerre se dérou
 * des sorts peuvent ajouter/ôter des tokens d'action (~= ralentir/accélérer)
 
 ! idées en vrac
-* Le combat introduit des concepts originaux et appréciables: tant que le défenseur ne place pas un contre, il subit une pluie de coups et reste en posture défensive.
-* D6xD6
-* inversion des dés utilisés pour connaitre le crit
+* ~àla gloomhaven : chaque carte comporte 2 parties indépendantes, on peut jouer soit le haut, soit le bas
+** ne pouvoir jouer que les parties hautes au sein du même tour ? (~àla keyforge)
+** devoir jouer 1 haute &amp; 1 basse en même temps, par paires ?
+** devoir alterner ?
+* dés: lancer un sort requiert d'accumuler un certain nb de symboles/couleur/nombres sur les dés de ~mana/resource
+** temps de cast : 
+*** limiter le nb de dés lançables par tour (en f° du &quot;niveau&quot;, du stuff, de la classe... typiquement un invocateur pourra caster + de dés par tour pour les sorts d'invocation)
+*** possibilité d'ajouter des cartes qui émulent un résultat spécifique de dé
+**** chaque carte dispose de cette possibilité ?
+**** certaines cartes seulement, et elles ne font que ça ?
+** options : possibilité de rajouter des paramètres : augmente/réduit le coût
+*** cible supplémentaire
+*** portée (contact seulement, courte, longue, visible ou pas... (visibilité : ~wanted/bang ?))
+*** incantation statique ou mobile
+*** DoT supplémentaire
+** contres
+*** retarder un sort en relançant un dé du caster
+***  contrer un sort en retirant des dés du caster
+*** contrer un sort en annulant des dés du caster
+**** ex: chaque dé de contre annule 1 dé de valeur/symbole équivalent
+** après un jet excellent, possibilité de récupérer les dés excédentaires (mais en risquant : de les perdre ? une brûlure de mana ? quel enjeu ?)
+* &quot;forme&quot; (inspi: DBS (awakened), keyforge (1 seule couleur par tour), shadowpriest wow (shadowform)...)
+** chaque joueur doit choisir une forme
+*** au début de son tour ?
+*** ou à la fin de son tour précédent ?
+**** auquel cas : ce commitment est fait face visible ? 
+**** ou cachée ?
+*** ou bien chaque joueur fait ce choix face cachée en même temps, pour la manche/round/tour (~àla complots AGoT)
+** il est limité dans les cartes/sorts/effets qu'il peut jouer par la forme assumée
+** possibilités de gameplay : 
+*** effets permettant d'empêcher un joueur de changer de forme pendant N tours
+*** effet contraignant un joueur à assumer une forme
+*** effet permettant de changer de forme en milieu de tour
+** limiter cela à certaines classes ?
+*** ~posture frénésie/neutre/défense (wow warrior)
+*** métamorphose ours / chat / ... (wow druid)
+*** aspect guépard / faucon / ... (wow hunter)
+*** orientation de sorts offensive / défensive
+* Le combat introduit des concepts originaux et appréciables: tant que le défenseur ne place pas un contre, il subit une pluie de coups et reste en posture défensive. (~àla Elékasë)
+* D6xD6 (jdr éponyme)
+* inversion des dés utilisés pour connaitre le crit (~àla Warhammer)
 * prévision du résultat du jet pour obtenir un boost
 * àla Agone : pas de jets, résultat déterministe par les comparaisons de caracs
 * àla Scales : (quasi) pas de caracs, seulement des 2-3 traits de compétence &amp; 1-2 traits de faiblesse
 * àla noHP : pas de PV, une &quot;blessure&quot; fait perdre un niveau d'efficacité dans une des 4 caracs principales
 * àla Falkenstein : pas de dés mais des cartes
-* chaque joueur a N tokens, et peut donner 1 token (à un joueur | au pot central) pour effectuer une action spéciale
-</pre>
+* ''chaque joueur a N tokens, et peut donner 1 token (à un joueur | au pot central) pour effectuer une action spéciale''
+* mana partagé entre les joueurs (~àla Mage Noir : https://magenoir.com/ https://www.trictrac.net/jeu-de-societe/mage-noir )
+* Une mécanique de &quot;craft&quot; de sorts : chaque sort peut servir de composant pour en lancer un plus puissant (~àla Mage Noir : https://magenoir.com/ https://www.trictrac.net/jeu-de-societe/mage-noir )
+
+! classes &amp; races
+* les joueurs jouent des &quot;monstres&quot; et affrontent des héros
+** race (visible/connue de tous): 
+*** gobelin / gobz
+*** murloc
+*** kobold
+*** skaven (hommes-rats warhammer)
+*** trogg (wow)
+*** troglodytes (HMM3)
+*** gnolls (Baldur's Gate, HMM3, wow)
+*** imps / diablotin (wow, HMM3)
+*** ?? gremlins (HMM3)
+*** ?? gnomes lépreux (wow gnomeregan)
+*** ?? golems / constructs
+*** ?? fungi / fungus (champignons humanoïdes)
+*** ?? squelette
+*** ?? zombie
+*** ?? nerubians (wow)
+*** ogre-magi (2 têtes : 2 joueurs)
+** classe = cachée
+*** interdit certaines cartes/école de magie
+*** offre une condition de victoire particulière (~àla Bang/Wanted, ~Tiercelieu, ~Citadelle...)
+*** possibilité de révéler sa classe : révèle sa condition de victoire, mais donne un pouvoir supplémentaire
+**** nécromant / liche : 
+***** objectif = parvenir à se métamorphoser en liche
+***** pouvoir = invoquer des squelettes/zombies
+**** assassin : 
+***** objectif = tuer un joueur (choisi ? aléatoire ? désigné par une règle (ex: celui de droite) ?)
+***** pouvoir = poisons (snare, dot, anti-heal, augm° dégâts subis...)
+**** ingénieur : 
+***** objectif = réunir &amp; construire un construct majeur (= réunir des cartes ~àla YuGiYo)
+***** pouvoir = construire des machines (decoy, fumigène, pet mécanique, ...)
+**** démoniste : 
+***** objectif = réussir à invoquer un démon majeur (= prise d'objectifs + aboutissement de l'incantation d'un rituel)
+***** pouvoir = invoquer des démons (mineurs, majeurs...)
+**** prêtre : 
+***** objectif = arriver à faire survivre le groupe entier
+***** pouvoir = soigner un joueur
+**** voleur / ninja : 
+***** objectif = parvenir à dérober un truc ? une liste de trucs ?
+***** pouvoir = dérober des trucs ? (ou bien tout le monde peut faire ça, les gobz se chamaillent pour les compos car concurrence des objectifs ?)
+**** alchimiste : 
+***** objectif = transmuter la pierre philosophale
+***** pouvoir = réaliser des potions
+**** mage / tissesorts
+***** pouvoir = peut bluffer les niveaux de sorts
+***** objectif = ??
+**** lycanthrope / garou
+**** ...
+
+! condition de victoire
+* non-élimination
+** points de victoire (~àla AGoT, ~Katana)
+** éliminer un joueur en particulier (~àla Vampire Rivals)
+** prise d'objectifs (~àla Arathi battleground WoW, ~L5R, ~YuGiYo)
+*** objets à looter sur les &quot;monstres&quot;</pre>
 </div>
 <div created="20210609154906945" modified="20210609155257736" tags="communication fiche_lecture" title="Influence &amp; manipulation">
 <pre>* Pied dans la bouche
@@ -15836,7 +15943,7 @@ Lucie Aubrac, Raymond Aubrac, Henri Bartoli, Daniel Cordier, Philippe Dechartre,
 &lt;&lt;&lt;
 </pre>
 </div>
-<div created="20201201132516726" modified="20220613151255636" tags="kids" title="Perçou kid talk Perceval">
+<div created="20201201132516726" modified="20220615092115684" tags="kids" title="Perçou kid talk Perceval">
 <pre>* a kapoté &gt;&gt;	le grain de beauté
 * a kakopel &gt;&gt;	le tractopelle
 * akatola &gt;&gt;	chocolat
@@ -15879,6 +15986,7 @@ Lucie Aubrac, Raymond Aubrac, Henri Bartoli, Daniel Cordier, Philippe Dechartre,
 * z'ai ''deviné'' une sanson pour vous... (réfléchis...) quarantaine, carambar, un p'ti nain qui rentre dans une armoire
 * c'est pour en profiter que je sois pas mort que je mets un casque
 * est-ce que tu as besoin des gants des fois pour aller à la junglerie, maman ? (junglerie = lingerie)
+* (chanson) z'ai trouvé _ un poisson _ en creusant _ dans la mer
 </pre>
 </div>
 <div created="20190301161125545" modified="20190301161230451" tags="fiche_lecture" title="Philogynes BIG5" type="">
@@ -16079,13 +16187,16 @@ http://liens.howtommy.net/?Be1gEQ
 * Tout en respirant par le ventre, parlez sur un ton plus grave que d’habitude pour dire vos répliques. Les femmes devront s’exercer plus que les hommes, car en général leur voix est plus aiguë et ne porte pas loin. Donc, respiration « basse » et voix grave : vous projetterez votre voix au maximum.
 Faites de tels exercices régulièrement durant vos répétitions. Vous verrez : la différence sera remarquable! On vous entendra de loin… et sans micro.</pre>
 </div>
-<div created="20220609090832140" modified="20220609124626114" tags="" title="pseudos">
+<div created="20220609090832140" modified="20220616143927871" tags="" title="pseudos">
 <pre>* Leno
 * Chanii
 * Sinakaë
+* Lancelot
 * Øð (alt-157, alt-208)
 * Øô
 * Aljernoon
+* Sac d'Os
+* Degolas
 
 ! misc
 * Hrun
@@ -16154,7 +16265,7 @@ Faites de tels exercices régulièrement durant vos répétitions. Vous verrez :
 * Yoshimo (BGII)
 * Sarevok</pre>
 </div>
-<div created="20190130144059269" modified="20220531145652789" tags="core" title="pw">
+<div created="20190130144059269" modified="20220617140744995" tags="core" title="pw">
 <pre>pw passw
 
 * cnpnet.cnp.fr =&gt;  CnpNet521t 
@@ -16186,7 +16297,7 @@ cseausy.fr sa.le@ausyfr C521 double
 leno.1fr1.nt =&gt; A...n 2/20
 FREEBOX =&gt; 1/20
 subscribe.free.fr/login =&gt; fbx18043933 521 alphanumonly / fbx27860631 bébé-terme (alphanumonly)
-youtube =&gt; osefgrr.la	5+21    cf https://www.guerrillamail.com/fr/inbox?mail_id=476361683
+youtube =&gt; osefgrr.la	5+22    cf https://www.guerrillamail.com/fr/inbox?mail_id=476361683
 =&gt; osefosef@grr.la 2/20
 aliexpress =&gt; ali.s.lx.n 6/19
 impots.gouv.fr =&gt; 1200125072181 / i 5/17
