@@ -397,6 +397,8 @@ Error message and password prompt
 
 <li>Emma kid talk</li>
 
+<li>Emmanuelle &amp; socialisation</li>
+
 <li>Emotion, décision, libre-arbitre - ÉLISABETH FEYTIT</li>
 
 <li>En finir avec la bedaine, en 5 leçons</li>
@@ -476,6 +478,8 @@ Error message and password prompt
 <li>isolation</li>
 
 <li>jdr enfants</li>
+
+<li>jdr system ideas</li>
 
 <li>jeux à faire avec enfants</li>
 
@@ -608,6 +612,8 @@ Error message and password prompt
 <li>Resilience</li>
 
 <li>Rhétorique</li>
+
+<li>ruminer / revenir à soi - Padovani</li>
 
 <li>S4ALL débattre</li>
 
@@ -10086,8 +10092,8 @@ Home
 <div created="20220503121158021" modified="20220610090642861" title="$:/state/folded/DecomissionPcTt">
 <pre>hide</pre>
 </div>
-<div created="20220503121015830" modified="20220505200117135" title="$:/state/folded/everywhere-bundle">
-<pre>hide</pre>
+<div created="20220503121015830" modified="20221121094531416" title="$:/state/folded/everywhere-bundle">
+<pre>show</pre>
 </div>
 <div created="20220503121408371" modified="20220914121602694" title="$:/state/folded/Flashcards à faire">
 <pre>show</pre>
@@ -10131,7 +10137,7 @@ Home
 <div created="20190108084833171" modified="20220131141113287" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
-<div created="20190108104722609" modified="20221012130049528" title="$:/state/tab/moresidebar-1850697562">
+<div created="20190108104722609" modified="20221121093452007" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
 <div created="20190108101211875" modified="20221012130046593" title="$:/state/tab/sidebar--595412856">
@@ -10140,7 +10146,7 @@ Home
 <div created="20220124175326357" modified="20220124175343928" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
 </div>
-<div created="20221118105131258" list="[[shadowrun ideas]] [[jdr enfants]] [[current bookmarks]] DecomissionPcTt [[daily routine à inclure]] [[Flashcards à faire]] everywhere-bundle Home" modified="20221118105131258" title="$:/StoryList">
+<div created="20221210110600890" list="[[Emmanuelle &amp; socialisation]] [[current bookmarks]] DecomissionPcTt [[daily routine à inclure]] [[Flashcards à faire]] everywhere-bundle Home" modified="20221210110921208" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20220124175934968" list="$:/core/ui/Buttons/more-tiddler-actions $:/core/ui/Buttons/edit $:/plugins/ajh/favorites/template $:/plugins/danielo515/encryptTiddler/crypt-button $:/core/ui/Buttons/info $:/core/ui/Buttons/new-here $:/core/ui/Buttons/new-journal-here $:/core/ui/Buttons/clone $:/core/ui/Buttons/export-tiddler $:/core/ui/Buttons/delete $:/core/ui/Buttons/permalink $:/core/ui/Buttons/permaview $:/core/ui/Buttons/open-window $:/core/ui/Buttons/close-others $:/core/ui/Buttons/fold-others $:/core/ui/Buttons/fold $:/core/ui/Buttons/fold-bar $:/core/ui/Buttons/close" modified="20220126091628309" title="$:/tags/ViewToolbar">
@@ -10194,11 +10200,11 @@ Home
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
-            &quot;text&quot;: &quot;1920&quot;
+            &quot;text&quot;: &quot;1280&quot;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;1080&quot;
+            &quot;text&quot;: &quot;720&quot;
         }
     }
 }</pre>
@@ -10209,8 +10215,8 @@ Home
 <div created="20210313142548541" modified="20221013085855629" title="$:/temp/password2">
 <pre></pre>
 </div>
-<div created="20190114084246125" modified="20221118105124259" title="$:/temp/search">
-<pre>shado</pre>
+<div created="20190114084246125" modified="20221210110936069" title="$:/temp/search">
+<pre>shadow</pre>
 </div>
 <div created="20190108084849123" modified="20190108084857507" title="$:/theme">
 <pre>$:/themes/tiddlywiki/snowwhite</pre>
@@ -11325,7 +11331,7 @@ sentiment = émotion x temps
 
 bonheur = joie x temps</pre>
 </div>
-<div created="20190725145732868" modified="20221028135754221" tags="dev" title="code snippets (java, git, kubectl / k8s ...)">
+<div created="20190725145732868" modified="20221130101524081" tags="dev" title="code snippets (java, git, kubectl / k8s ...)">
 <pre>! Java
 !! Java stream regroupement d'objets en Map&lt;A, B&gt; à partir d'une liste d'objets
 
@@ -11419,6 +11425,22 @@ git clone --branch &lt;branchname&gt; &lt;remote-repo-url&gt;
 ** //If you mark one or more lines as &quot;squash&quot;, they will be combined with the one above//
 * git rebase remotes/origin/develop
 ** rebase directement depuis le distant pour éviter les pb de fetch
+
+!! git pull une branche locale sans se mettre dessus
+* git fetch //remote// //sourceBranch//://destinationBranch//
+* git fetch origin develop:develop
+
+
+```
+# Merge local branch foo into local branch master,
+# without having to checkout master first.
+# Here, . means to use the local repository as the &quot;remote&quot;:
+git fetch . foo:master
+# Merge remote branch origin/foo into local branch foo,
+# without having to checkout foo first:
+git fetch origin foo:foo
+
+```
 
 
 ! kubectl / k8s
@@ -11708,7 +11730,7 @@ Conclusion : la confiance est très dure à mettre en place. Et quand elle est p
 ```
 </pre>
 </div>
-<div created="20200131132103939" modified="20221012130024072" tags="idea conscience" title="conscience - notes &amp; idées diverses">
+<div created="20200131132103939" modified="20221208124103003" tags="idea conscience" title="conscience - notes &amp; idées diverses">
 <pre>! test de ~Turing pour identifier une conscience
 Expérience de pensée (ou idée à mettre en place ?) pour mieux comprendre son rapport personnel à l'idée de conscience (phénomène émergent, singularité de source divine, ...?)
 L'idée est de comparer en regard &quot;boîte noire&quot; 2 (catégories d')entités :
@@ -11731,6 +11753,8 @@ Et si nos yeux servent à capter les particules de lumière, les photons, pour q
 
 ! Freud, langage, inconscient
 selon Freud, l'inconscient est structuré comme un langage &gt;&gt;&gt; le langage crée l'inconscient ??? l'inconscient émerge du langage ?
+* l'animal n'a pas de langage (abusif mais osef), il est ''présent'' au monde sans vision structurée
+* l'humain superpose des repères à sa perception du monde : sa conscience est enveloppée dans l'insconscient (semi-structure) auquel se superpose le conscient (cf Precepteur/Nietzsche dionysien/apolinien)
 
 ! vie &amp; particule élémentaire de conscience
 Alexandra Henrion-Claude propose l'idée d'&quot;amourons&quot;, particule élémentaire d'amour / de conscience ?? serions-nous alors chacun un agglomérat de particules élémentaires de conscience ? (~ notion d'essence dans Shadowrun)
@@ -11738,8 +11762,21 @@ Alexandra Henrion-Claude propose l'idée d'&quot;amourons&quot;, particule élé
 ! physique quantique
 l'observation perturbe l'expérience, mais de façon PREDICTIBLE &gt; il n'y a toujours zéro choix
 
+! nature duelle de la conscience 
+(cf Matthieu Play / Padovani &quot;Au delà de la norme et des étiquettes&quot; part 4/4 https://www.youtube.com/watch?v=7NMeOlvFfaM )
+de même qu'un photon est à la fois onde et corpuscule, la conscience serait à la fois un &quot;champ&quot; omniprésent/étendu/universel/sans-limites (jésus l'appelle &quot;le royaume&quot;) et à la fois une entité, quelqu'un en train de vivre ça (jésus l'appelle &quot;le père&quot;) - à la fois un espace et un &quot;je suis&quot;
+
 ! transhumanisme, course à l'intelligence &amp; absolu
-l'intelligence est la capacité à traiter les inputs pour en tirer des conclusions &gt; la course à l'intelligence du transhumanisme néglige le caractère vain de l'intelligence : ''par définition (à approfondir?)'', les inputs sont limités ET la capacité de traitement l'est également &gt; l'absolue/infini est inaccessible par l'intelligence seule &gt; ''une intelligence absolue nécessite/induit des inputs absolus/complets/infinis et donc aucun BESOIN de traitement, puisque tout est su, ce qui écarte la notion d'intelligence....?''</pre>
+l'intelligence est la capacité à traiter les inputs pour en tirer des conclusions &gt; la course à l'intelligence du transhumanisme néglige le caractère vain de l'intelligence : ''par définition (à approfondir?)'', les inputs sont limités ET la capacité de traitement l'est également &gt; l'absolue/infini est inaccessible par l'intelligence seule &gt; ''une intelligence absolue nécessite/induit des inputs absolus/complets/infinis et donc aucun BESOIN de traitement, puisque tout est su, ce qui écarte la notion d'intelligence....?''
+
+! la conscience comme champ potentiel
+(idée perso) il y aurait un &quot;champ de conscience&quot; omniprésent, et chaque &quot;individu&quot;/&quot;être conscient&quot; serait une fenêtre donnant sur ce champ de conscience -- à l'image d'une source lumineuse (champ de conscience) dont la lumière filtrerait à travers des trous percés dans une paroi (les trous sont les consciences individuelles, et la paroi ~ le réel ou la matérialité
+
+* la conscience individuelle pourrait alors s'échelonner sur un continuum (taille du trou laissant passer la lumière, forme...)
+** fourmi = petite conscience indiv, humain = grande conscience indiv
+** ensemble de trous rapprochés / en lien = macro-&quot;instance de conscience&quot; ? (ex: société humaine, colonie de fourmis...)
+* peut-il alors y avoir des consciences qui se recoupent ? (ex: j'ai conscience de moi, mais si ça se trouve certaines bactéries/cellules me composant ont une conscience individuelle limitée, ou bien notre société humaine a une conscience individuelle, ou encore un amas de galaxies a une conscience......)
+(voir aussi l'analogie vue ici ou là de la conscience divine comme masse océanique et les vagues comme consciences individuelles, émanant de cette conscience divine)</pre>
 </div>
 <div created="20190426093809319" modified="20190426094628236" tags="conscience" title="Conscience &amp; temps &amp; spi">
 <pre>* James Randi Zététicien	https://www.youtube.com/channel/UCufMEUXvtTGZ_twRq3HSQgg
@@ -12524,6 +12561,13 @@ racloir d'oreille / oriculi / cure-oreill https://www.boutiquezerodechet.com/sal
 * Quand j'étais grande ...
 </pre>
 </div>
+<div created="20221210110939316" modified="20221210111239490" tags="kids" title="Emmanuelle &amp; socialisation">
+<pre>2022-12
+
+&quot;Callie et Emma ont dit que je sens pas bon&quot;
+
+&quot;Mais Lola, Ashley &amp; Manon elles disent que c'est pas vrai, que je sens bon. Elles disent que Callie et Emma elles disent ça parce qu'elles m'aiment pas.&quot;</pre>
+</div>
 <div created="20190604100557828" modified="20190604100648946" tags="fiche_lecture" title="Emotion, décision, libre-arbitre - ÉLISABETH FEYTIT">
 <pre>@41'35 https://www.youtube.com/watch?v=639zswxOK5A
 
@@ -12764,7 +12808,7 @@ http://jeanzin.fr/ecorevo/sciences/entropie.htm
 * https://www.ebooksgratuits.com/ebooks.php
 * https://www.e-reading.club/</pre>
 </div>
-<div created="20220502152957655" modified="20220505095219540" tags="" title="everywhere-bundle">
+<div created="20220502152957655" modified="20221121094730481" tags="" title="everywhere-bundle">
 <pre>! usb key
 * https://www.amazon.fr/SanDisk-Cl%C3%A9-USB-SDCZ33-G35-2-0/dp/B08GZR7BW7
 * https://www.amazon.fr/Lani%C3%A8re-Stockage-Compatible-Ordinateur-Autoradio/dp/B09V14NY72
@@ -12792,10 +12836,14 @@ http://jeanzin.fr/ecorevo/sciences/entropie.htm
 ** ''ffmpeg portable''
 ** vlc portable
 ** smplayer portable
-** fallout
-*** 1.5
-*** 2 + abbaye
-** ???
+** jeux
+*** fallout
+**** 1.5
+**** 2 + abbaye
+*** Slay the Spire
+*** émulators ?
+*** Accross
+*** dosbox misc (Dune 1&amp;2, ...)
 
 * presti
 ** pdfs
@@ -14376,33 +14424,63 @@ ctrl + alt + H</pre>
 *** PAC &quot;eau chaude&quot; 13500€ (installation comprise)
 *** PAC sans eau chaude : 11500€ (installation comprise)</pre>
 </div>
-<div created="20221118104032132" modified="20221118105014859" tags="idea kids education jeux" title="jdr enfants">
-<pre>! pas de mort: fuite ou KO
+<div created="20221118104032132" modified="20221121123817718" tags="idea kids education jeux jdr" title="jdr enfants">
+<pre>! pas de mort: 
+* fuite 
+* KO
+* fatigué
+* bosse / bleu
+* genou écorché / saigne
+* tombé par terre
+* en pleurs
 
 ! settings :
 * pirates / chasse au trésor
 * pokemon
 * ninjago
 * heart of darkness ? &gt; une éclipse fait disparaitre le chien du héros qui part à sa rescousse dans le monde des ténèbres
+* Kirikou : méchant pas vraiment méchant, malédiction, rédemption, 
+* Ryo : Blu &amp; Elise : libérer les animaux prisonniers dans des ''cages / prisons''
 
 ! PNJs :
 * robots
 * licorne
 * père-noel
 * la petite souris
+* minions
+* aliens de ToyStory
+* Schtroumphs
+** grognon
+** bricoleur
+** dormeur
+** à lunettes
+* 7 nains
+** joyeux
+** grincheux
+** prof
+** simplet
+** atchoum
+** timide
+** dormeur
 * dhabus (speaks in symbols)
 
 ! opponents :
 * sorcière
 * grand méchant loup
-* champignomes (hommes-champignons toxiques)
+* Gargamel
+* Capitaine Crochet
+* pirates
 * dinosaures
 * gros rat moche
+* farfadets / lutins / korrigan
+* loup, tigre, lion
+* crocodile
 * ogre
+* champignomes (hommes-champignons toxiques)
 * minotaure
+* radscoprion / scorpion géant
 * dragon
 * homme-serpent (ninjago)
-* loup
 * murlocs?
 
 ! items :
@@ -14417,25 +14495,35 @@ ctrl + alt + H</pre>
 
 ! spells :
 * téléportation
-* télékinésie
-* vol
+* télékinésie &quot;bouger un objet par la pensée&quot;
+* vol &quot;s'envoler&quot;
 * sommeil &quot;faire dormir&quot;
-* invisibilité &quot;disparaitre&quot;
+* invisibilité &quot;disparaitre&quot;/&quot;on peut plus te voir&quot;
 * &quot;saut de géant&quot;
+* rapetisser / grandir
+* parler avec les animaux
 
 ! PJ:
 * ninjago
+** Jay : bleu / magie:électricité / précautionneux
+** Kaï : rouge / magie:feu / courageux
+** Nya : bleu-noir / magie:eau
+** Lloyd : vert / cohésion/équipe / magie:life&amp;nature
+** Cole : noir / magie:terre / musicien
+** Zane : blanc / magie:glace / robot
+* Mr Chatouille : grands bras / blagueur / ...
+* Kirikou : petit / malin / courageux
+* Robin des Bois : malin / archer / discret
+* Aladdin : agile / charmeur / courageux
+* Miguel (Coco) : musicien / courageux
+* Elsa (Reine des Neiges) : magie de glace / jolie / princesse / ... (+bonhomme de neige)
 * robots ?
-* Mr Chatouille : grands bras
 * Sullivan (Monster &amp; Co)
 * Bob (Monster &amp; Co)
 * Buzz (Toy Story)
 * Woody (Toy Story)
-* Aladdin
-* Miguel (Coco)
 * Hector (Coco)
 * Hannah (Reine des Neiges)
-* Elsa (Reine des Neiges)
 * Christophe (Reine des Neiges)
 * Ernest (Ernest &amp; Celestine)
 * Celestine (Ernest &amp; Celestine)
@@ -14448,6 +14536,27 @@ ctrl + alt + H</pre>
 * Raiponce			&lt;&lt;
 * Rémy (Ratatouille)
 </pre>
+</div>
+<div created="20221209131638652" modified="20221209132001976" tags="jdr idea" title="jdr system ideas">
+<pre>! Libreté : bile noire
+Libreté est un jeu de Vivien Féasson (qui, au moment de sortir cet article, a lancé un foulancement pour son prochain jeu, Exploirateurs de Bruines, que je ne peux que vous encourager à soutenir) où on joue des enfants survivant dans un monde sans adultes. Au cœur du jeu se trouve la bile noire : lorsque notre personnage se sent perdu, triste, en colère, ou autre sentiment négatif, le jeu nous propose de prendre de 1 à 3 jetons de bile noire dans une pile commune. 
+
+Les jetons ont trois utilisations principales :
+
+* le moment, la manière et le nombre de jetons qu’on prend renseigne la table sur les émotions qui traversent notre personnage : partir en disant “je m’en fous de toute façon” et prendre trois jetons donne le sous-titre à la table – en fait notre personnage est très affecté par la situation ;
+* lorsqu’on réalise une action, la seule manière d’obtenir un bonus à notre jet est de dépenser des points de bile noire, qui représentent l’énergie ou l’investissement que notre personnage met dans l’action – au risque d’y aller trop fort en obtenant une réussite excessive synonyme de problème (on casse l’outil utilisé, on fait mal à quelqu’un qu’on voulait juste effrayer un peu, etc.) ;
+* Si notre personnage a 5 jetons de bile noire ou davantage devant lui, l’Aversaire (le MJ) peut lui demander de faire un jet pour ne pas craquer sous les mauvaises émotions qui s’empilent – en cas de mauvais résultat au jet, le personnage pourra faire quelque chose de vraiment grave.
+
+Ces jetons s’apparentent aux points Fate : quand notre personnage est dans une situation qui le désavantage ou l’expose, on prend des pions qu’on peut dépenser ensuite pour gagner un bonus au jet. Mais ici, la joueuse est la seule juge : elle prend des jetons comme elle veut, quand elle veut. Si la table n’est pas au clair sur la manière et le moment de prendre des pions de bile noire, on peut faire une mise au point en fin de partie – mais au final, chacun.e est maitre.sse de ses points.
+
+Par ailleurs, cette mécanique trouve très naturellement sa place au cœur du jeu : là où les points Fate se prennent et se donnent par des ajouts à une situation de départ, la bile noire représente les états émotionnels des personnages, qui sont au centre des parties de Libreté. Comme la bile est ''une monnaie à la fois dangereuse (puisque miser de la bile peut entrainer une réussite excessive et qu’en garder trop de côté amène à craquer) et importante (c’est le principal moyen d’obtenir des bonus aux jets de dés qu’on fait)'', son économie tourne très facilement. Comme ''on l’obtient quand son personnage vit des émotions négatives, on doit impliquer notre personnage dans ce qui se vit à table'' sous peine de passer la partie au second plan.
+
+Dans mon expérience, les parties de Libreté ont toujours été intenses en grande partie grâce à la Bile noire. C’est pour moi un excellent exemple de gamification réussie, puisqu’il est :
+
+* dépendant de la joueuse, ce qui évite les négociations entre participant.e.s, 
+* utile à la partie mais pas nécessaire à son accomplissement, ce qui invite à l’utiliser sans mettre une trop grosse pression sur les joueuses, 
+* intégré efficacement au reste des mécaniques de jeu, ce qui permet d’en comprendre rapidement les tenants et les aboutissants,
+* jouant (au sens de “fun” ), parce qu’il y a un intérêt et un risque à en prendre et à en garder tout au long de la partie, mais aussi lorsqu’on l’utilise (on mise des jetons qu’on ajoute à une dose de hasard – le jet de dés).</pre>
 </div>
 <div created="20220613151334864" modified="20220613152132364" tags="education kids jeux" title="jeux à faire avec enfants">
 <pre>! SALLAFRANQUE Marie
@@ -14470,17 +14579,22 @@ ctrl + alt + H</pre>
 ** https://www.jeux-gratuits.com/jeu-moto-x3m-winter.html
 </pre>
 </div>
-<div created="20200217132431231" modified="20220610160101481" tags="todo jeux" title="jeux à faire/refaire">
+<div created="20200217132431231" modified="20221129084554300" tags="todo jeux" title="jeux à faire/refaire">
 <pre>! Jamais joué
 * Fallout 1.5
 * Fallout 2 + abbay
+* ''Arcanum'' (par les devs de Fallout, après Fallout)
 * ''Shadowrun Hong Kong'' (2015)
+* Shadowrun SNES
+* Shadowrun Genesis
+* ''Shadow Tactics Blades of the Shogun''
 * ''Underrail'' (2015)
 * Vampire : Redemption (2000)
 * Vampire : Bloodlines (2004)
 * ''Disco Elysium'' (2019)
 * Wasteland 2
 * Arx Fatalis
+* Dex (action-RPG à défilement horizontal dans un univers cyberpunk)
 * Thief : Dark Project
 * System Shock I &amp; II
 * Monkey Island
@@ -14518,6 +14632,7 @@ ctrl + alt + H</pre>
 * Besiege
 * Cities Skylines
 * Pillars of Eternity
+* Stasis (point-and-click, sci-fi, horror adventure game)
 
 ! Déjà joué
 * Interstate 76
@@ -14543,7 +14658,7 @@ ctrl + alt + H</pre>
 ** Marko's Magic Football
 ** Rocket Knight Adventures</pre>
 </div>
-<div created="20220523123402867" modified="20220523140006284" tags="jeux" title="jeux pratiqués">
+<div created="20220523123402867" modified="20221121093535286" tags="jeux jdr" title="jeux pratiqués">
 <pre>! compétitifs
 * MtG Magic the Gathering JCC
 * GoT / TdF / Game of Thrones / Trône de Fer JCE
@@ -16254,7 +16369,7 @@ Lucie Aubrac, Raymond Aubrac, Henri Bartoli, Daniel Cordier, Philippe Dechartre,
 &lt;&lt;&lt;
 </pre>
 </div>
-<div created="20201201132516726" modified="20221012112938319" tags="kids" title="Perçou kid talk Perceval">
+<div created="20201201132516726" modified="20221210110911627" tags="kids" title="Perçou kid talk Perceval">
 <pre>* a kapoté &gt;&gt;	le grain de beauté
 * a kakopel &gt;&gt;	le tractopelle
 * akatola &gt;&gt;	chocolat
@@ -16310,6 +16425,10 @@ Lucie Aubrac, Raymond Aubrac, Henri Bartoli, Daniel Cordier, Philippe Dechartre,
 * &quot;en fait dans AU FEU LES POMPIERS&quot;, c'est les pompiers qui ''dé-brûlent'' la maison, pasque la maison elle s'est brûlée toute seule&quot;
 * (veut ma pièce magique: &quot;je t'ai donné une pièce à toi déjà !?&quot;) (triste)&quot;non mais elle est dans un autre t-shirt !!!&quot;
 * (Perceval, tu exagères !) &quot;NON ! Z'suis pas xagère !!!&quot;
+* z'avais mis des zautocollants dans l'imprimante pour imprimer des zautocollants
+* NON c'est PAS VRAI ! Parce que sinon j'te ''tappe la paix'' !
+* non &quot;des gallinacées&quot; c'est pas un oiseau ! dégalinasser ça veut dire danser !! (dans &quot;Rock 'n roll des gallinacées =&gt; rock n roll dégalinacez)
+* (parlant d'un ondamania) si tu m'le donne on dira que ça sera maccordéon
 </pre>
 </div>
 <div created="20190301161125545" modified="20190301161230451" tags="fiche_lecture" title="Philogynes BIG5" type="">
@@ -16475,7 +16594,7 @@ http://liens.howtommy.net/?Be1gEQ
 
 </pre>
 </div>
-<div created="20220511172245331" modified="20221006064329078" tags="" title="prénoms">
+<div created="20220511172245331" modified="20221121135138581" tags="" title="prénoms">
 <pre>! androgynes
 * ''Cassandre''
 * ''Dominique''
@@ -16524,7 +16643,9 @@ http://liens.howtommy.net/?Be1gEQ
 * J: Alban
 * J: Adaël
 * S: Adonis
-* S: Aramis
+* S: ''Aramis''
+* J: ''Esmeralda''
+* J: Victoire
 
 ! brainstorm féminin S&amp;J
 * Emmanuelle
@@ -16533,10 +16654,10 @@ http://liens.howtommy.net/?Be1gEQ
 * Aurore
 * Esther
 * Camille
-* Io
+* ''Io''
 * Petra / Petrouchka
 * Cassandre
-* Antigone
+* ''Antigone''
 * Chanii
 * Nemesis</pre>
 </div>
@@ -17776,6 +17897,16 @@ https://www.amazon.fr/dp/B004T9WRJK/?coliid=IWKZ281GVG30I&amp;colid=2OVN57DIUA0J
 # narration/storytelling
 </pre>
 </div>
+<div created="20221208124140014" modified="20221208130620458" tags="fiche_lecture exercices routine todo" title="ruminer / revenir à soi - Padovani">
+<pre>(cf Matthieu Play / Padovani &quot;Au delà de la norme et des étiquettes&quot; part 4/4 https://www.youtube.com/watch?v=7NMeOlvFfaM ) 
+
+Le soir, avant de dormir, prendre le temps de &quot;ruminer&quot; :
+
+* revenir au corps (main sur le cœur central)
+* contacter ce que j'ai fais, ce qui a été nourrissant pour moi, ce que je veux célébrer et honorer
+* pas forcément long, ça peut devenir une présence instantanée à toi
+</pre>
+</div>
 <div created="20190301160932076" modified="20190329084935546" tags="fiche_lecture" title="S4ALL débattre">
 <pre>https://www.youtube.com/watch?v=CocRVkQzxfU
 
@@ -17837,12 +17968,13 @@ It's NOT 'Just Going To Happen!'
 * clé U2F		https://u2f-key.tech/fr/
 </pre>
 </div>
-<div created="20221110161421302" modified="20221118110543788" tags="idea jeux" title="shadowrun ideas">
+<div created="20221110161421302" modified="20221122160426399" tags="idea jeux jdr" title="shadowrun ideas">
 <pre>! idées personnages
 * &quot;paradogs&quot; paradox paranormal dog
 * buggy cyberware (not retracting razorblades, ...)
 * pj ghoul + cyber-eyes
 * fake-paraplegic (cyber switch to disable/enable legs + program to keep legs trained)
+* 'real-looking' cyberarms + integrated ceramic gun
 
 ! idées PJ pré-tirés
 * non-combat (adept) shaman
@@ -17862,7 +17994,7 @@ primes-à-la-goule &gt;&gt; un pnj rapt des norm (ou les élève ?) pour les tra
 ** control/pilote
 ** turn against legit users (auto-control)
 * login
-**- credentials escalation
+** credentials escalation
 ** get true credential through bruteforce
 * alarm
 ** trigger
@@ -17921,6 +18053,9 @@ primes-à-la-goule &gt;&gt; un pnj rapt des norm (ou les élève ?) pour les tra
 * augmente la difficulté du prochain tir !!!
 * augmente les chances de toucher &gt; nb dés ++
 * trop de balles = devient de + en + dur de toucher
+* gestion des balles perdues
+** chaque pnj dans le champ se voit attribuer un n°
+** chaque 1 est relancé : si match = hit
 !! rolls parameters:
 * &quot;largeur&quot;= nb successes
 * &quot;hauteur&quot;= max success value
@@ -17931,6 +18066,15 @@ primes-à-la-goule &gt;&gt; un pnj rapt des norm (ou les élève ?) pour les tra
 * ignore/suppress: N 1s
 * incremental opposition roll: hidden difficulty
 * hidden difficulty (perception, stealth, decking...)
+* jet à hauteur ouverte :
+** laisser monter les 6 au max de leurs rerolls
+** la hauteur indique qqchose ?
+!! pouvoir controler / limiter un résultat
+* typiquement, ne pas one-shot un pnj, limiter les dégâts
+** ex: viser la jambe lors d'une attaque
+* indiquer à l'avance le niveau de contrôle souhaité X
+** enlève X dés au pool du jet
+** permet de réduire jusqu'à X niveaux de réussites
 
 ! character concepts / typologies de personnages:
 !! concepts
@@ -18033,7 +18177,65 @@ I also point out that an aspected d magician, even with no magical skills and ha
 * zilean &gt; snare / acceleration / back to state
 * Mordekaizer
 * ''Vhailor / Alphonse Elric &gt; empty animated armor &gt; free spirit''
-* ''Dak'kon katana wielding contact mage''</pre>
+* ''Dak'kon katana wielding contact mage''
+
+! Cyberware ideas
+* fake paraplegic switch on/off + muscle trainer / muscle replacement
+* detonator-linked compartment : être capable d'&quot;ingérer&quot; un credstick dans son corps de sorte qu'il soit sealed et que s'il est forcé ça explose
+* cyber-mini-arm 
+** grab &amp; re-toss grenades
+** auto-reload weapon
+
+! Grenades
+* explode on trigger (wireless smartlink)
+** hacker can do a quickness/reaction test to trigger it on holder as soon as it is un-pinned
+* programmable timer (near-field smartlink)
+** hacker can program another timer with aimed field tool
+* decoy grenades: replicates gunshots sounds
+* smoke
+* flash
+
+! initiative &amp; sequence:
+* prendre des dégâts réduit la séquence 
+** mais l'action supplémentaire reste ?
+* snare / glace : réduire la séquence d'init
+
+! ''gestion de plusieurs PNJs en 1 roll'' :
+* difficulté fixe pour le jet
+* chaque pnj a 1 dé
+** + le pnj est proficient + son dé est élevé (d8, d10, d12, d20...)
+*** ''la diff avec le SR indique le nb de succès''
+
+! magic
+* temps de cast
+** delayed initiative sequence
+* Geas
+** Geas de condition : la créature doit être dans un état physique particulier.
+** Geas de jeûne : la créature doit avoir passé la journée à jeûner.
+** ''Geas gestuel'' : la créature doit effectuer des gestes amples et visibles.
+** ''Geas d'incantation'' : la créature doit prononcer des incantations.
+** Geas de lieu : la créature doit se trouver dans un environnement particulier.
+** Geas de mentor : la créature restreint ses pouvoirs à ceux que son esprit mentor favorise.
+** Geas de rituel : la créature doit avoir accompli une action particulière dans la journée.
+** ''Geas de talisman'' : la créature doit utiliser un fétiche.
+** Geas de temporel : la créature ne peut utiliser ses capacités magiques qu'à un moment donné.
+* univers alternatif avec magie amoindrie
+** àla L'Assassin Royal : 
+*** &quot;the Skill&quot;
+**** distant vision / clairvoyance
+**** telepathy
+**** conversations at great distance
+**** influence minds
+**** induce dreams
+**** alter perception ~light illusion
+*** animals &quot;the Wit&quot;:
+**** speak with animals
+**** see through animal eyes
+**** animal possession
+**** repel animals
+** àla Rogues' World
+*** sorcellerie rituelle uniquement
+</pre>
 </div>
 <div created="20190416125524938" modified="20190418152027154" tags="coinmagic magic" title="shuttle pass / flying shuttle pass">
 <pre>&lt;&lt;&lt;
