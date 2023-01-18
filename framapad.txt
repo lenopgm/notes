@@ -1,5 +1,6 @@
 npp recover : C:\Users\slemoine\AppData\Local\Temp\N++RECOV fichiers ".dump" / http://buffernow.com/notepad-plus-crash-recover-your-lost-file/
 somme infinie finie Σ∞n = -1/12 ~= -0.08   https://www.youtube.com/watch?v=xqTWRtNDO3U
+https://www.balena.io/etcher
 
 GOTO Megadrive : jeux coop
 GOTO Google operators
