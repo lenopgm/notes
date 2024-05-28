@@ -7,10 +7,11 @@ main()
 
 fun main() {
     println("#id,nom EN,nom FR,type 1,type 2,vulnérabilités,résistances,dangereux pour,inoffensif pour\n")
-    val path = "C:\\Users\\samuel_lemoine\\Downloads\\Nouveau dossier\\pokemon\\quickédex\\resources\\"
+    val path = "C:\\Users\\samuel_lemoine\\privé_perso\\PortableGit\\notes\\quickédex\\resources\\"
     val pokemon_types = path + "pokemon_types.csv"
     val type_efficacy = path + "type_efficacy.csv"
     val i18n = path + "pokemon_species_names.csv"
+    val stats = path + "pokemon_stats.csv"
 
     val pokemons = mutableMapOf<Int, Pokemon>()
     
@@ -39,6 +40,7 @@ fun main() {
                     dangerousFor = mutableListOf(),
                     weakAgainst = mutableSetOf(),
                     ratio = 1.0,
+                    statsum = 0,
                 )
                 // Ajouter le Pokémon à la Map des pokemons
                 pokemons[id] = pokemon
@@ -65,6 +67,21 @@ fun main() {
             } else if(locale == 7) {
                 pokemons[id]?.en = name
             } else continue
+        }
+    }
+
+    /* pokemons stats */
+    BufferedReader(InputStreamReader(FileInputStream(stats), "UTF-8")).use { reader ->
+        // pokemon_id,stat_id,base_stat,effort
+        var line: String?
+        first = true
+        while (reader.readLine().also { line = it } != null) {
+            if(first) {first = false; continue }
+            val split = line?.split(',') ?: continue
+            val id = split[0].toInt()
+            if(id < 10000) {
+                pokemons[id]!!.statsum += split[2].toInt()
+            }
         }
     }
 
@@ -140,6 +157,7 @@ data class Pokemon(
     val dangerousFor: MutableList<Int>,
     val weakAgainst: MutableSet<Int>,
     var ratio: Double,
+    var statsum: Int,
 )
 
 fun printTypes(types: Collection<Int>) {
@@ -211,6 +229,7 @@ fun printHTML(pokemons: MutableMap<Int, Pokemon>) {
         printTypesTD(it.dangerousFor)
         printTypesTD(it.weakAgainst)
         printTD("%.2f".format(it.ratio))
+        printTD(it.statsum)
         print("</tr>")
         println()
     }
