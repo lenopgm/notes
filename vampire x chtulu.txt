@@ -1,5 +1,6 @@
 couloir infini
 	une sortie se profile quand ils se font une réflexion particulière ? (échelle, trou, virage...)
+	si demi-tour, pas long de revenir (genre après 1h de marche en avant, 3mn suffisent à revenir)
 ? garous domestiqués ?
 lettre artefact irl
 duplicité: rôlistes fous ou vrais adorateurs chtuliens ?
@@ -25,6 +26,6 @@ Joseph Curwen
 Charles Ward
 
 miasme
-écoeurant
+écœurant
 aura capiteuse 
 odeurs nauséabondes et de cris insoutenables 
