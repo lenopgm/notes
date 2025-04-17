@@ -1,0 +1,132 @@
+https://vanilla-wow-archive.fandom.com/wiki/API_GetSpellCooldown
+
+How to increase your tab target range https://forum.nostalrius.org/viewtopic.php?f=63&t=44850
+/console targetNearestDistance 50
+or add this line in your config.wtf : SET targetNearestDistance "50"
+
+switch track huma/stealth
+/run c=CastSpellByName t=GetTrackingTexture() if t and strfind(t,"Prayer") then c("Track Hidden") else c("Track Humanoids") end
+(SUPERMACRO) /run if buffed("Track Humanoids", 'player') then CastSpellByName("Track Hidden") else CastSpellByName("Track Humanoids") end;
+/run local x=0 if GetTrackingTexture()=="Interface\\Icons\\Ability_Stealth" then x=1 end if x==0 then CastSpellByName("Track Hidden") else CastSpellByName("Track Humanoids") end
+/run local x=0 if GetTrackingTexture()=="Interface\\Icons\\Spell_Holy_PrayerOfHealing" then x=1 end if x==0 then CastSpellByName("Track Humanoids") else CastSpellByName("Track Hidden") end
+
+invi pot
+/script if UnitAffectingCombat("player") then CastSpellByName("Feign Death") end
+/use Lesser Invisibility Potion
+/script CastPetAction(3);
+https://github.com/Meridaw/Vanilla-Macros/blob/master/Hunter/Hunter%20Vanish.md
+/run for b=0,4 do for s=1,GetContainerNumSlots(b,s)do local n=GetContainerItemLink(b,s)if n and (strfind(n,"Invisibility Potion"))then UseContainerItem(b,s,1)end end end
+/run if UnitAffectingCombat("player") then CastSpellByName("Feign Death") end
+/script CastPetAction(3);
+
+https://github.com/Meridaw/Vanilla-Macros/blob/master/Hunter/Viper%20Sting.md
+if target is player controlled and has mana cast Viper Sting, else cast Serpent Sting
+/run if (UnitPowerType('target')==0) and UnitPlayerControlled("target") then CastSpellByName("Viper Sting")else CastSpellByName("Serpent Sting")end
+
+Viper sting on trap target without auto shot
+/run local i,x=1,0 while UnitDebuff("target",i) do if UnitDebuff("target",i)=="Interface\\Icons\\Spell_Frost_ChainsOfIce" then x=1 end i=i+1 end if x==1 then CastSpellByName("Viper Sting")ClearTarget() else CastSpellByName("Viper Sting")end
+
+Uber Pet Attack https://github.com/Meridaw/Vanilla-Macros/blob/master/Hunter/Pet/Uber%20Pet%20Attack.md
+/run if UnitExists("target") then if UnitIsFriend("player","target") then AssistUnit("target");PetAttack();else if UnitExists("pettarget") and UnitIsUnit("target", "pettarget") then PetFollow();else PetAttack();end;end;else PetFollow();end;
+
+
+
+
+Show the Battlefield Minimap outside of BGs
+/run if(not BattlefieldMinimap)then BattlefieldMinimap_LoadUI()BattlefieldMinimap:Show()else BattlefieldMinimap:Show()end;SHOW_BATTLEFIELD_MINIMAP="1";
+If you want to make it bigger append this at the end of the macro. 1.5 = 50% bigger, adjust as needed. All should be one line.
+BattlefieldMinimap:SetScale(1.5);
+
+
+Use offhand or cancel buff
+/script UseInventoryItem(17);
+/run SpellStopCasting()
+/script local i=0 g=GetPlayerBuff while not(g(i) == -1)do if(strfind(GetPlayerBuffTexture(g(i)), "Spell_Magic_PolymorphChicken"))then CancelPlayerBuff(g(i))end i=i+1 end
+
+
+
+Spammable fear with stopcasting (# being the id of the action bar where you put Fear)
+/script if GetUnitName("target")==nil then TargetNearestEnemy() end
+/script if not IsCurrentAction(#) then SpellStopCasting() end;
+/cast Fear(Rank 3)
+
+
+
+/run if CheckInteractDistance("target",3) then CastSpellByName("Aspect of the Monkey") else CastSpellByName("Aspect of the Hawk")end
+
+
+
+https://github.com/Meridaw/Vanilla-Macros/blob/master/Hunter/Scatter%20Shot.md
+/console targetNearestDistance 15
+/run TargetNearestEnemy() CastSpellByName("Scatter Shot")
+/console targetNearestDistance 41
+
+
+
+
+A/ Hunter pvp is pretty much the same for each class, it just depends on your spec. If they have a mana bar use viper sting, keep them at range, scatter fd trap if they get close to reset.
+B/ Also, don't shoot mounted warriors. He's going to stay mounted until he is in intercept range and then you are dead.
+A/ Surely you’re joking. Warriors are a joke for hunters to kill. If you start with a freezing trap there is almost no way they will win if you are marks.
+B/ Did you even read what i wrote? You can't kite a warrior who's on a horse. Yeah, if he's a total idiot maybe he'll jump in your trap without skull of impending doom. Otherwise he's going to fall back unless he can tell you aren't standing on a trap.
+A/ He has to dismount at some point and when he does all you need is wingclip to get out of range and once he intercepts you feign and trap. The rest is elementary. And if he does have impending doom just spam wingclip until you get a root which is easy enough and just scatter. I did read what you wrote it just doesn’t make a difference.
+B/ The root is talented. Did you not know that?
+   If you are in range for wing clip then the warrior is in range for hamstring. Did you not know that?
+   Stop misleading people. You have NO IDEA what you're talking about.
+A/ If you are pvping on a Hunter you will always have this talented. Always. Did you not know that? It sounds like you didn’t.
+   I don’t know why you are getting so hung up on hamstring. Yes you will get a hamstring on you. But you have plenty of time to get out of range slower when the warrior is ROOTED.
+   Do I.... do I really need to explain basic pvp principles to you or would you like to just watch a couple videos of hunter pvp so you stop making yourself look like an idiot.
+B/ once you get hamstring on you you will always have hamstring on you. It doesn't matter if he's rooted or not.
+   You have no idea what you're talking about, and I'm not going to continue to entertain your ridiculous assertions by replying to them any longer.
+   Have a good day, and see you in classic.
+A/ What does it matter if you have hamstring on you if you are out of his range you fucking retard? He intercepts you? Scatter and get out of range again. He runs you down because your hamstring in your scenario? Feign trap and get out of range again.
+  Literally watch any vanilla pvp vid that involves duels. Hunters win with like 90% health every time. Even in warrior pvp videos where they beat hunters, the hunters always are bad as fuck and the fights are still down to the wire.
+  You are clearly a fucking moron getting hung up on hamstring thinking that it’s a death sentence
+C/ Not sure why you got down voted, that's very accurate. Hamstring isn't going to do much if the warrior is in a freezing trap for like half an hour, you can sit down and eat next to him. (Used to do that before deminishing returns on cc)
+   And the distance you can create with scattershot, concussive shot will put more distance between you two than the warrior can reach to keep hamstring applied.
+   If all else fails poo deterrence and melee macro them down after landing a few good shots; which did mongoose, raptor, or wing clip of they were on cool down.
+A/ Yeah I know, I was just downvoted by the guy I was commenting on who apparently thought warriors destroyed hunters for some reason. When quite honestly I could theoretically kill a full t3 warrior with quest items as a hunter fairly easily considering hunters have the most utility for getting out of melee range (if played correctly)
+
+
+
+
+
+
+
+local start, duration, enabled = GetSpellCooldown("Multi-Shot");
+if enabled == 0 then
+ DEFAULT_CHAT_FRAME:AddMessage("Presence of Mind is currently active, use it and wait " .. duration .. " seconds for the next one.");
+elseif ( start > 0 and duration > 0) then
+ DEFAULT_CHAT_FRAME:AddMessage("Presence of Mind is cooling down, wait " .. (start + duration - GetTime()) .. " seconds for the next one.");
+else
+ DEFAULT_CHAT_FRAME:AddMessage("Presence of Mind is ready.");
+end
+
+MULTISPAM
+/cast Multi-Shot
+/run if CheckInteractDistance("target", 3) and (not PlayerFrame.inCombat) then AttackTarget() elseif not IsAutoRepeatAction(3) then CastSpellByName("Auto Shot") end
+/script PetAttack()
+
+
+
+REF /run function b(k)for i=1,16 do if strfind(tostring(UnitBuff("player",i)),k)then return 1 end end end if not b("FruitCake")then use("Graccu's Mince Meat Fruitcake")elseif not b("Ability_Ambush")then CastSpellByName("Shadowmeld")end
+REF /run if CheckInteractDistance("target", 3) and (not PlayerFrame.inCombat) then AttackTarget() elseif not IsAutoRepeatAction(3) then CastSpellByName("Auto Shot") end
+REF /script class=UnitClass("target"); if ((class=="Rogue") or (class=="Warrior")) then CastSpellByName("Serpent Sting"); else CastSpellByName("Viper Sting"); end
+REF /run local i,x=1,0 while UnitBuff("player",i) do if UnitBuff("player",i)=="Interface\\Icons\\Ability_Ambush" then x=1 end i=i+1 end if x==0 then CastSpellByName("Shadowmeld") end
+REF /run local c=CastSpellByName if UnitExists("pet") then if UnitHealth("pet")==0 then c("Revive Pet") elseif GetPetHappiness()~=nil and GetPetHappiness()~=3 then c("Feed Pet") PickupContainerItem(0, 1) else c("Dismiss Pet") end else c("Call Pet") end
+
+
+CastSpellByName("Counterattack"); CastSpellByName("Wing Clip")
+
+CastSpellByName("Counterattack")
+CastSpellByName("Mongoose Bite")
+CastSpellByName("Raptor Strike")
+CastSpellByName("Wing Clip")
+
+local start, duration, enabled = GetSpellCooldown("Multi-Shot");
+if duration == 0 then
+ CastSpellByName("Multi-Shot");
+elseif ( _ ) then
+ DEFAULT_CHAT_FRAME:AddMessage("Presence of Mind is cooling down, wait " .. (start + duration - GetTime()) .. " seconds for the next one.");
+else
+ DEFAULT_CHAT_FRAME:AddMessage("Presence of Mind is ready.");
+end
